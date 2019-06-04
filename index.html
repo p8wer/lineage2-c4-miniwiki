@@ -16,11 +16,15 @@
     https://fontawesome.com
        
     creditos fondo: https://wall.alphacoders.com/big.php?i=103328   
+      
+    MIL gracias a Josh por el subdominio
+    https://freedns.afraid.org/ 
        
     -->
     
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <!-- dan's tools favicon.ico -->
     <link rel="apple-touch-icon" sizes="57x57" href="imagenes/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="imagenes/favicon/apple-icon-60x60.png">
@@ -39,9 +43,13 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="imagenes/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/a83fd999e2.js"></script>
+    
+    <!-- Viewport para celular -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
     <!-- OVERRIDE del default azul de boton activo de bootstrap, reemplazado por un verde transparente -->
     <style>
     .nav-pills .nav-link.active,
@@ -56,7 +64,7 @@
 <body class="bg-dark text-white">
 
 
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
   <a class="navbar-brand" href="index.html"><img src="imagenes/favicon/ms-icon-70x70.png" alt="Icono Lineage2 C4"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -65,22 +73,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="nav nav-pills" id="pills-tab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active text-white" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Inicio</a>
+                <a class="nav-link active text-white" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-angle-right"></i> Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" id="pills-buffs-tab" data-toggle="pill" href="#pills-buffs" role="tab" aria-controls="pills-buffs" aria-selected="false">Buffs</a>
+                <a class="nav-link text-white" id="pills-buffs-tab" data-toggle="pill" href="#pills-buffs" role="tab" aria-controls="pills-buffs" aria-selected="false"><i class="fas fa-angle-right"></i> Buffs</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" id="pills-noblesse-tab" data-toggle="pill" href="#pills-noblesse" role="tab" aria-controls="pills-noblesse" aria-selected="false">Noblesse</a>
+                <a class="nav-link text-white" id="pills-noblesse-tab" data-toggle="pill" href="#pills-noblesse" role="tab" aria-controls="pills-noblesse" aria-selected="false"><i class="fas fa-angle-right"></i> Noblesse</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" id="pills-tips-tab" data-toggle="pill" href="#pills-tips" role="tab" aria-controls="pills-tips" aria-selected="false">Tips</a>
+                <a class="nav-link text-white" id="pills-tips-tab" data-toggle="pill" href="#pills-tips" role="tab" aria-controls="pills-tips" aria-selected="false"><i class="fas fa-angle-right"></i> Tips</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" id="pills-glosario-tab" data-toggle="pill" href="#pills-glosario" role="tab" aria-controls="pills-glosario" aria-selected="false">Glosario</a>
+                <a class="nav-link text-white" id="pills-glosario-tab" data-toggle="pill" href="#pills-glosario" role="tab" aria-controls="pills-glosario" aria-selected="false"><i class="fas fa-angle-right"></i> Glosario</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white" id="pills-sobrelaweb-tab" data-toggle="pill" href="#pills-sobrelaweb" role="tab" aria-controls="pills-sobrelaweb" aria-selected="false">Sobre la Web</a>
+                <a class="nav-link text-white" id="pills-sobrelaweb-tab" data-toggle="pill" href="#pills-sobrelaweb" role="tab" aria-controls="pills-sobrelaweb" aria-selected="false"><i class="fas fa-angle-right"></i> Sobre la Web</a>
             </li>
         </ul>
     </div>
@@ -96,7 +104,7 @@
             <h1>Hola! Bienvenidos a esta Mini Wiki del Lineage 2 C4</h1>
             <hr>
             <h4>Hecha con la intención de ayudar a los que menos sabemos y cubrir la falta de información de esta crónica tan usada y apreciada por sus fans.</h4>
-            <p> <span class="text-danger">Nota Importante: </span> Los cambios en buff/balance son los reflejados en el servidor <a href="https://www.l2ultra.com">L2Ultra</a>.</p>
+            <p> <span class="text-danger">Nota Importante: </span> Los cambios en buff/balance son los reflejados en el servidor <a href="https://www.l2ultra.com" class="font-weight-bold">L2Ultra</a>.</p>
             <p class="py-1">Arriba en la barra <i class="far fa-hand-point-up"></i> tenes los links para navegar por la Web. Espero que lo disfrutes! -sunset</p>
         </div>
     </div>
@@ -259,19 +267,19 @@
 
 <ul class="nav nav-pills m-1" id="pills-tab" role="tablist">
 <li class="nav-item">
-<a class="nav-link active text-white" id="pills-noble0-tab" data-toggle="pill" href="#pills-noble0" role="tab" aria-controls="pills-noble0" aria-selected="true">¿Por qué Noblesse?</a>
+<a class="nav-link active text-white" id="pills-noble0-tab" data-toggle="pill" href="#pills-noble0" role="tab" aria-controls="pills-noble0" aria-selected="true"><i class="fas fa-chevron-right"></i> ¿Por qué Noblesse?</a>
 </li>
 <li class="nav-item">
-<a class="nav-link text-white" id="pills-noble1-tab" data-toggle="pill" href="#pills-noble1" role="tab" aria-controls="pills-noble1" aria-selected="false">Parte 1</a>
+<a class="nav-link text-white" id="pills-noble1-tab" data-toggle="pill" href="#pills-noble1" role="tab" aria-controls="pills-noble1" aria-selected="false"><i class="fas fa-chevron-right"></i> Parte 1</a>
 </li>
 <li class="nav-item">
-<a class="nav-link text-white" id="pills-noble2-tab" data-toggle="pill" href="#pills-noble2" role="tab" aria-controls="pills-noble2" aria-selected="false">Parte 2</a>
+<a class="nav-link text-white" id="pills-noble2-tab" data-toggle="pill" href="#pills-noble2" role="tab" aria-controls="pills-noble2" aria-selected="false"><i class="fas fa-chevron-right"></i> Parte 2</a>
 </li>
 <li class="nav-item">
-<a class="nav-link text-white" id="pills-noble3-tab" data-toggle="pill" href="#pills-noble3" role="tab" aria-controls="pills-noble3" aria-selected="false">Parte 3</a>
+<a class="nav-link text-white" id="pills-noble3-tab" data-toggle="pill" href="#pills-noble3" role="tab" aria-controls="pills-noble3" aria-selected="false"><i class="fas fa-chevron-right"></i> Parte 3</a>
 </li>
 <li class="nav-item">
-<a class="nav-link text-white" id="pills-noble4-tab" data-toggle="pill" href="#pills-noble4" role="tab" aria-controls="pills-noble4" aria-selected="false">Parte 4</a>
+<a class="nav-link text-white" id="pills-noble4-tab" data-toggle="pill" href="#pills-noble4" role="tab" aria-controls="pills-noble4" aria-selected="false"><i class="fas fa-chevron-right"></i> Parte 4</a>
 </li>
 </ul>
 
@@ -354,8 +362,8 @@
                 </p>
                 <p>tigre, SharkaM, Sonic, SpoilMeu, y todos los que se coparon desde que estoy en el sv para polearlos y que tiran convo copadas :B, sino la verdad que seria un re garrón
                 <br><br>
-                Hecho con <a href="https://getbootstrap.com">Bootstrap</a> y <a href="https://fontawesome.com">Fontawesome</a>, también el favicon es por <a href="https://www.danstools.com">Dan's Tools</a>
-                <br><br>
+                Hecho con <a href="https://getbootstrap.com" class="text-warning">Bootstrap</a> y <a href="https://fontawesome.com" class="text-warning">Fontawesome</a>, también el favicon es por <a href="https://www.danstools.com" class="text-warning">Dan's Tools</a>
+                <br>Gracias también a <a href="https://freedns.afraid.org/" class="text-warning">Josh (FreeDNS)</a> para poder hacer el subdominio de <a href="http://lineage2c4.info.tm/" class="text-warning">lineage2c4.info.tm</a> <br><br>
                 
                 Espero que les sirva esta web, y al que ya sabe del juego y la ve, que la pase al que no :p <br>
                 Si encuentran algo que estaría bueno para agregar o tienen cualquier tipo de opinion/consulta sobre la web, me pueden encontrar ingame como sunset, o por Discord sunset#9425
