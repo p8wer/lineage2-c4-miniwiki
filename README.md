@@ -6,17 +6,19 @@ Contenidos:
 
 * Inicio  ![Progress](http://progressed.io/bar/99) 
 
-* Buffs ![Progress](http://progressed.io/bar/80) 
+* Buffs ![Progress](http://progressed.io/bar/85) 
 
 * Noblesse  ![Progress](http://progressed.io/bar/25) 
 
 * * Qué es y como obtenerla
 
-* Clases/Sub  ![Progress](http://progressed.io/bar/33) 
+* Clases/Sub  ![Progress](http://progressed.io/bar/75) 
 
-* * Cuales existen, resumen de tales, tips
+* * Cuales existen, importancia de tales, combos
 
-* Tips (Información miscelánea?)  ![Progress](http://progressed.io/bar/0) 
+* Info. Miscelánea  ![Progress](http://progressed.io/bar/33) 
+
+* * Atributos&Dyes, Quest importantes, tips
 
 * Glosario  ![Progress](http://progressed.io/bar/0) 
 
