@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>L2 C4 MiniWiki</title>
     <meta name="description" content="Mini Wiki del Lineage 2 C4 basado en L2Ultra">
     <meta name="author" content="https://github.com/sunset904">
     <meta name="keywords" content="lineage2, l2c4, lineage2c4, lineage c4, lineage 2 c4">
-    <!-- 
-    
+    <!--
+
     Creditos en cuanto al diseño/funcionamiento de esta web:
     Bootstrap, Dan's Tools, Font Awesome
-    
+
     https://getbootstrap.com
     https://www.danstools.com
     https://fontawesome.com
-       
-    creditos fondo: https://wall.alphacoders.com/big.php?i=103328   
-      
+
+    creditos fondo: https://wall.alphacoders.com/big.php?i=103328
+
     MIL gracias a Josh por el subdominio
-    https://freedns.afraid.org/ 
-       
+    https://freedns.afraid.org/
+
     -->
-    
+
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+
     <!-- dan's tools favicon.ico -->
     <link rel="apple-touch-icon" sizes="57x57" href="imagenes/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="imagenes/favicon/apple-icon-60x60.png">
@@ -35,7 +36,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="imagenes/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="imagenes/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="imagenes/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="imagenes/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="imagenes/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="imagenes/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon/favicon-16x16.png">
@@ -43,795 +44,976 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="imagenes/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    
+
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/a83fd999e2.js"></script>
-    
+
     <!-- Viewport para celular -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
+
     <!-- OVERRIDE del default azul de boton activo de bootstrap, reemplazado por un verde transparente -->
     <style>
-    .nav-pills .nav-link.active,
-    .nav-pills .show > .nav-link {
-    color: #fff;
-    background-color: rgba(0, 250, 0, 0.2);
-    }
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #fff;
+            background-color: rgba(0, 250, 0, 0.2);
+        }
+
     </style>
-    
+
 </head>
 
 <body class="bg-dark text-white">
 
 
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
-  <a class="navbar-brand" href="index.html"><img src="imagenes/favicon/favicon-32x32.png" alt="Icono Lineage2 C4"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="imagenes/favicon/favicon-32x32.png" alt="Icono Lineage2 C4"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav nav-pills" id="pills-tab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active text-white" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-angle-right"></i> Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" id="pills-buffs-tab" data-toggle="pill" href="#pills-buffs" role="tab" aria-controls="pills-buffs" aria-selected="false"><i class="fas fa-angle-right"></i> Buffs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" id="pills-noblesse-tab" data-toggle="pill" href="#pills-noblesse" role="tab" aria-controls="pills-noblesse" aria-selected="false"><i class="fas fa-angle-right"></i> Noblesse</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" id="pills-clases-tab" data-toggle="pill" href="#pills-clases" role="tab" aria-controls="pills-clases" aria-selected="false"><i class="fas fa-angle-right"></i> Clases</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" id="pills-infomiscelanea-tab" data-toggle="pill" href="#pills-infomiscelanea" role="tab" aria-controls="pills-infomiscelanea" aria-selected="false"><i class="fas fa-angle-right"></i> Info. Miscelánea</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" id="pills-glosario-tab" data-toggle="pill" href="#pills-glosario" role="tab" aria-controls="pills-glosario" aria-selected="false"><i class="fas fa-angle-right"></i> Glosario</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" id="pills-mapa-tab" data-toggle="pill" href="#pills-mapa" role="tab" aria-controls="pills-mapa" aria-selected="false"><i class="fas fa-angle-right"></i> Mapa (grande) <!-- como las victorias de BOCITA EL MÁS GRANDE --></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" id="pills-sobrelaweb-tab" data-toggle="pill" href="#pills-sobrelaweb" role="tab" aria-controls="pills-sobrelaweb" aria-selected="false"><i class="fas fa-angle-right"></i> Sobre la Web</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<div class="tab-content" id="pills-tabContent">
-
-<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-  
-<div class="container text-center">
-    <div class="row">
-        <div class="col">
-            <h2>Hola! Bienvenidos a esta Mini Wiki del Lineage 2 C4</h2>
-            <hr>
-            <h5>Hecha con la intención de ayudar a los que menos sabemos y cubrir la falta de información de esta crónica tan usada y apreciada por sus fans.</h5>
-            <p> <span class="text-danger">Nota Importante: </span> Los cambios en buff/balance son los reflejados en el servidor <a href="https://www.l2ultra.com/info" class="font-weight-bold">L2Ultra</a>.</p>
-            <p class="py-1">Arriba en la barra <i class="far fa-hand-point-up"></i> tenes los links para navegar por la Web. Espero que lo disfrutes! -sunset</p>
-        </div>
-    </div>
-</div>
-
-<img src="imagenes/fondo.jpg" alt="Fondo Lineage 2" class="img-fluid py-1">
-
-<footer class="footer mt-auto py-1 bg-secondary text-center fixed-bottom small">
-  <div class="container">
-    <span class="text-white">Con aprecio a todos los que les sirva <i class="far fa-smile"></i></span>
-  </div>
-</footer>
-
-</div>
-
-<div class="tab-pane fade" id="pills-buffs" role="tabpanel" aria-labelledby="pills-buffs-tab">
-   
-<div class="container-fluid">
-
-    <div class="row">
-        <div class="col">    
-        <h5>Referencias:</h5>
-        <p><span class="text-success">Verde para los buffs beneficiales a los Fighter</span><br>
-        <span class="text-primary">Azul para los buffs beneficiales a los Mystic</span><br>
-        <span class="text-warning">Amarillo para tipos de Buff generales</span></p>
-        </div>
-    </div>
-
-        <div class="row">
-
-            <div class="col">
-                <h2 class="display-4">Dances</h2>
-                <ul class="list-unstyled">
-                <li class="py-2"><img src="imagenes/skill/dance/dance_of_warrior.png" alt="Dance of the Warrior" class="rounded"> Dance of the Warrior <span class="badge badge-success badge-pill">+ P. Atk</span></li>
-                <li class="py-2"><img src="imagenes/skill/dance/dance_of_fire.png" alt="Dance of Fire" class="rounded"> Dance of Fire <span class="badge badge-success badge-pill">+ Critical Damage</span></li>
-                <li class="py-2"><img src="imagenes/skill/dance/dance_of_fury.png" alt="Dance of Fury" class="rounded"> Dance of Fury <span class="badge badge-success badge-pill">+ Atk. Spd.</span></li>
-                <li class="py-2"><img src="imagenes/skill/dance/dance_of_vampire.png" alt="Dance of the Vampire" class="rounded"> Dance of the Vampire <span class="badge badge-success badge-pill">+ Vampiric (Melee)</span></li>
-                <li class="py-2"><img src="imagenes/skill/dance/dance_of_inspiration.png" alt="Dance of Inspiration" class="rounded"> Dance of Inspiration <span class="badge badge-success badge-pill">+ Accuracy</span></li>
-                <li class="py-2"><img src="imagenes/skill/dance/dance_of_concentration.png" alt="Dance of Concentration" class="rounded"> Dance of Concentration <span class="badge badge-primary badge-pill">+ Casting Spd.</span> <span class="badge badge-primary badge-pill">- Magic Cancel Rate</span></li>
-                <li class="py-2"><img src="imagenes/skill/dance/dance_of_light.png" alt="Dance of Light" class="rounded"> Dance of Light <span class="badge badge-success badge-pill">+ Sacred para P. Atk</span></li>
-                <li class="py-2"><img src="imagenes/skill/dance/dance_of_mystic.png" alt="Dance of the Mystic" class="rounded"> Dance of the Mystic <span class="badge badge-primary badge-pill">+ M. Atk</span></li>
-                <li class="py-2"><img src="imagenes/skill/dance/dance_of_siren.png" alt="Dance of Siren" class="rounded"> Dance of Siren <span class="badge badge-primary badge-pill">+ Critical Rate M. Atk</span></li>
-                <li class="py-2"><img src="imagenes/skill/dance/dance_of_protection.png" alt="Dance of Protection" class="rounded"> Dance of Protection <span class="badge badge-warning badge-pill">+ Resist a Daño Terrenal [?]</span></li>
-                <li class="py-2"><img src="imagenes/skill/dance/dance_of_aqua_guard.png" alt="Dance of Aqua Guard" class="rounded"> Dance of Aqua Guard <span class="badge badge-warning badge-pill">+ Resist a Ataques de Agua</span></li>
-                <li class="py-2"><img src="imagenes/skill/dance/dance_of_earth_guard.png" alt="Dance of Earth Guard" class="rounded"> Dance of Earth Guard <span class="badge badge-warning badge-pill">+ Resist a Ataques de Tierra</span></li> 
-                </ul>
-            </div>
-
-            <div class="col">
-                <h2 class="display-4">Songs</h2>
-                <ul class="list-unstyled">
-                <li class="py-2"><img src="imagenes/skill/song/song_of_earth.png" alt="Song of Earth" class="rounded">Song of Earth <span class="badge badge-warning badge-pill">+ P. Def</span></li>
-                <li class="py-2"><img src="imagenes/skill/song/song_of_life.png" alt="Song of Life" class="rounded"> Song of Life <span class="badge badge-warning badge-pill">+ Regen HP</span></li>
-                <li class="py-2"><img src="imagenes/skill/song/song_of_water.png" alt="Song of Water" class="rounded"> Song of Water <span class="badge badge-warning badge-pill">+ Evasion</span></li>
-                <li class="py-2"><img src="imagenes/skill/song/song_of_warding.png" alt="Song of Warding" class="rounded"> Song of Warding <span class="badge badge-warning badge-pill">+ M. Def</span></li>
-                <li class="py-2"><img src="imagenes/skill/song/song_of_wind.png" alt="Song of Wind" class="rounded"> Song of Wind <span class="badge badge-warning badge-pill">+ Speed</span></li>
-                <li class="py-2"><img src="imagenes/skill/song/song_of_hunter.png" alt="Song of Hunter" class="rounded"> Song of Hunter <span class="badge badge-success badge-pill">+ Critical Rate P. Atk</span></li>
-                <li class="py-2"><img src="imagenes/skill/song/song_of_vitality.png" alt="Song of Vitality" class="rounded"> Song of Vitality <span class="badge badge-warning badge-pill">+ HP</span></li>
-                <li class="py-2"><img src="imagenes/skill/song/song_of_champion.png" alt="Song of Champion" class="rounded"> Song of Champion <span class="badge badge-success badge-pill">- Consumo MP y Re-uso Skill Físico</span></li>
-                <li class="py-2"><img src="imagenes/skill/song/song_of_renewal.png" alt="Song of Renewal" class="rounded"> Song of Renewal <span class="badge badge-primary badge-pill">- Consumo MP y Re-uso Skill Mágico</span></li>
-                <li class="py-2"><img src="imagenes/skill/song/song_of_invocation.png" alt="Song of Invocation" class="rounded"> Song of Invocation <span class="badge badge-warning badge-pill">+ Resist a Dark Magic Atk.</span></li>
-                <li class="py-2"><img src="imagenes/skill/song/song_of_storm_guard.png" alt="Song of Storm Guard" class="rounded"> Song of Storm Guard <span class="badge badge-warning badge-pill">+ Resist a Ataques de Aire</span></li>
-                <li class="py-2"><img src="imagenes/skill/song/song_of_flame_guard.png" alt="Song of Flame Guard" class="rounded"> Song of Flame Guard <span class="badge badge-warning badge-pill">+ Resist a Ataques de Fuego</span></li>
-                <li class="py-2"><img src="imagenes/skill/song/song_of_vengeance.png" alt="Song of Vengeance" class="rounded"> Song of Vengeance <span class="badge badge-warning badge-pill">Refleja % del daño Melee recibido</span></li>
-                </ul>
-            </div>
-
-            <div class="col">
-                <h2 class="display-4">Chants</h2>
-                <ul class="list-unstyled">
-                <li class="py-2"><img src="imagenes/skill/chant/chant_of_flame.png" alt="Chant of Flame" class="rounded"> Chant of Flame <span class="badge badge-primary badge-pill">+ Casting Spd.</span></li>
-                <li class="py-2"><img src="imagenes/skill/chant/chant_of_fire.png" alt="Chant of Fire" class="rounded"> Chant of Fire <span class="badge badge-warning badge-pill">+ M. Def</span></li>
-                <li class="py-2"><img src="imagenes/skill/chant/chant_of_battle.png" alt="Chant of Battle" class="rounded"> Chant of Battle <span class="badge badge-success badge-pill">+ P. Atk</span></li>
-                <li class="py-2"><img src="imagenes/skill/chant/chant_of_shielding.png" alt="Chant of Shielding" class="rounded"> Chant of Shielding <span class="badge badge-warning badge-pill">+ P. Def</span></li>
-                <li class="py-2"><img src="imagenes/skill/chant/chant_of_fury.png" alt="Chant of Fury" class="rounded"> Chant of Fury <span class="badge badge-success badge-pill">+ Atk. Spd.</span></li>
-                <li class="py-2"><img src="imagenes/skill/chant/chant_of_evasion.png" alt="Chant of Evasion" class="rounded"> Chant of Evasion <span class="badge badge-warning badge-pill">+ Evasion</span></li>
-                <li class="py-2"><img src="imagenes/skill/chant/chant_of_rage.png" alt="Chant of Rage" class="rounded"> Chant of Rage <span class="badge badge-success badge-pill">+ Critical Damage</span></li>
-                <li class="py-2"><img src="imagenes/skill/chant/chant_of_predator.png" alt="Chant of Predator" class="rounded"> Chant of Predator <span class="badge badge-success badge-pill">+ Critical Rate P. Atk</span></li>
-                <!-- <li class="py-2"><img src="imagenes/skill/chant/chant_of_life.png" alt="Chant of Life" class="rounded"> Chant of Life <span class="badge badge-warning badge-pill">Recovery HP</span></li> -->
-                <li class="py-2"><img src="imagenes/skill/chant/chant_of_revenge.png" alt="Chant of Revenge" class="rounded"> Chant of Revenge <span class="badge badge-warning badge-pill">Refleja % del daño Melee recibido</span></li>
-                <li class="py-2"><img src="imagenes/skill/chant/chant_of_eagle.png" alt="Chant of Eagle" class="rounded"> Chant of Eagle <span class="badge badge-success badge-pill">+ Accuracy</span></li>
-                <li class="py-2"><img src="imagenes/skill/chant/chant_of_vampire.png" alt="Chant of Vampire" class="rounded"> Chant of Vampire <span class="badge badge-success badge-pill">+ Vampiric (Melee)</span></li>
-                <!-- <li class="py-2"><img src="imagenes/skill" alt="" class="rounded"> <span class="badge badge-primary badge-pill"></span></li> -->
-                </ul>
-            </div>
-
-            <div class="col">
-                <h2 class="display-4">Pa'agrio</h2>
-                <ul class="list-unstyled">
-                <li class="py-2"><img src="imagenes/skill/paagrio/power_of_paagrio.png" alt="Power of Pa'agrio" class="rounded"> Power of Pa'agrio <span class="badge badge-success badge-pill">+ P. Atk</span></li>
-                <li class="py-2"><img src="imagenes/skill/paagrio/blessing_of_paagrio.png" alt="Blessing of Pa'agrio" class="rounded"> Blessing of Pa'agrio <span class="badge badge-warning badge-pill">+ P. Def</span></li>
-                <li class="py-2"><img src="imagenes/skill/paagrio/wisdom_of_paagrio.png" alt="Wisdom of Pa'agrio" class="rounded"> Wisdom of Pa'agrio <span class="badge badge-primary badge-pill">+ Casting Spd.</span></li>
-                <li class="py-2"><img src="imagenes/skill/paagrio/glory_of_paagrio.png" alt="Glory of Pa'agrio" class="rounded"> Glory of Pa'agrio <span class="badge badge-warning badge-pill">+ M. Def</span></li>
-                <li class="py-2"><img src="imagenes/skill/paagrio/sight_of_paagrio.png" alt="Sight of Pa'agrio" class="rounded"> Sight of Pa'agrio <span class="badge badge-success badge-pill">+ Accuracy</span></li>
-                <li class="py-2"><img src="imagenes/skill/paagrio/shield_of_paagrio.png" alt="Shield of Pa'agrio" class="rounded"> Shield of Pa'agrio <span class="badge badge-warning badge-pill">+ Shield Def.</span></li>
-                <li class="py-2"><img src="imagenes/skill/paagrio/tact_of_paagrio.png" alt="Tact of Pa'agrio" class="rounded"> Tact of Pa'agrio <span class="badge badge-warning badge-pill">+ Evasion</span></li>
-                <li class="py-2"><img src="imagenes/skill/paagrio/speed_of_paagrio.png" alt="Speed of Pa'agrio" class="rounded"> Speed of Pa'agrio <span class="badge badge-warning badge-pill">+ Speed</span></li>
-                <li class="py-2"><img src="imagenes/skill/paagrio/rage_of_paagrio.png" alt="Rage of Pa'agrio" class="rounded"> Rage of Pa'agrio <span class="badge badge-danger badge-pill">- P. Def M. Def  </span><span class="badge badge-primary badge-pill">+ M. Atk, Casting Spd </span> <span class="badge badge-success badge-pill">+ P. Atk,  Atk Spd</span></li>
-                <!-- <li class="py-2"><img src="imagenes/skill/paagrio/" alt="" class="rounded">Heart of Pa'agrio<span class="badge badge-primary badge-pill">Recovery HP</span></li> -->
-                <!-- <li class="py-2"><img src="imagenes/skill/paagrio/" alt="" class="rounded">Honor of Pa'agrio<span class="badge badge-primary badge-pill">Recovery CP</span></li> -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-angle-right"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-buffs-tab" data-toggle="pill" href="#pills-buffs" role="tab" aria-controls="pills-buffs" aria-selected="false"><i class="fas fa-angle-right"></i> Buffs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-noblesse-tab" data-toggle="pill" href="#pills-noblesse" role="tab" aria-controls="pills-noblesse" aria-selected="false"><i class="fas fa-angle-right"></i> Noblesse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-clases-tab" data-toggle="pill" href="#pills-clases" role="tab" aria-controls="pills-clases" aria-selected="false"><i class="fas fa-angle-right"></i> Clases</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-infomiscelanea-tab" data-toggle="pill" href="#pills-infomiscelanea" role="tab" aria-controls="pills-infomiscelanea" aria-selected="false"><i class="fas fa-angle-right"></i> Info. Miscelánea</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-glosario-tab" data-toggle="pill" href="#pills-glosario" role="tab" aria-controls="pills-glosario" aria-selected="false"><i class="fas fa-angle-right"></i> Glosario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-mapa-tab" data-toggle="pill" href="#pills-mapa" role="tab" aria-controls="pills-mapa" aria-selected="false"><i class="fas fa-angle-right"></i> Mapa (grande)
+                        <!-- como las victorias de BOCITA EL MÁS GRANDE --></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-sobrelaweb-tab" data-toggle="pill" href="#pills-sobrelaweb" role="tab" aria-controls="pills-sobrelaweb" aria-selected="false"><i class="fas fa-angle-right"></i> Sobre la Web</a>
+                </li>
             </ul>
+        </div>
+    </nav>
+
+    <div class="tab-content" id="pills-tabContent">
+
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <h2>Hola! Bienvenidos a esta Mini Wiki del Lineage 2 C4</h2>
+                        <hr>
+                        <h5>Hecha con la intención de ayudar a los que menos sabemos y cubrir la falta de información de esta crónica tan usada y apreciada por sus fans.</h5>
+                        <p> <span class="text-danger">Nota Importante: </span> Los cambios en buff/balance son los reflejados en el servidor <a href="https://www.l2ultra.com/info" class="font-weight-bold">L2Ultra</a>.</p>
+                        <p class="py-1">Arriba en la barra <i class="far fa-hand-point-up"></i> tenes los links para navegar por la Web. Espero que lo disfrutes! -sunset</p>
+                    </div>
+                </div>
             </div>
 
-        </div>  
+            <img src="imagenes/fondo.jpg" alt="Fondo Lineage 2" class="img-fluid py-1">
 
-       <div class="row-fluid">
-            <h2 class="display-4 text-center">Otros</h2>
-       </div>
+            <footer class="footer mt-auto py-1 bg-secondary text-center fixed-bottom small">
+                <div class="container">
+                    <span class="text-white">Con aprecio a todos los que les sirva <i class="far fa-smile"></i></span>
+                </div>
+            </footer>
 
-        <div class="row">
+        </div>
 
-            <div class="col">
-                <ul class="list-unstyled">
+        <div class="tab-pane fade" id="pills-buffs" role="tabpanel" aria-labelledby="pills-buffs-tab">
 
-                    <!-- base
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col">
+                        <h5>Referencias:</h5>
+                        <p><span class="text-success">Verde para los buffs beneficiales a los Fighter</span><br>
+                            <span class="text-primary">Azul para los buffs beneficiales a los Mystic</span><br>
+                            <span class="text-warning">Amarillo para tipos de Buff generales</span></p>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col">
+                        <h2 class="display-4">Dances</h2>
+                        <ul class="list-unstyled">
+                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_warrior.png" alt="Dance of the Warrior" class="rounded"> Dance of the Warrior <span class="badge badge-success badge-pill">+ P. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_fire.png" alt="Dance of Fire" class="rounded"> Dance of Fire <span class="badge badge-success badge-pill">+ Critical Damage</span></li>
+                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_fury.png" alt="Dance of Fury" class="rounded"> Dance of Fury <span class="badge badge-success badge-pill">+ Atk. Spd.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_vampire.png" alt="Dance of the Vampire" class="rounded"> Dance of the Vampire <span class="badge badge-success badge-pill">+ Vampiric (Melee)</span></li>
+                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_inspiration.png" alt="Dance of Inspiration" class="rounded"> Dance of Inspiration <span class="badge badge-success badge-pill">+ Accuracy</span></li>
+                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_concentration.png" alt="Dance of Concentration" class="rounded"> Dance of Concentration <span class="badge badge-primary badge-pill">+ Casting Spd.</span> <span class="badge badge-primary badge-pill">- Magic Cancel Rate</span></li>
+                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_light.png" alt="Dance of Light" class="rounded"> Dance of Light <span class="badge badge-success badge-pill">+ Sacred para P. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_mystic.png" alt="Dance of the Mystic" class="rounded"> Dance of the Mystic <span class="badge badge-primary badge-pill">+ M. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_siren.png" alt="Dance of Siren" class="rounded"> Dance of Siren <span class="badge badge-primary badge-pill">+ Critical Rate M. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_protection.png" alt="Dance of Protection" class="rounded"> Dance of Protection <span class="badge badge-warning badge-pill">+ Resist a Daño Terrenal [?]</span></li>
+                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_aqua_guard.png" alt="Dance of Aqua Guard" class="rounded"> Dance of Aqua Guard <span class="badge badge-warning badge-pill">+ Resist a Ataques de Agua</span></li>
+                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_earth_guard.png" alt="Dance of Earth Guard" class="rounded"> Dance of Earth Guard <span class="badge badge-warning badge-pill">+ Resist a Ataques de Tierra</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h2 class="display-4">Songs</h2>
+                        <ul class="list-unstyled">
+                            <li class="py-2"><img src="imagenes/skill/song/song_of_earth.png" alt="Song of Earth" class="rounded">Song of Earth <span class="badge badge-warning badge-pill">+ P. Def</span></li>
+                            <li class="py-2"><img src="imagenes/skill/song/song_of_life.png" alt="Song of Life" class="rounded"> Song of Life <span class="badge badge-warning badge-pill">+ Regen HP</span></li>
+                            <li class="py-2"><img src="imagenes/skill/song/song_of_water.png" alt="Song of Water" class="rounded"> Song of Water <span class="badge badge-warning badge-pill">+ Evasion</span></li>
+                            <li class="py-2"><img src="imagenes/skill/song/song_of_warding.png" alt="Song of Warding" class="rounded"> Song of Warding <span class="badge badge-warning badge-pill">+ M. Def</span></li>
+                            <li class="py-2"><img src="imagenes/skill/song/song_of_wind.png" alt="Song of Wind" class="rounded"> Song of Wind <span class="badge badge-warning badge-pill">+ Speed</span></li>
+                            <li class="py-2"><img src="imagenes/skill/song/song_of_hunter.png" alt="Song of Hunter" class="rounded"> Song of Hunter <span class="badge badge-success badge-pill">+ Critical Rate P. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/song/song_of_vitality.png" alt="Song of Vitality" class="rounded"> Song of Vitality <span class="badge badge-warning badge-pill">+ HP</span></li>
+                            <li class="py-2"><img src="imagenes/skill/song/song_of_champion.png" alt="Song of Champion" class="rounded"> Song of Champion <span class="badge badge-success badge-pill">- Consumo MP y Re-uso Skill Físico</span></li>
+                            <li class="py-2"><img src="imagenes/skill/song/song_of_renewal.png" alt="Song of Renewal" class="rounded"> Song of Renewal <span class="badge badge-primary badge-pill">- Consumo MP y Re-uso Skill Mágico</span></li>
+                            <li class="py-2"><img src="imagenes/skill/song/song_of_invocation.png" alt="Song of Invocation" class="rounded"> Song of Invocation <span class="badge badge-warning badge-pill">+ Resist a Dark Magic Atk.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/song/song_of_storm_guard.png" alt="Song of Storm Guard" class="rounded"> Song of Storm Guard <span class="badge badge-warning badge-pill">+ Resist a Ataques de Aire</span></li>
+                            <li class="py-2"><img src="imagenes/skill/song/song_of_flame_guard.png" alt="Song of Flame Guard" class="rounded"> Song of Flame Guard <span class="badge badge-warning badge-pill">+ Resist a Ataques de Fuego</span></li>
+                            <li class="py-2"><img src="imagenes/skill/song/song_of_vengeance.png" alt="Song of Vengeance" class="rounded"> Song of Vengeance <span class="badge badge-warning badge-pill">Refleja % del daño Melee recibido</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h2 class="display-4">Chants</h2>
+                        <ul class="list-unstyled">
+                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_flame.png" alt="Chant of Flame" class="rounded"> Chant of Flame <span class="badge badge-primary badge-pill">+ Casting Spd.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_fire.png" alt="Chant of Fire" class="rounded"> Chant of Fire <span class="badge badge-warning badge-pill">+ M. Def</span></li>
+                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_battle.png" alt="Chant of Battle" class="rounded"> Chant of Battle <span class="badge badge-success badge-pill">+ P. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_shielding.png" alt="Chant of Shielding" class="rounded"> Chant of Shielding <span class="badge badge-warning badge-pill">+ P. Def</span></li>
+                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_fury.png" alt="Chant of Fury" class="rounded"> Chant of Fury <span class="badge badge-success badge-pill">+ Atk. Spd.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_evasion.png" alt="Chant of Evasion" class="rounded"> Chant of Evasion <span class="badge badge-warning badge-pill">+ Evasion</span></li>
+                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_rage.png" alt="Chant of Rage" class="rounded"> Chant of Rage <span class="badge badge-success badge-pill">+ Critical Damage</span></li>
+                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_predator.png" alt="Chant of Predator" class="r ounded"> Chant of Predator <span class="badge badge-success badge-pill">+ Critical Rate P. Atk</span></li>
+                            <!-- <li class="py-2"><img src="imagenes/skill/chant/chant_of_life.png" alt="Chant of Life" class="rounded"> Chant of Life <span class="badge badge-warning badge-pill">Recovery HP</span></li> -->
+                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_revenge.png" alt="Chant of Revenge" class="rounded"> Chant of Revenge <span class="badge badge-warning badge-pill">Refleja % del daño Melee recibido</span></li>
+                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_eagle.png" alt="Chant of Eagle" class="rounded"> Chant of Eagle <span class="badge badge-success badge-pill">+ Accuracy</span></li>
+                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_vampire.png" alt="Chant of Vampire" class="rounded"> Chant of Vampire <span class="badge badge-success badge-pill">+ Vampiric (Melee)</span></li>
+                            <!-- <li class="py-2"><img src="imagenes/skill" alt="" class="rounded"> <span class="badge badge-primary badge-pill"></span></li> -->
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h2 class="display-4">Pa'agrio</h2>
+                        <ul class="list-unstyled">
+                            <li class="py-2"><img src="imagenes/skill/paagrio/power_of_paagrio.png" alt="Power of Pa'agrio" class="rounded"> Power of Pa'agrio <span class="badge badge-success badge-pill">+ P. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/paagrio/blessing_of_paagrio.png" alt="Blessing of Pa'agrio" class="rounded"> Blessing of Pa'agrio <span class="badge badge-warning badge-pill">+ P. Def</span></li>
+                            <li class="py-2"><img src="imagenes/skill/paagrio/wisdom_of_paagrio.png" alt="Wisdom of Pa'agrio" class="rounded"> Wisdom of Pa'agrio <span class="badge badge-primary badge-pill">+ Casting Spd.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/paagrio/glory_of_paagrio.png" alt="Glory of Pa'agrio" class="rounded"> Glory of Pa'agrio <span class="badge badge-warning badge-pill">+ M. Def</span></li>
+                            <li class="py-2"><img src="imagenes/skill/paagrio/sight_of_paagrio.png" alt="Sight of Pa'agrio" class="rounded"> Sight of Pa'agrio <span class="badge badge-success badge-pill">+ Accuracy</span></li>
+                            <li class="py-2"><img src="imagenes/skill/paagrio/shield_of_paagrio.png" alt="Shield of Pa'agrio" class="rounded"> Shield of Pa'agrio <span class="badge badge-warning badge-pill">+ Shield Def.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/paagrio/tact_of_paagrio.png" alt="Tact of Pa'agrio" class="rounded"> Tact of Pa'agrio <span class="badge badge-warning badge-pill">+ Evasion</span></li>
+                            <li class="py-2"><img src="imagenes/skill/paagrio/speed_of_paagrio.png" alt="Speed of Pa'agrio" class="rounded"> Speed of Pa'agrio <span class="badge badge-warning badge-pill">+ Speed</span></li>
+                            <li class="py-2"><img src="imagenes/skill/paagrio/rage_of_paagrio.png" alt="Rage of Pa'agrio" class="rounded"> Rage of Pa'agrio <span class="badge badge-danger badge-pill">- P. Def M. Def </span><span class="badge badge-primary badge-pill">+ M. Atk, Casting Spd </span> <span class="badge badge-success badge-pill">+ P. Atk, Atk Spd</span></li>
+                            <!-- <li class="py-2"><img src="imagenes/skill/paagrio/" alt="" class="rounded">Heart of Pa'agrio<span class="badge badge-primary badge-pill">Recovery HP</span></li> -->
+                            <!-- <li class="py-2"><img src="imagenes/skill/paagrio/" alt="" class="rounded">Honor of Pa'agrio<span class="badge badge-primary badge-pill">Recovery CP</span></li> -->
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row-fluid">
+                    <h2 class="display-4 text-center">Otros</h2>
+                </div>
+
+                <div class="row justify-content-center">
+
+                    <div class="col-3">
+                        <ul class="list-unstyled">
+
+                            <!-- base
                     <li class="py-2"><img src="" alt="" class="rounded"> <span class="badge badge-primary badge-pill">+ %%BUFF%%</span></li>
                     -->
 
-                    <li class="py-2"><img src="imagenes/skill/otros/wind_walk.png" alt="Wind Walk" class="rounded">Wind Walk <span class="badge badge-warning badge-pill">+ Speed</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/mental_shield.png" alt="Mental Shield" class="rounded">Mental Shield <span class="badge badge-warning badge-pill">+ Resist Hold, Sleep, Fear y Mental Atks </span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/guidance.png" alt="Guidance" class="rounded">Guidance <span class="badge badge-primary badge-success">+ Accuracy</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/shield.png" alt="Shield" class="rounded">Shield <span class="badge badge-warning badge-pill">+ P. Def</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/might.png" alt="Might" class="rounded">Might <span class="badge badge-success badge-pill">+ P. Atk</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/berserker_spirit.png" alt="Berserker Spirit" class="rounded">Berserker Spirit <span class="badge badge-danger badge-pill">- P. Def M. Def  </span><span class="badge badge-primary badge-pill">+ M. Atk, Casting Spd </span> <span class="badge badge-success badge-pill">+ P. Atk,  Atk Spd</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/bless_the_body.png" alt="Bless the Body" class="rounded">Bless the Body <span class="badge badge-warning badge-pill">+ HP</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/bless_the_soul.png" alt="Bless the Soul" class="rounded">Bless the Soul <span class="badge badge-warning badge-pill">+ MP</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/concentration.png" alt="Concentration" class="rounded">Concentration <span class="badge badge-primary badge-pill">- Magic Cancel Rate</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/magic_barrier.png" alt="Magic Barrier" class="rounded">Magic Barrier <span class="badge badge-warning badge-pill">+ M. Def</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/wind_walk.png" alt="Wind Walk" class="rounded"> Wind Walk <span class="badge badge-warning badge-pill">+ Speed</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/mental_shield.png" alt="Mental Shield" class="rounded"> Mental Shield <span class="badge badge-warning badge-pill">+ Resist Hold, Sleep, Fear y Mental Atks </span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/guidance.png" alt="Guidance" class="rounded"> Guidance <span class="badge badge-primary badge-success">+ Accuracy</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/shield.png" alt="Shield" class="rounded"> Shield <span class="badge badge-warning badge-pill">+ P. Def</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/might.png" alt="Might" class="rounded"> Might <span class="badge badge-success badge-pill">+ P. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/berserker_spirit.png" alt="Berserker Spirit" class="rounded"> Berserker Spirit <span class="badge badge-danger badge-pill">- P. Def M. Def </span><span class="badge badge-primary badge-pill">+ M. Atk, Casting Spd </span> <span class="badge badge-success badge-pill">+ P. Atk, Atk Spd</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/bless_the_body.png" alt="Bless the Body" class="rounded"> Bless the Body <span class="badge badge-warning badge-pill">+ HP</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/bless_the_soul.png" alt="Bless the Soul" class="rounded"> Bless the Soul <span class="badge badge-warning badge-pill">+ MP</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/concentration.png" alt="Concentration" class="rounded"> Concentration <span class="badge badge-primary badge-pill">- Magic Cancel Rate</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/magic_barrier.png" alt="Magic Barrier" class="rounded"> Magic Barrier <span class="badge badge-warning badge-pill">+ M. Def</span></li>
 
-                </ul>
+                        </ul>
+                    </div>
+
+                    <div class="col-3">
+                        <ul class="list-unstyled">
+                            <li class="py-2"><img src="imagenes/skill/otros/resist_shock.png" alt="Resist Shock" class="rounded"> Resist Shock <span class="badge badge-warning badge-pill">+ Resist Shock</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/acumen.png" alt="Acumen" class="rounded"> Acumen <span class="badge badge-primary badge-pill">+ Casting Spd.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/bless_shield.png" alt="Bless Shield" class="rounded"> Bless Shield <span class="badge badge-warning badge-pill">+ Shield Def.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/advanced_block.png" alt="Advanced Block" class="rounded">A dvanced Block <span class="badge badge-warning badge-pill">+ Rate Shield Def.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/empower.png" alt="Empower" class="rounded"> Empower <span class="badge badge-primary badge-pill">+ M. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/decrease_weight.png" alt="Decrease Weight" class="rounded"> Decrease Weight <span class="badge badge-warning badge-pill">Aligera el peso</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/focus.png" alt="Focus" class="rounded"> Focus <span class="badge badge-success badge-pill">+ Critical Rate P. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/death_whisper.png" alt="Death Whisper" class="rounded"> Death Whisper <span class="badge badge-success badge-pill">+ Critical Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/wild_magic.png" alt="Wild Magic" class="rounded"> Wild Magic <span class="badge badge-primary badge-pill">+ Critical Rate M. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/vampiric_rage.png" alt="Vampiric Rage" class="rounded"> Vampiric Rage <span class="badge badge-success badge-pill">+ Vampiric (Melee)</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-3">
+                        <ul class="list-unstyled">
+                            <li class="py-2"><img src="imagenes/skill/otros/haste.png" alt="Haste" class="rounded">Haste <span class="badge badge-primary badge-pill">+ Atk. Spd.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/prophecy_of_water.png" alt="Prophecy of Water" class="rounded"> Prophecy of Water <span class="badge badge-danger badge-pill">- Speed</span><span class="badge badge-primary badge-pill"> + M. Atk, M. Def, Casting Spd.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/prophecy_of_fire.png" alt="Prophecy of Fire" class="rounded"> Prophecy of Fire <span class="badge badge-danger badge-pill">- Speed</span><span class="badge badge-success badge-pill">+ HP, P. Atk, P. Def, Accuracy, Atk Spd.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/prophecy_of_wind.png" alt="Prophecy of Wind" class="rounded"> Prophecy of Wind <span class="badge badge-success badge-pill">+ Evasion, Accuracy, Atk Spd.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/chant_of_victory.png" alt="Chant of Victory" class="rounded"> Chant of Victory <span class="badge badge-danger badge-pill">- Speed</span><br><span class="badge badge-success badge-pill">+ HP, P. Atk, P. Def, Accuracy, Atk Spd.</span><span class="badge badge-primary badge-pill">+ M. Atk, M. Def, Casting Spd.</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
-            <div class="col">
-                <ul class="list-unstyled">      
-                    <li class="py-2"><img src="imagenes/skill/otros/resist_shock.png" alt="Resist Shock" class="rounded">Resist Shock <span class="badge badge-warning badge-pill">+ Resist Shock</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/acumen.png" alt="Acumen" class="rounded">Acumen <span class="badge badge-primary badge-pill">+ Casting Spd.</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/bless_shield.png" alt="Bless Shield" class="rounded">Bless Shield <span class="badge badge-warning badge-pill">+ Shield Def.</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/advanced_block.png" alt="Advanced Block" class="rounded">Advanced Block <span class="badge badge-warning badge-pill">+ Rate Shield Def.</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/empower.png" alt="Empower" class="rounded">Empower <span class="badge badge-primary badge-pill">+ M. Atk</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/decrease_weight.png" alt="Decrease Weight" class="rounded">Decrease Weight <span class="badge badge-warning badge-pill">Aligera el peso</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/focus.png" alt="Focus" class="rounded">Focus <span class="badge badge-success badge-pill">+ Critical Rate P. Atk</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/death_whisper.png" alt="Death Whisper" class="rounded">Death Whisper <span class="badge badge-success badge-pill">+ Critical Atk</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/wild_magic.png" alt="Wild Magic" class="rounded">Wild Magic <span class="badge badge-primary badge-pill">+ Critical Rate M. Atk</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/vampiric_rage.png" alt="Vampiric Rage" class="rounded">Vampiric Rage <span class="badge badge-success badge-pill">+ Vampiric (Melee)</span></li>
-                </ul>
-            </div>
-
-           <div class="col">
-                <ul class="list-unstyled">   
-                    <li class="py-2"><img src="imagenes/skill/otros/haste.png" alt="Haste" class="rounded">Haste <span class="badge badge-primary badge-pill">+ Atk. Spd.</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/prophecy_of_water.png" alt="Prophecy of Water" class="rounded">Prophecy of Water <span class="badge badge-danger badge-pill">- Speed</span><span class="badge badge-primary badge-pill"> + M. Atk, M. Def, Casting Spd.</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/prophecy_of_fire.png" alt="Prophecy of Fire" class="rounded">Prophecy of Fire <span class="badge badge-danger badge-pill">- Speed</span><span class="badge badge-success badge-pill">+ HP, P. Atk,  P. Def, Accuracy,  Atk Spd.</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/prophecy_of_wind.png" alt="Prophecy of Wind" class="rounded">Prophecy of Wind <span class="badge badge-success badge-pill">+ Evasion, Accuracy, Atk Spd.</span></li>
-                    <li class="py-2"><img src="imagenes/skill/otros/chant_of_victory.png" alt="Chant of Victory" class="rounded">Chant of Victory <span class="badge badge-danger badge-pill">- Speed</span><br><span class="badge badge-success badge-pill">+ HP, P. Atk, P. Def, Accuracy, Atk Spd.</span><span class="badge badge-primary badge-pill">+ M. Atk, M. Def, Casting Spd.</span></li>
-                </ul>
-            </div>
-        </div> 
-</div>
-
-</div>
-
-<div class="tab-pane fade" id="pills-noblesse" role="tabpanel" aria-labelledby="pills-noblesse-tab">
-
-
-<ul class="nav nav-pills m-1" id="pills-tab-noblesse" role="tablist">
-<li class="nav-item">
-<a class="nav-link active text-white" id="pills-noble0-tab" data-toggle="pill" href="#pills-noble0" role="tab" aria-controls="pills-noble0" aria-selected="true"><i class="fas fa-chevron-right"></i> ¿Por qué Noblesse?</a>
-</li>
-<li class="nav-item">
-<a class="nav-link text-white" id="pills-noble1-tab" data-toggle="pill" href="#pills-noble1" role="tab" aria-controls="pills-noble1" aria-selected="false"><i class="fas fa-chevron-right"></i> Parte 1</a>
-</li>
-<li class="nav-item">
-<a class="nav-link text-white" id="pills-noble2-tab" data-toggle="pill" href="#pills-noble2" role="tab" aria-controls="pills-noble2" aria-selected="false"><i class="fas fa-chevron-right"></i> Parte 2</a>
-</li>
-<li class="nav-item">
-<a class="nav-link text-white" id="pills-noble3-tab" data-toggle="pill" href="#pills-noble3" role="tab" aria-controls="pills-noble3" aria-selected="false"><i class="fas fa-chevron-right"></i> Parte 3</a>
-</li>
-<li class="nav-item">
-<a class="nav-link text-white" id="pills-noble4-tab" data-toggle="pill" href="#pills-noble4" role="tab" aria-controls="pills-noble4" aria-selected="false"><i class="fas fa-chevron-right"></i> Parte 4</a>
-</li>
-</ul>
-
-<div class="tab-content" id="pills-tabContent-noblesse">
-<div class="tab-pane fade show active" id="pills-noble0" role="tabpanel" aria-labelledby="pills-noble0-tab">
-
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <p class=" text-center">Tener Noblesse nos da acceso a nuevas Skill, con 2 siendo importantes para todo momento en L2, y el resto para los Asedios. Además te da una tiara fachera! <img src="imagenes/skill/noblesse/noblesse_tiara" alt="Noblesse Tiara">
-            <br>
-            Es importante tener Noblesse ya que es algo que todos los personajes deberian tener, por ser una parte importante de lo que es capaz nuestro PJ.</p>
         </div>
-    </div>
-    <div class="row text-center">
-        <div class="col">
-            <ul class="list-unstyled">
-            <li class="py-2"><img src="imagenes/skill/noblesse/blessing_of_the_noblesse.png" alt="Blessing of the Noblesse" class="rounded"><span class="font-weight-bold h5"> Blessing of the Noblesse</span> Retiene todos los Buffs que tenias en caso de que mueras.</li>
-            <li class="py-2"><img src="imagenes/skill/noblesse/summon_cp_potion.png" alt="Summon CP Potion" class="rounded"><span class="font-weight-bold h5"> Summon CP Potion</span> Invoca 20 Greater CP Potion.</li>
-            <li class="py-2"><img src="imagenes/skill/noblesse/fortune_of_noblesse.png" alt="Fortune of Noblesse" class="rounded"><span class="font-weight-bold h5"> Fortune of Noblesse</span> Baja la chance a tu Party de dropear un item en caso de Raid o Boss War.</li>
-            <li class="py-2"><img src="imagenes/skill/noblesse/build_advanced_headquarters.png" alt="Build Advanced Headquarters" class="rounded"><span class="font-weight-bold h5"> Build Advanced Headquarters</span> Establece un cuartel con doble de vida que ayuda con la recuperación y despacho de miembros de tu clan.</li>
+
+        <div class="tab-pane fade" id="pills-noblesse" role="tabpanel" aria-labelledby="pills-noblesse-tab">
+
+
+            <ul class="nav nav-pills m-1" id="pills-tab-noblesse" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" id="pills-noble0-tab" data-toggle="pill" href="#pills-noble0" role="tab" aria-controls="pills-noble0" aria-selected="true"><i class="fas fa-chevron-right"></i> ¿Por qué Noblesse?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-noble1-tab" data-toggle="pill" href="#pills-noble1" role="tab" aria-controls="pills-noble1" aria-selected="false"><i class="fas fa-chevron-right"></i> Parte 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-noble2-tab" data-toggle="pill" href="#pills-noble2" role="tab" aria-controls="pills-noble2" aria-selected="false"><i class="fas fa-chevron-right"></i> Parte 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-noble3-tab" data-toggle="pill" href="#pills-noble3" role="tab" aria-controls="pills-noble3" aria-selected="false"><i class="fas fa-chevron-right"></i> Parte 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-noble4-tab" data-toggle="pill" href="#pills-noble4" role="tab" aria-controls="pills-noble4" aria-selected="false"><i class="fas fa-chevron-right"></i> Parte 4</a>
+                </li>
             </ul>
+
+            <div class="tab-content" id="pills-tabContent-noblesse">
+                <div class="tab-pane fade show active" id="pills-noble0" role="tabpanel" aria-labelledby="pills-noble0-tab">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <p class=" text-center">Tener Noblesse nos da acceso a nuevas Skill, con 2 siendo importantes para todo momento en L2, y el resto para los Asedios. Además te da una tiara fachera! <img src="imagenes/skill/noblesse/noblesse_tiara" alt="Noblesse Tiara">
+                                    <br>
+                                    Es importante tener Noblesse ya que es algo que todos los personajes deberian tener, por ser una parte importante de lo que es capaz nuestro PJ.</p>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col">
+                                <ul class="list-unstyled">
+                                    <li class="py-2"><img src="imagenes/skill/noblesse/blessing_of_the_noblesse.png" alt="Blessing of the Noblesse" class="rounded"><span class="font-weight-bold h5"> Blessing of the Noblesse</span> Retiene todos los Buffs que tenias en caso de que mueras.</li>
+                                    <li class="py-2"><img src="imagenes/skill/noblesse/summon_cp_potion.png" alt="Summon CP Potion" class="rounded"><span class="font-weight-bold h5"> Summon CP Potion</span> Invoca 20 Greater CP Potion.</li>
+                                    <li class="py-2"><img src="imagenes/skill/noblesse/fortune_of_noblesse.png" alt="Fortune of Noblesse" class="rounded"><span class="font-weight-bold h5"> Fortune of Noblesse</span> Baja la chance a tu Party de dropear un item en caso de Raid o Boss War.</li>
+                                    <li class="py-2"><img src="imagenes/skill/noblesse/build_advanced_headquarters.png" alt="Build Advanced Headquarters" class="rounded"><span class="font-weight-bold h5"> Build Advanced Headquarters</span> Establece un cuartel con doble de vida que ayuda con la recuperación y despacho de miembros de tu clan.</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="list-unstyled">
+                                    <li class="py-2"><img src="imagenes/skill/noblesse/harmony_of_the_noblesse.png" alt="Harmony of the Noblesse" class="rounded"><span class="font-weight-bold h5"> Harmony of the Noblesse</span> Hace daño no elemental en área.</li>
+                                    <li class="py-2"><img src="imagenes/skill/noblesse/symphony_of_the_noblesse.png" alt="ymphony of the Noblesse" class="rounded"><span class="font-weight-bold h5"> Symphony of the Noblesse</span> Hace aun más daño no elemental en área.</li>
+                                    <li class="py-2"><img src="imagenes/skill/noblesse/strider_siege_assault.png" alt="Strider Siege Assault" class="rounded"><span class="font-weight-bold h5"> Strider Siege Assault</span> Ataque fuerte con un Strider a una puerta y pared de Castillo.</li>
+                                    <li class="py-2"><img src="imagenes/skill/noblesse/wyvern_aegis.png" alt="Wyvern Aegis" class="rounded"><span class="font-weight-bold h5"> Wyvern Aegis</span> Incrementa P. y M. Def al estar montado en un Wyvern.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-noble1" role="tabpanel" aria-labelledby="pills-noble1-tab">
+
+                    <div class="container">
+                        <div class="row">
+                            <p>
+                                La Quest se comienza en Aden, y vas a necesitar minimamente para empezarla estar en subclase que sea de mínimo Nivel 50. <br>
+                                Debes hablar con Talien, que se encuentra en las escaleras cerca de la GK de Aden.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-noble2" role="tabpanel" aria-labelledby="pills-noble2-tab">
+
+
+
+                </div>
+                <div class="tab-pane fade" id="pills-noble3" role="tabpanel" aria-labelledby="pills-noble3-tab">
+
+
+
+                </div>
+                <div class="tab-pane fade" id="pills-noble4" role="tabpanel" aria-labelledby="pills-noble4-tab">
+
+
+
+                </div>
+            </div>
+
+
         </div>
-        <div class="col">
-            <ul class="list-unstyled">
-            <li class="py-2"><img src="imagenes/skill/noblesse/harmony_of_the_noblesse.png" alt="Harmony of the Noblesse" class="rounded"><span class="font-weight-bold h5"> Harmony of the Noblesse</span> Hace daño no elemental en área.</li>
-            <li class="py-2"><img src="imagenes/skill/noblesse/symphony_of_the_noblesse.png" alt="ymphony of the Noblesse" class="rounded"><span class="font-weight-bold h5"> Symphony of the Noblesse</span> Hace aun más daño no elemental en área.</li>
-            <li class="py-2"><img src="imagenes/skill/noblesse/strider_siege_assault.png" alt="Strider Siege Assault" class="rounded"><span class="font-weight-bold h5"> Strider Siege Assault</span> Ataque fuerte con un Strider a una puerta y pared de Castillo.</li>
-            <li class="py-2"><img src="imagenes/skill/noblesse/wyvern_aegis.png" alt="Wyvern Aegis" class="rounded"><span class="font-weight-bold h5"> Wyvern Aegis</span> Incrementa P. y M. Def al estar montado en un Wyvern.</li>
+
+        <div class="tab-pane fade" id="pills-clases" role="tabpanel" aria-labelledby="pills-clases-tab">
+
+
+            <ul class="nav nav-pills m-1" id="pills-tab-clases" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" id="pills-clases0-tab" data-toggle="pill" href="#pills-clases0" role="tab" aria-controls="pills-clases0" aria-selected="true"><i class="fas fa-chevron-right"></i> Listado</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-clases1-tab" data-toggle="pill" href="#pills-clases1" role="tab" aria-controls="pills-clases1" aria-selected="false"><i class="fas fa-chevron-right"></i> Información</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-clases2-tab" data-toggle="pill" href="#pills-clases2" role="tab" aria-controls="pills-clases2" aria-selected="false"><i class="fas fa-chevron-right"></i> Combos</a>
+                </li>
+                <!-- <li class="nav-item">
+                <a class="nav-link text-white" id="pills-clases3-tab" data-toggle="pill" href="#pills-clases3" role="tab" aria-controls="pills-clases3" aria-selected="false"><i class="fas fa-chevron-right"></i> Parte 3</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-white" id="pills-clases4-tab" data-toggle="pill" href="#pills-clases4" role="tab" aria-controls="pills-clases4" aria-selected="false"><i class="fas fa-chevron-right"></i> Parte 4</a>
+                </li> -->
             </ul>
-        </div>
+
+            <div class="tab-content" id="pills-tabContent-clases">
+                <div class="tab-pane fade show active" id="pills-clases0" role="tabpanel" aria-labelledby="pills-clases0-tab">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-center"><span class="text-danger font-weight-bold">Recuerda que en L2Ultra permite cambiar entre elfos, habilita overlord y warsmith como Subclass y no cambia el skin al cambiar/agregar una Subclass!</span> <br>
+                                    Puedes elegir lo que esta <span class="font-weight-bold">en negrita</span> como Subclass cuando llegues a nivel 75 en una</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around">
+                            <div class="col-sm-3">
+                                <p class="text-center display-4">Human</p>
+                                <ul>
+                                    <li class="font-weight-light">Human Fighter
+                                        <ul>
+                                            <li>Warrior
+                                                <ul>
+                                                    <li class="font-weight-bold">Warlord
+                                                        <ul>
+                                                            <li class="font-weight-light">Dreadnought</li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="font-weight-bold">Gladiator
+                                                        <ul>
+                                                            <li class="font-weight-light">Duelist</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li>Human Knight
+                                                <ul>
+                                                    <li class="font-weight-bold">Paladin
+                                                        <ul>
+                                                            <li class="font-weight-light">Phoenix Knight</li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="font-weight-bold">Dark Avenger
+                                                        <ul>
+                                                            <li class="font-weight-light">Hell Knight</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li>Rogue
+                                                <ul>
+                                                    <li class="font-weight-bold">Treasure Hunter
+                                                        <ul>
+                                                            <li class="font-weight-light">Adventurer</li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="font-weight-bold">Hawkeye
+                                                        <ul>
+                                                            <li class="font-weight-light">Sagittarius</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="font-weight-light">Human Mystic
+                                        <ul>
+                                            <li>Human Wizard
+                                                <ul>
+                                                    <li class="font-weight-bold">Sorcerer
+                                                        <ul>
+                                                            <li class="font-weight-light">Archmage</li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="font-weight-bold">Necromancer
+                                                        <ul>
+                                                            <li class="font-weight-light">Soultaker</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+
+                                                <ul>
+                                                    <li class="font-weight-bold">Warlock
+                                                        <ul>
+                                                            <li class="font-weight-light">Arcana Lord</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="col-sm-3">
+                                <p class="text-center display-4">Elf</p>
+                                <ul>
+                                    <li class="font-weight-light">Elven Fighter
+                                        <ul>
+                                            <li>Warrior
+                                                <ul>
+                                                    <li class="font-weight-bold">Temple Knight
+                                                        <ul>
+                                                            <li class="font-weight-light">Eva's Templar</li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="font-weight-bold">Sword Singer
+                                                        <ul>
+                                                            <li class="font-weight-light">Sword Muse</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li>Elven Scout
+                                                <ul>
+                                                    <li class="font-weight-bold">Plains Walker
+                                                        <ul>
+                                                            <li class="font-weight-light">Wind Rider</li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="font-weight-bold">Silver Ranger
+                                                        <ul>
+                                                            <li class="font-weight-light">Moonlight Sentinel</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="font-weight-light">Elven Mystic
+                                        <ul>
+                                            <li>Elven Wizard
+                                                <ul>
+                                                    <li class="font-weight-bold">Spellsinger
+                                                        <ul>
+                                                            <li class="font-weight-light">Mystic Muse</li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="font-weight-bold">Elemental Summoner
+                                                        <ul>
+                                                            <li class="font-weight-light">Elemental Master</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="font-weight-light">Elven Oracle
+                                                <ul>
+                                                    <li class="font-weight-bold">Elven Elder
+                                                        <ul>
+                                                            <li class="font-weight-light">Eva's Saint</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                            <div class="col-sm-3">
+                                <p class="text-center display-4">Dark Elf</p>
+                                <ul>
+                                    <li class="font-weight-light">Dark Fighter
+                                        <ul>
+                                            <li>Palus Knight
+                                                <ul>
+                                                    <li class="font-weight-bold">Shillien Knight
+                                                        <ul>
+                                                            <li class="font-weight-light">Shillien Templar</li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="font-weight-bold">Bladedancer
+                                                        <ul>
+                                                            <li class="font-weight-light">Spectral Dancer</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li>Assassin
+                                                <ul>
+                                                    <li class="font-weight-bold">Abyss Walker
+                                                        <ul>
+                                                            <li class="font-weight-light">Ghost Hunter</li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="font-weight-bold">Phantom Ranger
+                                                        <ul>
+                                                            <li class="font-weight-light">Ghost Sentinel</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="font-weight-light">Dark Mystic
+                                        <ul>
+                                            <li>Dark Wizard
+                                                <ul>
+                                                    <li class="font-weight-bold">Spellhowler
+                                                        <ul>
+                                                            <li class="font-weight-light">Storm Screamer</li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="font-weight-bold">Phantom Summoner
+                                                        <ul>
+                                                            <li class="font-weight-light">Spectral Master</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="font-weight-light">Shillien Oracle
+                                                <ul>
+                                                    <li class="font-weight-bold">Shillien Elder
+                                                        <ul>
+                                                            <li class="font-weight-light">Shillien Saint</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+                        <div class="row  justify-content-around">
+                            <div class="col-sm-3">
+                                <p class="text-center display-4">Orc</p>
+                                <ul>
+                                    <li class="font-weight-light">Orc Fighter
+                                        <ul>
+                                            <li>Raider
+                                                <ul>
+                                                    <li class="font-weight-bold">Destroyer
+                                                        <ul>
+                                                            <li class="font-weight-light">Titan</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li>Monk
+                                                <ul>
+                                                    <li class="font-weight-bold">Tyrant
+                                                        <ul>
+                                                            <li class="font-weight-light">Grand Khavatari</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="font-weight-light">Orc Mystic
+                                        <ul>
+                                            <li>Orc Shaman
+                                                <ul>
+                                                    <li class="font-weight-bold">Overlord
+                                                        <ul>
+                                                            <li class="font-weight-light">Dominator</li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="font-weight-bold">Warcryer
+                                                        <ul>
+                                                            <li class="font-weight-light">Doomcryer</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <p class="text-center display-4">Dwarf</p>
+                                <ul>
+                                    <li class="font-weight-light">Dwarven Fighter
+                                        <ul>
+                                            <li>Scavenger
+                                                <ul>
+                                                    <li class="font-weight-bold">Bounty Hunter
+                                                        <ul>
+                                                            <li class="font-weight-light">Fortune Seeker</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li>Artisan
+                                                <ul>
+                                                    <li class="font-weight-bold">Warsmith
+                                                        <ul>
+                                                            <li class="font-weight-light">Maestro</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-clases1" role="tabpanel" aria-labelledby="pills-clases1-tab">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2>Atributos y Dyes, ¿qué son?</h2>
+                                <p>Los Atributos son las características básicas del personaje, que son mostradas en el juego como <span class="text-success">STR</span> (fuerza), <span class="text-success">DEX</span> (destreza), <span class="text-success">CON</span> (constitucíon), <span class="text-primary">INT</span> (inteligencia), <span class="text-primary">WIT</span> (sabiduría) y <span class="text-primary">MEN</span> (mentalidad).</p>
+                                <p>Todos estos afectan diferentemente las características de combate de nuestro PJ, las cuales son <span class="text-success">P. Atk.</span> (ataque físico), <span class="text-warning">P. Def.</span> (defensa física), <span class="text-success">Accuracy</span> (precisión), <span class="text-success">Critical</span> (chance de críticos), <span class="text-success">Atk. Spd.</span> (velocidad de ataque) y <span class="text-primary">M. Atk.</span> (ataque mágico), <span class="text-warning">M. Def.</span> (defensa mágica), <span class="text-warning">Evasion</span> (evasión)
+                                    <!-- xD -->, <span class="text-warning">Speed</span> <!-- wagon --> (velocidad), <span class="text-primary">Casting Spd.</span> (velocidad de casteo).</p>
+                                <p>Los Dyes son para hacernos "tatuajes" los cuales pueden hacerse en un Symbol Maker. Hay un límite de 3 tatuajes por PJ, y tienen ciertas peculiaridades:</p>
+                                <ul>
+                                    <li>Los Greater Dye (los que deberías hacerte) estan disponibles para usar a partir de Nivel 40</li>
+                                    <li class="text-danger font-weight-bold">Recuerda que en L2Ultra NO HAY restricción de Dyes por Clase</li>
+                                    <li>Cambiar de Clase quitará tus Dyes, y pero volves a tenerlos si volves a esa clase (ej Switch de Subclass)</li>
+                                    <li>Conservas tus Dyes si avanzas a 3ra Clase</li>
+                                    <li>STR, DEX y CON pueden usarse en todos</li>
+                                    <li>INT y MEN solo pueden usarse en Wizards</li>
+                                    <li>INT y WIT pueden usarse en todos excepto Healers</li>
+                                    <li>MEN y WIT pueden usarse en todos excepto Mystics</li>
+                                </ul>
+                                <hr>
+                                <h4>Entonces, ¿en qué afectan los Dyes?</h4>
+                                <ul>
+                                    <li>STR afecta tu <span class="text-success">P. Atk.</span></li><span class="text-warning"></span>
+                                    <li>DEX afecta tu <span class="text-success"></span>Atk. Spd., tu <span class="text-success"></span>Casting Spd. de Skill físico, <span class="text-success"></span>Accuracy, <span class="text-warning"></span>Evasion, <span class="text-success"></span>probabilidad de Crítico, <span class="text-success"></span>tasa de Crítico, <span class="text-success"></span>tasa de éxito de Skill de Dagas, Escudos y <span class="text-warning"></span>Speed</li>
+                                    <li>CON afecta tu <span class="text-warning"></span>HP, <span class="text-warning"></span>CP, <span class="text-warning"></span>velocidad de regeneración de HP, <span class="text-warning"></span>límite de peso, <span class="text-warning"></span>aguante de respiración, <span class="text-warning"></span>resistencia al Shock y Bleed</li>
+                                    <li>INT afecta tu M. Atk. y tasa de éxito de Curse Spells</li>
+                                    <li>WIT afecta tu chance de Crítico Mágico, Casting Spd. de Skill mágico, <span class="text-warning"></span>resistencia al Hold y Curse Spells</li>
+                                    <li>MEN afecta tu <span class="text-warning"></span>M. Def., <span class="text-warning"></span>MP, <span class="text-warning"></span>velocidad de regeneración de MP, <span class="text-warning"></span>Resistencia Poison y Curse Spells, y baja la probabilidad de interrupción de Hechizos Mágicos</li>
+                                </ul>
+                                <hr>
+                                <h4>Los Atributos básicos de cada Raza basado en su inclinación</h4>
+                                <p>En <span class="badge badge-success">Verde</span> los Atributos más altos de cada Raza - Fighter, en <span class="badge badge-primary">Azul</span> los más altos para cada Raza - Mystic.</p>
+                                <small>Protip: si por ejemplo queres tener Atributos de Dark Elf siendo Human, pero queres tener 3er clase de Humano, cambiá y hace la de 3ra de Human, y luego volve a la de Dark Elf después de aprender todos los Skill.</small>
+                            </div>
+                        </div>
+                        <div class="row pt-1">
+                            <div class="col">
+                                <h6 class="text-center">Fighter</h6>
+                                <table class="table table-dark text-center table-hover table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Atributos</th>
+                                            <th scope="col">Human</th>
+                                            <th scope="col">Elf</th>
+                                            <th scope="col">Dark Elf</th>
+                                            <th scope="col">Orc</th>
+                                            <th scope="col">Dwarf</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">STR</th>
+                                            <td>40</td>
+                                            <td><span class="badge badge-pill badge-danger">36</span></td>
+                                            <td><span class="badge badge-pill badge-success">41</span></td>
+                                            <td>40</td>
+                                            <td>39</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">DEX</th>
+                                            <td>32</td>
+                                            <td><span class="badge badge-pill badge-success">36</span></td>
+                                            <td>33</td>
+                                            <td><span class="badge badge-pill badge-danger">26</span></td>
+                                            <td>29</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">CON</th>
+                                            <td>43</td>
+                                            <td>36</td>
+                                            <td><span class="badge badge-pill badge-danger">32</span></td>
+                                            <td><span class="badge badge-pill badge-success">47</span></td>
+                                            <td>45</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">INT</th>
+                                            <td>21</td>
+                                            <td>23</td>
+                                            <td><span class="badge badge-pill badge-success">25</span></td>
+                                            <td><span class="badge badge-pill badge-danger">18</span></td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">WIT</th>
+                                            <td>11</td>
+                                            <td><span class="badge badge-pill badge-success">14</span></td>
+                                            <td>12</td>
+                                            <td>12</td>
+                                            <td><span class="badge badge-pill badge-danger">10</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">MEN</th>
+                                            <td><span class="badge badge-pill badge-danger">25</span></td>
+                                            <td>26</td>
+                                            <td>26</td>
+                                            <td><span class="badge badge-pill badge-success">27</span></td>
+                                            <td><span class="badge badge-pill badge-success">27</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="col">
+                                <h6 class="text-center">Mystic</h6>
+                                <table class="table table-dark text-center table-hover table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Atributos</th>
+                                            <th scope="col">Human</th>
+                                            <th scope="col">Elf</th>
+                                            <th scope="col">Dark Elf</th>
+                                            <th scope="col">Orc</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">STR</th>
+                                            <td>22</td>
+                                            <td><span class="badge badge-pill badge-danger">21</span></td>
+                                            <td>23</td>
+                                            <td><span class="badge badge-pill badge-primary">27</span></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">DEX</th>
+                                            <td><span class="badge badge-pill badge-danger">21</span></td>
+                                            <td><span class="badge badge-pill badge-primary">24</span></td>
+                                            <td>23</td>
+                                            <td><span class="badge badge-pill badge-primary">24</span></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">CON</th>
+                                            <td>27</td>
+                                            <td>25</td>
+                                            <td><span class="badge badge-pill badge-danger">24</span></td>
+                                            <td><span class="badge badge-pill badge-primary">31</span></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">INT</th>
+                                            <td>41</td>
+                                            <td>37</td>
+                                            <td><span class="badge badge-pill badge-primary">44</span></td>
+                                            <td><span class="badge badge-pill badge-danger">31</span></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">WIT</th>
+                                            <td>20</td>
+                                            <td><span class="badge badge-pill badge-primary">23</span></td>
+                                            <td>19</td>
+                                            <td><span class="badge badge-pill badge-danger">15</span></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">MEN</th>
+                                            <td>39</td>
+                                            <td>40</td>
+                                            <td><span class="badge badge-pill badge-danger">37</span></td>
+                                            <td><span class="badge badge-pill badge-primary">42</span></td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-clases2" role="tabpanel" aria-labelledby="pills-clases2-tab">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h1>Combos para PvP (pker/para agite)</h1>
+                                <hr>
+                                <li>Arquero con melee:</li>
+                                <p>Hawkeye | Shillien Knight + Tyrant + Phantom Summoner <br>
+                                    Potente con el arco, y usa los Skill Judgement y Shield Bash de cerca con Escudo para cancelar y debuffear al enemigo. Tankea con el Nightshade del PS, y Tyrant ayuda con el DPS.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h1>Combos para PvE (mobero)</h1>
+                                <hr>
+                                <li>Polero estandar:</li>
+                                <p>Warlord | Tyrant + Treasure Hunter + Warlock <br>
+                                    Usa su Polearm y Provoke para juntar trenes de mobs, y al ponerte en una esquina o pared le pegas a todos a la vez, tiene mucho DPS debido a Tyrant con su Fist Fury y Totems y pasivas,
+                                    sumado a los Críticos (Rate y Power) de TH. Posee Warlord para tener a la Gatita que da mejores Críticos, y de paso esto ayuda con la regen. de MP. <br>
+                                    Puede ayudar a amigos con el pvp equipando una Daga, pero NO ES EL FOCO DEL PJ.
+                                    <!-- Si estas leyendo esto, sabias que podes cancelar target del tren de mobs y tirarle los bichos a otro?
+                            me re entretiene hacer eso JAJAJA -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="tab-pane fade" id="pills-clases3" role="tabpanel" aria-labelledby="pills-clases3-tab">
+
+
+
     </div>
-</div>
-   
-    </div>
-<div class="tab-pane fade" id="pills-noble1" role="tabpanel" aria-labelledby="pills-noble1-tab">
-    
-    <div class="container">
-        <div class="row">
-                <p>
-                La Quest se comienza en Aden, y vas a necesitar minimamente para empezarla estar en subclase que sea de mínimo Nivel 50. <br>
-                Debes hablar con Talien, que se encuentra en las escaleras cerca de la GK de Aden.
-                </p>
-        </div>
-    </div>
-    
-    </div>
-<div class="tab-pane fade" id="pills-noble2" role="tabpanel" aria-labelledby="pills-noble2-tab">
-    
-    
-    
-    </div>
-<div class="tab-pane fade" id="pills-noble3" role="tabpanel" aria-labelledby="pills-noble3-tab">
-    
-    
-
-    </div> 
-<div class="tab-pane fade" id="pills-noble4" role="tabpanel" aria-labelledby="pills-noble4-tab">
-    
-    
-    
-    </div>
-</div>
-
-
-</div>
-
-<div class="tab-pane fade" id="pills-clases" role="tabpanel" aria-labelledby="pills-clases-tab">
-    
-
-<ul class="nav nav-pills m-1" id="pills-tab-clases" role="tablist">
-<li class="nav-item">
-<a class="nav-link active text-white" id="pills-clases0-tab" data-toggle="pill" href="#pills-clases0" role="tab" aria-controls="pills-clases0" aria-selected="true"><i class="fas fa-chevron-right"></i> Listado</a>
-</li>
-<li class="nav-item">
-<a class="nav-link text-white" id="pills-clases1-tab" data-toggle="pill" href="#pills-clases1" role="tab" aria-controls="pills-clases1" aria-selected="false"><i class="fas fa-chevron-right"></i> Información</a>
-</li>
-<li class="nav-item">
-<a class="nav-link text-white" id="pills-clases2-tab" data-toggle="pill" href="#pills-clases2" role="tab" aria-controls="pills-clases2" aria-selected="false"><i class="fas fa-chevron-right"></i> Combos</a>
-</li>
-<!-- <li class="nav-item">
-<a class="nav-link text-white" id="pills-clases3-tab" data-toggle="pill" href="#pills-clases3" role="tab" aria-controls="pills-clases3" aria-selected="false"><i class="fas fa-chevron-right"></i> Parte 3</a>
-</li>
-<li class="nav-item">
-<a class="nav-link text-white" id="pills-clases4-tab" data-toggle="pill" href="#pills-clases4" role="tab" aria-controls="pills-clases4" aria-selected="false"><i class="fas fa-chevron-right"></i> Parte 4</a>
-</li> -->
-</ul>
-
-<div class="tab-content" id="pills-tabContent-clases">
-<div class="tab-pane fade show active" id="pills-clases0" role="tabpanel" aria-labelledby="pills-clases0-tab">
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col">
-        <p class="text-center"><span class="text-danger font-weight-bold">Recuerda que en L2Ultra permite cambiar entre elfos, habilita overlord y warsmith como Subclass y no cambia el skin al cambiar/agregar una Subclass!</span> <br>
-        Puedes elegir lo que esta <span class="font-weight-bold">en negrita</span> como Subclass cuando llegues a nivel 75 en una</p>
-        </div>
-    </div>
-    <div class="row justify-content-around">
-        <div class="col-sm-3">
-        <p class="text-center display-4">Human</p>
-        <ul>
-            <li class="font-weight-light">Human Fighter
-                <ul>
-                    <li>Warrior
-                        <ul><li class="font-weight-bold">Warlord
-                        <ul><li class="font-weight-light">Dreadnought</li></ul></li>
-                        
-                        <li class="font-weight-bold">Gladiator 
-                        <ul><li class="font-weight-light">Duelist</li></ul></li></ul></li>
-                        
-                    <li>Human Knight
-                        <ul><li class="font-weight-bold">Paladin 
-                        <ul><li class="font-weight-light">Phoenix Knight</li></ul></li>
-                        
-                        <li class="font-weight-bold">Dark Avenger 
-                        <ul><li class="font-weight-light">Hell Knight</li></ul></li></ul></li>
-                        
-                    <li>Rogue
-                        <ul><li class="font-weight-bold">Treasure Hunter 
-                        <ul><li class="font-weight-light">Adventurer</li></ul></li>
-                        
-                        <li class="font-weight-bold">Hawkeye 
-                        <ul><li class="font-weight-light">Sagittarius</li></ul></li></ul></li></ul>
-            </li>
-            
-            <li class="font-weight-light">Human Mystic
-                <ul>
-                    <li>Human Wizard
-                        <ul><li class="font-weight-bold">Sorcerer 
-                        <ul><li class="font-weight-light">Archmage</li></ul></li>
-                        
-                        <li class="font-weight-bold">Necromancer 
-                        <ul><li class="font-weight-light">Soultaker</li></ul></li></ul>
-                        
-                        <ul><li class="font-weight-bold">Warlock 
-                        <ul><li class="font-weight-light">Arcana Lord</li></ul></li></ul></li></ul></li>
-        </ul>
-        </div>
-
-
-        <div class="col-sm-3">
-        <p class="text-center display-4">Elf</p>
-        <ul>
-            <li class="font-weight-light">Elven Fighter
-                <ul>
-                    <li>Warrior
-                        <ul><li class="font-weight-bold">Temple Knight
-                        <ul><li class="font-weight-light">Eva's Templar</li></ul></li>
-                        
-                        <li class="font-weight-bold">Sword Singer 
-                        <ul><li class="font-weight-light">Sword Muse</li></ul></li></ul></li>
-                        
-                    <li>Elven Scout
-                        <ul><li class="font-weight-bold">Plains Walker
-                        <ul><li class="font-weight-light">Wind Rider</li></ul></li>
-                        
-                        <li class="font-weight-bold">Silver Ranger 
-                        <ul><li class="font-weight-light">Moonlight Sentinel</li></ul></li></ul></li>
-                </ul>
-            </li>
-            
-            <li class="font-weight-light">Elven Mystic
-                <ul>
-                    <li>Elven Wizard
-                        <ul><li class="font-weight-bold">Spellsinger 
-                        <ul><li class="font-weight-light">Mystic Muse</li></ul></li>
-                        
-                        <li class="font-weight-bold">Elemental Summoner 
-                        <ul><li class="font-weight-light">Elemental Master</li></ul></li></ul>
-                    </li>
-                    
-                    <li class="font-weight-light">Elven Oracle
-                <ul>
-                        <li class="font-weight-bold">Elven Elder 
-                        <ul><li class="font-weight-light">Eva's Saint</li></ul></li></ul></li></ul></li>
-            
-        </ul>
-        </div>
-
-   
-        <div class="col-sm-3">
-        <p class="text-center display-4">Dark Elf</p>
-        <ul>
-            <li class="font-weight-light">Dark Fighter
-                <ul>
-                    <li>Palus Knight
-                        <ul><li class="font-weight-bold">Shillien Knight
-                        <ul><li class="font-weight-light">Shillien Templar</li></ul></li>
-                        
-                        <li class="font-weight-bold">Bladedancer 
-                        <ul><li class="font-weight-light">Spectral Dancer</li></ul></li></ul></li>
-                        
-                    <li>Assassin
-                        <ul><li class="font-weight-bold">Abyss Walker
-                        <ul><li class="font-weight-light">Ghost Hunter</li></ul></li>
-                        
-                        <li class="font-weight-bold">Phantom Ranger 
-                        <ul><li class="font-weight-light">Ghost Sentinel</li></ul></li></ul></li>
-                </ul>
-            </li>
-            
-            <li class="font-weight-light">Dark Mystic
-                <ul>
-                    <li>Dark Wizard
-                        <ul><li class="font-weight-bold">Spellhowler 
-                        <ul><li class="font-weight-light">Storm Screamer</li></ul></li>
-                        
-                        <li class="font-weight-bold">Phantom Summoner 
-                        <ul><li class="font-weight-light">Spectral Master</li></ul></li></ul>
-                    </li>
-                    
-                    <li class="font-weight-light">Shillien Oracle
-                <ul>
-                        <li class="font-weight-bold">Shillien Elder 
-                        <ul><li class="font-weight-light">Shillien Saint</li></ul></li></ul></li></ul></li>
-            
-        </ul>
-        </div>
-
-   
-    </div>        
-       <div class="row  justify-content-around">
-        <div class="col-sm-3">
-        <p class="text-center display-4">Orc</p>
-        <ul>
-            <li class="font-weight-light">Orc Fighter
-                <ul>
-                    <li>Raider
-                        <ul><li class="font-weight-bold">Destroyer
-                        <ul><li class="font-weight-light">Titan</li></ul></li>
-                        </ul></li>
-                        
-                    <li>Monk
-                        <ul><li class="font-weight-bold">Tyrant
-                        <ul><li class="font-weight-light">Grand Khavatari</li></ul></li></ul></li></ul></li>
-            
-            <li class="font-weight-light">Orc Mystic
-                <ul>
-                    <li>Orc Shaman
-                        <ul><li class="font-weight-bold">Overlord 
-                        <ul><li class="font-weight-light">Dominator</li></ul></li>
-                        
-                        <li class="font-weight-bold">Warcryer 
-                        <ul><li class="font-weight-light">Doomcryer</li></ul></li></ul></li></ul></li>
-        </ul>
-        </div>
-
-        <div class="col-sm-3">
-        <p class="text-center display-4">Dwarf</p>
-        <ul>
-            <li class="font-weight-light">Dwarven Fighter
-                <ul>
-                    <li>Scavenger
-                        <ul><li class="font-weight-bold">Bounty Hunter
-                        <ul><li class="font-weight-light">Fortune Seeker</li></ul></li></ul></li>
-                        
-                    <li>Artisan
-                        <ul><li class="font-weight-bold">Warsmith 
-                        <ul><li class="font-weight-light">Maestro</li></ul></li></ul></li></ul></li>
-        </ul>
-        </div>
-
-    </div>
-</div>
-   
-    </div>
-<div class="tab-pane fade" id="pills-clases1" role="tabpanel" aria-labelledby="pills-clases1-tab">
-    
-    <div class="container">
-       <div class="row">
-           <div class="col">
-               <h2>Atributos y Dyes, ¿qué son?</h2>
-               <p>Los Atributos son las características básicas del personaje, que son mostradas en el juego como <span class="text-success">STR</span> (fuerza), <span class="text-success">DEX</span> (destreza), <span class="text-success">CON</span> (constitucíon), <span class="text-primary">INT</span> (inteligencia), <span class="text-primary">WIT</span> (sabiduría) y <span class="text-primary">MEN</span> (mentalidad).</p>
-               <p>Todos estos afectan diferentemente las características de combate de nuestro PJ, las cuales son <span class="text-success">P. Atk.</span> (ataque físico), <span class="text-warning">P. Def.</span> (defensa física), <span class="text-success">Accuracy</span> (precisión), <span class="text-success">Critical</span> (chance de críticos), <span class="text-success">Atk. Spd.</span> (velocidad de ataque) y <span class="text-primary">M. Atk.</span> (ataque mágico), <span class="text-warning">M. Def.</span> (defensa mágica), <span class="text-warning">Evasion</span> (evasión)<!-- xD -->, <span class="text-warning">Speed</span> <!-- wagon --> (velocidad), <span class="text-primary">Casting Spd.</span> (velocidad de casteo).</p>
-               <p>Los Dyes son para hacernos "tatuajes" los cuales pueden hacerse en un Symbol Maker. Hay un límite de 3 tatuajes por PJ, y tienen ciertas peculiaridades:</p>
-               <ul>
-                   <li>Los Greater Dye (los que deberías hacerte) estan disponibles para usar a partir de Nivel 40</li>
-                   <li class="text-danger font-weight-bold">Recuerda que en L2Ultra NO HAY restricción de Dyes por Clase</li>
-                   <li>Cambiar de Clase quitará tus Dyes, y pero volves a tenerlos si volves a esa clase (ej Switch de Subclass)</li>
-                   <li>Conservas tus Dyes si avanzas a 3ra Clase</li>
-                   <li>STR, DEX y CON pueden usarse en todos</li>
-                   <li>INT y MEN solo pueden usarse en Wizards</li>
-                   <li>INT y WIT pueden usarse en todos excepto Healers</li>
-                   <li>MEN y WIT pueden usarse en todos excepto Mystics</li>
-               </ul>
-               <hr>
-               <h4>Entonces, ¿en qué afectan los Dyes?</h4>
-               <ul>
-                   <li>STR afecta tu P. Atk.</li>
-                   <li>DEX afecta tu Atk. Spd., tu Casting Spd. de Skill físico, Accuracy, Evasion, probabilidad de Crítico, tasa de Crítico, tasa de éxito de Skill de Dagas, Escudos y Speed</li>
-                   <li>CON afecta tu HP, CP, velocidad de regeneración de HP, límite de peso, aguante de respiración, resistencia al Shock y Bleed</li>
-                   <li>INT afecta tu M. Atk. y tasa de éxito de Curse Spells</li>
-                   <li>WIT afecta tu chance de Crítico Mágico, Casting Spd. de Skill mágico, resistencia al Hold y Curse Spells</li>
-                   <li>MEN afecta tu M. Def., MP, velocidad de regeneración de MP, Resistencia Poison y Curse Spells, y baja la probabilidad de interrupción de Hechizos Mágicos</li>
-               </ul>
-               <hr>
-               <h4>Los Atributos básicos de cada Raza basado en su inclinación</h4>
-               <p>En <span class="badge badge-success">Verde</span> los Atributos más altos de cada Raza - Fighter, en <span class="badge badge-primary">Azul</span> los más altos para cada Raza - Mystic.</p>
-               <small>Protip: si por ejemplo queres tener Atributos de Dark Elf siendo Human, pero queres tener 3er clase de Humano, cambiá y hace la de 3ra de Human, y luego volve a la de Dark Elf después de aprender todos los Skill.</small>           
-           </div>
-       </div>
-        <div class="row pt-1">
-            <div class="col">
-                <h6 class="text-center">Fighter</h6>
-                <table class="table table-dark text-center table-hover table-sm">
-                    <thead>
-                    <tr>
-                        <th scope="col">Atributos</th>
-                        <th scope="col">Human</th>
-                        <th scope="col">Elf</th>
-                        <th scope="col">Dark Elf</th>
-                        <th scope="col">Orc</th>
-                        <th scope="col">Dwarf</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">STR</th>
-                        <td>40</td>
-                        <td><span class="badge badge-pill badge-danger">36</span></td>
-                        <td><span class="badge badge-pill badge-success">41</span></td>
-                        <td>40</td>
-                        <td>39</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">DEX</th>
-                        <td>32</td>
-                        <td><span class="badge badge-pill badge-success">36</span></td>
-                        <td>33</td>
-                        <td><span class="badge badge-pill badge-danger">26</span></td>
-                        <td>29</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">CON</th>
-                        <td>43</td>
-                        <td>36</td>
-                        <td><span class="badge badge-pill badge-danger">32</span></td>
-                        <td><span class="badge badge-pill badge-success">47</span></td>
-                        <td>45</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">INT</th>
-                        <td>21</td>
-                        <td>23</td>
-                        <td><span class="badge badge-pill badge-success">25</span></td>
-                        <td><span class="badge badge-pill badge-danger">18</span></td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">WIT</th>
-                        <td>11</td>
-                        <td><span class="badge badge-pill badge-success">14</span></td>
-                        <td>12</td>
-                        <td>12</td>
-                        <td><span class="badge badge-pill badge-danger">10</span></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">MEN</th>
-                        <td><span class="badge badge-pill badge-danger">25</span></td>
-                        <td>26</td>
-                        <td>26</td>
-                        <td><span class="badge badge-pill badge-success">27</span></td>
-                        <td><span class="badge badge-pill badge-success">27</span></td>
-                    </tr>
-                    </tbody>
-                    </table>
-            </div>
-
-            <div class="col">
-                <h6 class="text-center">Mystic</h6>
-                <table class="table table-dark text-center table-hover table-sm">
-                    <thead>
-                    <tr>
-                        <th scope="col">Atributos</th>
-                        <th scope="col">Human</th>
-                        <th scope="col">Elf</th>
-                        <th scope="col">Dark Elf</th>
-                        <th scope="col">Orc</th>
-
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">STR</th>
-                        <td>22</td>
-                        <td><span class="badge badge-pill badge-danger">21</span></td>
-                        <td>23</td>
-                        <td><span class="badge badge-pill badge-primary">27</span></td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">DEX</th>
-                        <td><span class="badge badge-pill badge-danger">21</span></td>
-                        <td><span class="badge badge-pill badge-primary">24</span></td>
-                        <td>23</td>
-                        <td><span class="badge badge-pill badge-primary">24</span></td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">CON</th>
-                        <td>27</td>
-                        <td>25</td>
-                        <td><span class="badge badge-pill badge-danger">24</span></td>
-                        <td><span class="badge badge-pill badge-primary">31</span></td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">INT</th>
-                        <td>41</td>
-                        <td>37</td>
-                        <td><span class="badge badge-pill badge-primary">44</span></td>
-                        <td><span class="badge badge-pill badge-danger">31</span></td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">WIT</th>
-                        <td>20</td>
-                        <td><span class="badge badge-pill badge-primary">23</span></td>
-                        <td>19</td>
-                        <td><span class="badge badge-pill badge-danger">15</span></td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">MEN</th>
-                        <td>39</td>
-                        <td>40</td>
-                        <td><span class="badge badge-pill badge-danger">37</span></td>
-                        <td><span class="badge badge-pill badge-primary">42</span></td>
-
-                    </tr>
-                    </tbody>
-                    </table>
-            </div>
-        </div>
-
-    </div>
-    
-    </div>
-<div class="tab-pane fade" id="pills-clases2" role="tabpanel" aria-labelledby="pills-clases2-tab">
-    
-    
-    
-    </div>
-<!--<div class="tab-pane fade" id="pills-clases3" role="tabpanel" aria-labelledby="pills-clases3-tab">
-    
-    
-
-    </div> 
 <div class="tab-pane fade" id="pills-clases4" role="tabpanel" aria-labelledby="pills-clases4-tab">
-    
-    
-    
+
+
+
     </div> -->
-</div>
-    
-</div>
+            </div>
 
-<div class="tab-pane fade" id="pills-infomiscelanea" role="tabpanel" aria-labelledby="pills-infomiscelanea-tab">
-    
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h1 class="text-center">
-                EN CONSTRUCCIÓN <br><br><i class="fas fa-wrench fa-spin fa-4x align-middle"></i>
-            </h1>
         </div>
-    </div>
-</div>
-    
-</div>
 
-<div class="tab-pane fade" id="pills-glosario" role="tabpanel" aria-labelledby="pills-glosario-tab">
-    
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h1 class="text-center">
-                EN CONSTRUCCIÓN <br><br><i class="fas fa-wrench fa-spin fa-4x align-middle"></i>
-            </h1>
+        <div class="tab-pane fade" id="pills-infomiscelanea" role="tabpanel" aria-labelledby="pills-infomiscelanea-tab">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center">
+                            EN CONSTRUCCIÓN <br><br><i class="fas fa-wrench fa-spin fa-4x align-middle"></i>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
-</div>
-    
-</div>
 
-<div class="tab-pane fade" id="pills-mapa" role="tabpanel" aria-labelledby="pills-mapa-tab">
-    
-<div class="container-fluid">
-    <div class="row">
-        <div class="col">
-            <img src="imagenes/mapa.png" alt="" class="rounded mx-auto d-block">
+        <div class="tab-pane fade" id="pills-glosario" role="tabpanel" aria-labelledby="pills-glosario-tab">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center">
+                            EN CONSTRUCCIÓN <br><br><i class="fas fa-wrench fa-spin fa-4x align-middle"></i>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
-</div>
-    
-</div>
 
-<div class="tab-pane fade" id="pills-sobrelaweb" role="tabpanel" aria-labelledby="pills-sobrelaweb-tab">
-    
-<div class="container">
-    
-    <div class="row">
-        <div class="col">
-            <a href="https://github.com/sunset904" class="h5 display-4">by sunset</a> <hr>
-                <p>
-                Agradecimientos especiales en ningun orden particular a:
-                </p>
-                <p>tigre, SharkaM, Sonic, SpoilMeu, y todos los que se coparon desde que estoy en el sv para polearlos y que tiran convo copadas :B, sino la verdad que seria un re garrón
-                </p>
-                <ul class="list-unstyled">
-                <li class="py-1">Hecho con <a href="https://getbootstrap.com" class="text-warning font-weight-bold">Bootstrap</a> y <a href="https://fontawesome.com" class="text-warning font-weight-bold">Fontawesome</a>, también el favicon es por <a href="https://www.danstools.com" class="text-warning font-weight-bold">Dan's Tools</a></li>
-                <li class="py-1">Gracias también a <a href="https://freedns.afraid.org/" class="text-warning font-weight-bold">Josh (FreeDNS)</a> para poder hacer el subdominio de <a href="http://lineage2c4.info.tm/" class="text-warning font-weight-bold">lineage2c4.info.tm</a> y <a href="https://github.com" class="text-warning font-weight-bold">Github</a> para poder hostear la web como mi primer proyecto personal en Bootstrap</li>
-                <li class="py-1"><a href="https://lineage.pmfun.com/list/map" class="text-warning font-weight-bold">L2PMfun</a> por el mapa</li>
-                </ul>
-                <p>
-                Espero que les sirva esta web, y al que ya sabe del juego y la ve, que la pase al que no :p <br>
-                Si encuentran algo que estaría bueno para agregar o tienen cualquier tipo de opinion/consulta sobre la web, me pueden encontrar ingame como sunset, o por Discord sunset#9425
-                </p> 
+        <div class="tab-pane fade" id="pills-mapa" role="tabpanel" aria-labelledby="pills-mapa-tab">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <img src="imagenes/mapa.png" alt="" class="rounded mx-auto d-block">
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+        <div class="tab-pane fade" id="pills-sobrelaweb" role="tabpanel" aria-labelledby="pills-sobrelaweb-tab">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col">
+                        <a href="https://github.com/sunset904" class="h5 display-4">by sunset</a>
+                        <hr>
+                        <p>
+                            Agradecimientos especiales en ningun orden particular a:
+                        </p>
+                        <p>tigre, SharkaM, Sonic, SpoilMeu, y todos los que se coparon desde que estoy en el sv para polearlos y que tiran convo copadas :B, sino la verdad que seria un re garrón
+                        </p>
+                        <ul class="list-unstyled">
+                            <li class="py-1">Hecho con <a href="https://getbootstrap.com" class="text-warning font-weight-bold">Bootstrap</a> y <a href="https://fontawesome.com" class="text-warning font-weight-bold">Fontawesome</a>, también el favicon es por <a href="https://www.danstools.com" class="text-warning font-weight-bold">Dan's Tools</a></li>
+                            <li class="py-1">Gracias también a <a href="https://freedns.afraid.org/" class="text-warning font-weight-bold">Josh (FreeDNS)</a> para poder hacer el subdominio de <a href="http://lineage2c4.info.tm/" class="text-warning font-weight-bold">lineage2c4.info.tm</a> y <a href="https://github.com" class="text-warning font-weight-bold">Github</a> para poder hostear la web como mi primer proyecto personal en Bootstrap</li>
+                            <li class="py-1"><a href="https://lineage.pmfun.com/list/map" class="text-warning font-weight-bold">L2PMfun</a> por el mapa</li>
+                        </ul>
+                        <p>
+                            Espero que les sirva esta web, y al que ya sabe del juego y la ve, que la pase al que no :p <br>
+                            Si encuentran algo que estaría bueno para agregar o tienen cualquier tipo de opinion/consulta sobre la web, me pueden encontrar ingame como sunset, o por Discord sunset#9425
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-    
-</div>
-    
-</div>
 
-</div>
+    <!-- Bootstrap JS Core -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<!-- Bootstrap JS Core -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- COLLAPSE ON CLICK PARA NAVBAR EN CELU -->
+    <script>
+        $(function() {
+            var navMain = $(".navbar-collapse");
+            navMain.on("click", "a", null, function() {
+                navMain.collapse('hide');
+            });
+        });
 
-<!-- COLLAPSE ON CLICK PARA NAVBAR EN CELU -->
-<script>
-    $(function(){ 
-     var navMain = $(".navbar-collapse");
-     navMain.on("click", "a", null, function () {
-         navMain.collapse('hide');
-     });
- });
-</script>
+    </script>
 
 </body>
+
 </html>
