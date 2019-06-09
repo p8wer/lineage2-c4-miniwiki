@@ -23,9 +23,11 @@
 
     -->
 
+
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <!-- Css alterado -->
+    <link rel="stylesheet" href="web/extra.css">
     <!-- dan's tools favicon.ico -->
     <link rel="apple-touch-icon" sizes="57x57" href="imagenes/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="imagenes/favicon/apple-icon-60x60.png">
@@ -50,16 +52,6 @@
 
     <!-- Viewport para celular -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- OVERRIDE del default azul de boton activo de bootstrap, reemplazado por un verde transparente -->
-    <style>
-        .nav-pills .nav-link.active,
-        .nav-pills .show>.nav-link {
-            color: #fff;
-            background-color: rgba(0, 250, 0, 0.2);
-        }
-
-    </style>
 
 </head>
 
@@ -991,7 +983,7 @@
                                 <small>Protip: si por ejemplo queres tener Atributos de Dark Elf siendo Human, pero queres tener 3er clase de Humano, cambiá y hace la de 3ra de Human, y luego volve a la de Dark Elf después de aprender todos los Skill.</small>
                             </div>
                         </div>
-                        <div class="row pt-1">
+                        <div class="row pt-3">
                             <div class="col">
                                 <h6 class="text-center">Fighter</h6>
                                 <table class="table table-dark text-center table-hover table-sm">
@@ -1191,9 +1183,9 @@
 
         <div class="tab-pane fade" id="pills-glosario" role="tabpanel" aria-labelledby="pills-glosario-tab">
 
-            <div class="container">
-                <div class="row">
-                    <div class="col">
+            <div class="container-fluid">
+                <div class="row justify-content-around">
+                    <div class="col-sm-3">
                         <h5>Objetos</h5>
                         <ul class="list-unstyled">
                             <li class="py-1"><img src="imagenes/otros/soulshot.webp" alt="Soulshot" class="rounded"> SS (No Grade/D/C/B/A/S) - <span class="font-weight-bold">S</span>oul<span class="font-weight-bold">S</span>hot + (grado correspondiente)</li>
@@ -1221,13 +1213,14 @@
                     </ul>
                       -->
                     </div>
-                    <div class="col">
+                    <div class="col-sm-3">
                         <h5>Clases</h5>
                         <ul class="list-unstyled">
                             <li class="py-1">pala - Paladin</li>
                             <li class="py-1">da - Dark Avenger</li>
                             <li class="py-1">tk - Temple Knight</li>
                             <li class="py-1">sk - Shillien Knight</li>
+                            <li class="py-1">wl - Warlord</li>
                             <li class="py-1">gl - Gladiator</li>
                             <li class="py-1">destro - Destroyer</li>
                             <li class="py-1">ty - Tyrant</li>
@@ -1238,7 +1231,7 @@
                             <li class="py-1">necro - Necromancer</li>
                             <li class="py-1">sh - Spell Howler</li>
                             <li class="py-1">ol - Overlord</li>
-                            <li class="py-1">wl - Warlock</li>
+                            <li class="py-1">wlk - Warlock</li>
                             <li class="py-1">es - Elemental Summoner</li>
                             <li class="py-1">ps - Phantom Summoner</li>
                             <li class="py-1">bp - Bishop</li>
@@ -1257,7 +1250,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col">
-                        <img src="imagenes/mapa.png" alt="" class="rounded mx-auto d-block">
+                        <img src="imagenes/mapa.png" alt="Mapa L2 C4" class="rounded mx-auto d-block">
                     </div>
                 </div>
             </div>

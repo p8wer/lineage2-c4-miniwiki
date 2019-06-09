@@ -1,0 +1,18 @@
+/* OVERRIDE del default azul de boton activo de bootstrap, reemplazado por un verde transparente */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: rgba(0, 250, 0, 0.2);
+}
+
+/* OVERRIDE de la fuente de bootstrap para que sea Tahoma, la fuente que usa el L2 */
+p,
+ul,
+table {
+    font-family: Tahoma;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
