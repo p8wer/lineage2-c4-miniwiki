@@ -6,7 +6,7 @@ Contenidos:
 
 * Inicio  ![Progress](http://progressed.io/bar/99) 
 
-* Buffs ![Progress](http://progressed.io/bar/85) 
+* Buffs ![Progress](http://progressed.io/bar/86) 
 
 * Noblesse  ![Progress](http://progressed.io/bar/25) 
 
@@ -16,11 +16,11 @@ Contenidos:
 
 * * Cuales existen, importancia de tales, combos
 
-* Info. Miscelánea  ![Progress](http://progressed.io/bar/33) 
+* Info. Miscelánea  ![Progress](http://progressed.io/bar/45) 
 
 * * Atributos&Dyes, Quest importantes, tips
 
-* Glosario  ![Progress](http://progressed.io/bar/0) 
+* Glosario  ![Progress](http://progressed.io/bar/33) 
 
 * Mapa (Grande)  ![Progress](http://progressed.io/bar/100) 
 
