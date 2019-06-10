@@ -16,11 +16,11 @@ Contenidos:
 
 * * Cuales existen, importancia de tales, combos
 
-* Info. Miscelánea  ![Progress](http://progressed.io/bar/45) 
+* Info. Miscelánea  ![Progress](http://progressed.io/bar/55) 
 
 * * Atributos&Dyes, Quest importantes, tips
 
-* Glosario  ![Progress](http://progressed.io/bar/33) 
+* Glosario  ![Progress](http://progressed.io/bar/60) 
 
 * Mapa (Grande)  ![Progress](http://progressed.io/bar/100) 
 
