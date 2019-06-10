@@ -7,23 +7,7 @@
     <meta name="description" content="Mini Wiki del Lineage 2 C4 basado en L2Ultra">
     <meta name="author" content="https://github.com/sunset904">
     <meta name="keywords" content="lineage2, l2c4, lineage2c4, lineage c4, lineage 2 c4">
-    <!--
-
-    Creditos en cuanto al diseño/funcionamiento de esta web:
-    Bootstrap, Dan's Tools, Font Awesome
-
-    https://getbootstrap.com
-    https://www.danstools.com
-    https://fontawesome.com
-
-    creditos fondo: https://wall.alphacoders.com/big.php?i=103328
-
-    MIL gracias a Josh por el subdominio
-    https://freedns.afraid.org/
-
-    -->
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <!-- Viewport para celular -->
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Css alterado -->
@@ -46,13 +30,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="imagenes/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/a83fd999e2.js"></script>
-
-    <!-- Viewport para celular -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
 </head>
 
 <body class="bg-dark text-white">
@@ -67,29 +46,45 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav nav-pills" id="pills-tab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active text-white" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-angle-right"></i> Inicio</a>
+                    <a class="nav-link active text-white" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" onclick="$(document).ready(function(){
+    $(this).scrollTop(0);
+});"><i class="fas fa-angle-right"></i> Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" id="pills-buffs-tab" data-toggle="pill" href="#pills-buffs" role="tab" aria-controls="pills-buffs" aria-selected="false"><i class="fas fa-angle-right"></i> Buffs</a>
+                    <a class="nav-link text-white" id="pills-buffs-tab" data-toggle="pill" href="#pills-buffs" role="tab" aria-controls="pills-buffs" aria-selected="false" onclick="$(document).ready(function(){
+    $(this).scrollTop(0);
+});"><i class="fas fa-angle-right"></i> Buffs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" id="pills-noblesse-tab" data-toggle="pill" href="#pills-noblesse" role="tab" aria-controls="pills-noblesse" aria-selected="false"><i class="fas fa-angle-right"></i> Noblesse</a>
+                    <a class="nav-link text-white" id="pills-noblesse-tab" data-toggle="pill" href="#pills-noblesse" role="tab" aria-controls="pills-noblesse" aria-selected="false" onclick="$(document).ready(function(){
+    $(this).scrollTop(0);
+});"><i class="fas fa-angle-right"></i> Noblesse</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" id="pills-clases-tab" data-toggle="pill" href="#pills-clases" role="tab" aria-controls="pills-clases" aria-selected="false"><i class="fas fa-angle-right"></i> Clases</a>
+                    <a class="nav-link text-white" id="pills-clases-tab" data-toggle="pill" href="#pills-clases" role="tab" aria-controls="pills-clases" aria-selected="false" onclick="$(document).ready(function(){
+    $(this).scrollTop(0);
+});"><i class="fas fa-angle-right"></i> Clases</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" id="pills-infomiscelanea-tab" data-toggle="pill" href="#pills-infomiscelanea" role="tab" aria-controls="pills-infomiscelanea" aria-selected="false"><i class="fas fa-angle-right"></i> Info. Miscelánea</a>
+                    <a class="nav-link text-white" id="pills-infomiscelanea-tab" data-toggle="pill" href="#pills-infomiscelanea" role="tab" aria-controls="pills-infomiscelanea" aria-selected="false" onclick="$(document).ready(function(){
+    $(this).scrollTop(0);
+});"><i class="fas fa-angle-right"></i> Info. Miscelánea</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" id="pills-glosario-tab" data-toggle="pill" href="#pills-glosario" role="tab" aria-controls="pills-glosario" aria-selected="false"><i class="fas fa-angle-right"></i> Glosario</a>
+                    <a class="nav-link text-white" id="pills-glosario-tab" data-toggle="pill" href="#pills-glosario" role="tab" aria-controls="pills-glosario" aria-selected="false" onclick="$(document).ready(function(){
+    $(this).scrollTop(0);
+});"><i class="fas fa-angle-right"></i> Glosario</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" id="pills-mapa-tab" data-toggle="pill" href="#pills-mapa" role="tab" aria-controls="pills-mapa" aria-selected="false"><i class="fas fa-angle-right"></i> Mapa (grande)
+                    <a class="nav-link text-white" id="pills-mapa-tab" data-toggle="pill" href="#pills-mapa" role="tab" aria-controls="pills-mapa" aria-selected="false" onclick="$(document).ready(function(){
+    $(this).scrollTop(0);
+});"><i class="fas fa-angle-right"></i> Mapa (grande)
                         <!-- como las victorias de BOCITA EL MÁS GRANDE --></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" id="pills-sobrelaweb-tab" data-toggle="pill" href="#pills-sobrelaweb" role="tab" aria-controls="pills-sobrelaweb" aria-selected="false"><i class="fas fa-angle-right"></i> Sobre la Web</a>
+                    <a class="nav-link text-white" id="pills-sobrelaweb-tab" data-toggle="pill" href="#pills-sobrelaweb" role="tab" aria-controls="pills-sobrelaweb" aria-selected="false" onclick="$(document).ready(function(){
+    $(this).scrollTop(0);
+});"><i class="fas fa-angle-right"></i> Sobre la Web</a>
                 </li>
             </ul>
         </div>
@@ -953,7 +948,7 @@
                         <div class="row">
                             <div class="col">
                                 <h2>Atributos y Dyes, ¿qué son?</h2>
-                                <p>Los Atributos son las características básicas del personaje, que son mostradas en el juego como <span class="text-success">STR</span> (fuerza), <span class="text-success">DEX</span> (destreza), <span class="text-success">CON</span> (constitucíon), <span class="text-primary">INT</span> (inteligencia), <span class="text-primary">WIT</span> (sabiduría) y <span class="text-primary">MEN</span> (mentalidad).</p>
+                                <p>Los Atributos son las características básicas del personaje, que son mostradas en el juego como <span class="text-success">STR</span> (fuerza), <span class="text-success">DEX</span> (destreza), <span class="text-warning">CON</span> (constitucíon), <span class="text-primary">INT</span> (inteligencia), <span class="text-primary">WIT</span> (sabiduría) y <span class="text-primary">MEN</span> (mentalidad).</p>
                                 <p>Todos estos afectan diferentemente las características de combate de nuestro PJ, las cuales son <span class="text-success">P. Atk.</span> (ataque físico), <span class="text-warning">P. Def.</span> (defensa física), <span class="text-success">Accuracy</span> (precisión), <span class="text-success">Critical</span> (chance de críticos), <span class="text-success">Atk. Spd.</span> (velocidad de ataque) y <span class="text-primary">M. Atk.</span> (ataque mágico), <span class="text-warning">M. Def.</span> (defensa mágica), <span class="text-warning">Evasion</span> (evasión)
                                     <!-- xD -->, <span class="text-warning">Speed</span> <!-- wagon --> (velocidad), <span class="text-primary">Casting Spd.</span> (velocidad de casteo).</p>
                                 <p>Los Dyes son para hacernos "tatuajes" los cuales pueden hacerse en un Symbol Maker. Hay un límite de 3 tatuajes por PJ, y tienen ciertas peculiaridades:</p>
@@ -1126,6 +1121,7 @@
                         <div class="row">
                             <div class="col text-justify">
                                 <h4 class="text-center">Yoke of the Past (permanente/repetible)</h4>
+                                <!-- ANOTAR SOBRE EL MERCHANT OF MAMMON EN NECROPOLIS DURANTE PERIODO DE VALIDACION -->
                                 <h6 class="text-center lead">Blank Scroll para el Mammon</h6>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae minima veniam odit minus, quis eos fuga, id veritatis reiciendis, placeat soluta voluptatibus officiis culpa facere commodi molestiae dicta sed quam!</p>
                                 <hr>
@@ -1220,18 +1216,19 @@
                             <li class="py-1">da - Dark Avenger</li>
                             <li class="py-1">tk - Temple Knight</li>
                             <li class="py-1">sk - Shillien Knight</li>
-                            <li class="py-1">wl - Warlord</li>
-                            <li class="py-1">gl - Gladiator</li>
+                            <li class="py-1">wd - Warlord</li>
+                            <li class="py-1">gladi - Gladiator</li>
                             <li class="py-1">destro - Destroyer</li>
                             <li class="py-1">ty - Tyrant</li>
                             <li class="py-1">bh - Bounty Hunter</li>
+                            <li class="py-1">wm - Warsmith</li>
                             <li class="py-1">th - Treasure Hunter</li>
                             <li class="py-1">he - Hawkeye</li>
-                            <li class="py-1">sc - Sorcerer</li>
+                            <li class="py-1">ss - Sorcerer</li>
                             <li class="py-1">necro - Necromancer</li>
                             <li class="py-1">sh - Spell Howler</li>
                             <li class="py-1">ol - Overlord</li>
-                            <li class="py-1">wlk - Warlock</li>
+                            <li class="py-1">wk - Warlock</li>
                             <li class="py-1">es - Elemental Summoner</li>
                             <li class="py-1">ps - Phantom Summoner</li>
                             <li class="py-1">bp - Bishop</li>
@@ -1279,8 +1276,26 @@
                         </ul>
                         <p>
                             Espero que les sirva esta web, y al que ya sabe del juego y la ve, que la pase al que no :p <br>
-                            Si encuentran algo que estaría bueno para agregar o tienen cualquier tipo de opinion/consulta sobre la web, me pueden encontrar ingame como sunset, o por Discord sunset#9425
+                            Si encuentran algo que estaría bueno para agregar o tienen cualquier tipo de opinion/consulta sobre la web, ¡COMENTALO ACA ABAJO! o por Discord mensaje a sunset#9425
                         </p>
+                        <!-- begin wwww.htmlcommentbox.com -->
+                        <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com"></a></div>
+                        <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+                        <script type="text/javascript" id="hcb">
+                            /*<!--*/
+                            if (!window.hcb_user) {
+                                hcb_user = {};
+                            }(function() {
+                                var s = document.createElement("script"),
+                                    l = hcb_user.PAGE || ("" + window.location).replace(/'/g, "%27"),
+                                    h = "https://www.htmlcommentbox.com";
+                                s.setAttribute("type", "text/javascript");
+                                s.setAttribute("src", h + "/jread?page=" + encodeURIComponent(l).replace("+", "%2B") + "&mod=%241%24wq1rdBcg%24ienHkOLTMBPJEXb7Yj%2Fa20" + "&opts=16862&num=10&ts=1560127923174");
+                                if (typeof s != "undefined") document.getElementsByTagName("head")[0].appendChild(s);
+                            })(); /*-->*/
+
+                        </script>
+                        <!-- end www.htmlcommentbox.com -->
                     </div>
                 </div>
 
@@ -1295,7 +1310,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <!-- COLLAPSE ON CLICK PARA NAVBAR EN CELU -->
+    <!-- COLLAPSE ON CLICK PARA NAVBAR https://stackoverflow.com/a/17317247 -->
     <script>
         $(function() {
             var navMain = $(".navbar-collapse");
@@ -1305,6 +1320,12 @@
         });
 
     </script>
+
+    <!-- Js usado en "onclick" para scrollear a top en cada click a los botones https://stackoverflow.com/a/3664409
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
+-->
 
 </body>
 
