@@ -4,7 +4,7 @@ Hola! Esta es una ideita que estuve teniendo para aplicar lo que aprendí en cla
 
 Contenidos:
 
-* Inicio  ![Progress](http://progressed.io/bar/99) 
+* Inicio  ![Progress](http://progressed.io/bar/100) 
 
 * Buffs ![Progress](http://progressed.io/bar/86) 
 
@@ -16,15 +16,15 @@ Contenidos:
 
 * * Cuales existen, importancia de tales, combos
 
-* Info. Miscelánea  ![Progress](http://progressed.io/bar/45) 
+* Info. Miscelánea  ![Progress](http://progressed.io/bar/55) 
 
 * * Atributos&Dyes, Quest importantes, tips
 
-* Glosario  ![Progress](http://progressed.io/bar/33) 
+* Glosario  ![Progress](http://progressed.io/bar/60) 
 
 * Mapa (Grande)  ![Progress](http://progressed.io/bar/100) 
 
-* Sobre la Web  ![Progress](http://progressed.io/bar/90) 
+* Sobre la Web  ![Progress](http://progressed.io/bar/100) 
 
 
 ___________________________
