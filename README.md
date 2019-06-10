@@ -4,7 +4,7 @@ Hola! Esta es una ideita que estuve teniendo para aplicar lo que aprendí en cla
 
 Contenidos:
 
-* Inicio  ![Progress](http://progressed.io/bar/99) 
+* Inicio  ![Progress](http://progressed.io/bar/100) 
 
 * Buffs ![Progress](http://progressed.io/bar/86) 
 
@@ -24,7 +24,7 @@ Contenidos:
 
 * Mapa (Grande)  ![Progress](http://progressed.io/bar/100) 
 
-* Sobre la Web  ![Progress](http://progressed.io/bar/90) 
+* Sobre la Web  ![Progress](http://progressed.io/bar/100) 
 
 
 ___________________________
