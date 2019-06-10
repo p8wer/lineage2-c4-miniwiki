@@ -17,6 +17,10 @@ table {
     line-height: 20px;
 }
 
+.blacky{
+    color: black
+}
+
 #myBtn {
     display: none;
     position: fixed;
