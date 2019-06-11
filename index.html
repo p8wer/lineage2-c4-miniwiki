@@ -44,61 +44,58 @@
 
 <body class="bg-dark text-white">
     <button onclick="topFunction()" id="myBtn" title="Vamos hacia arriba!"><img src="imagenes/otros/arrow-up.png" alt="Boton Scroll Top" style="width:32px;height:32px;"></button>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
-            <a class="navbar-brand" href="index.html"><img src="imagenes/favicon/favicon-96x96.png" alt="Icono Lineage2 C4" style="width:48px;height:48px;"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="imagenes/favicon/favicon-96x96.png" alt="Icono Lineage2 C4" style="width:48px;height:48px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" onclick="$(document).ready(function(){
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" onclick="$(document).ready(function(){
     $(this).scrollTop(0);
 });"><i class="fas fa-angle-right"></i> Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" id="pills-buffs-tab" data-toggle="pill" href="#pills-buffs" role="tab" aria-controls="pills-buffs" aria-selected="false" onclick="$(document).ready(function(){
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-buffs-tab" data-toggle="pill" href="#pills-buffs" role="tab" aria-controls="pills-buffs" aria-selected="false" onclick="$(document).ready(function(){
     $(this).scrollTop(0);
 });"><i class="fas fa-angle-right"></i> Buffs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" id="pills-noblesse-tab" data-toggle="pill" href="#pills-noblesse" role="tab" aria-controls="pills-noblesse" aria-selected="false" onclick="$(document).ready(function(){
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-noblesse-tab" data-toggle="pill" href="#pills-noblesse" role="tab" aria-controls="pills-noblesse" aria-selected="false" onclick="$(document).ready(function(){
     $(this).scrollTop(0);
 });"><i class="fas fa-angle-right"></i> Noblesse</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" id="pills-clases-tab" data-toggle="pill" href="#pills-clases" role="tab" aria-controls="pills-clases" aria-selected="false" onclick="$(document).ready(function(){
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-clases-tab" data-toggle="pill" href="#pills-clases" role="tab" aria-controls="pills-clases" aria-selected="false" onclick="$(document).ready(function(){
     $(this).scrollTop(0);
 });"><i class="fas fa-angle-right"></i> Clases</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" id="pills-infomiscelanea-tab" data-toggle="pill" href="#pills-infomiscelanea" role="tab" aria-controls="pills-infomiscelanea" aria-selected="false" onclick="$(document).ready(function(){
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-infomiscelanea-tab" data-toggle="pill" href="#pills-infomiscelanea" role="tab" aria-controls="pills-infomiscelanea" aria-selected="false" onclick="$(document).ready(function(){
     $(this).scrollTop(0);
 });"><i class="fas fa-angle-right"></i> Info. Miscelánea</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" id="pills-glosario-tab" data-toggle="pill" href="#pills-glosario" role="tab" aria-controls="pills-glosario" aria-selected="false" onclick="$(document).ready(function(){
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-glosario-tab" data-toggle="pill" href="#pills-glosario" role="tab" aria-controls="pills-glosario" aria-selected="false" onclick="$(document).ready(function(){
     $(this).scrollTop(0);
 });"><i class="fas fa-angle-right"></i> Glosario</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" id="pills-mapa-tab" data-toggle="pill" href="#pills-mapa" role="tab" aria-controls="pills-mapa" aria-selected="false" onclick="$(document).ready(function(){
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-mapa-tab" data-toggle="pill" href="#pills-mapa" role="tab" aria-controls="pills-mapa" aria-selected="false" onclick="$(document).ready(function(){
     $(this).scrollTop(0);
 });"><i class="fas fa-angle-right"></i> Mapa (grande)
-                            <!-- como las victorias de BOCITA EL MÁS GRANDE --></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" id="pills-sobrelaweb-tab" data-toggle="pill" href="#pills-sobrelaweb" role="tab" aria-controls="pills-sobrelaweb" aria-selected="false" onclick="$(document).ready(function(){
+                        <!-- como las victorias de BOCITA EL MÁS GRANDE --></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" id="pills-sobrelaweb-tab" data-toggle="pill" href="#pills-sobrelaweb" role="tab" aria-controls="pills-sobrelaweb" aria-selected="false" onclick="$(document).ready(function(){
     $(this).scrollTop(0);
 });"><i class="fas fa-angle-right"></i> Sobre la Web</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-    </header>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="tab-content" id="pills-tabContent">
 
@@ -114,8 +111,6 @@
                     </div>
                 </div>
             </div>
-
-
 
         </div>
 
@@ -941,7 +936,7 @@
                         <div class="row">
                             <div class="col">
                                 <p class="h4">Atributos y Dyes, ¿qué son?</p>
-                                <p>Los Atributos son las características básicas del personaje, que son mostradas en el juego como <span class="text-success">STR</span> (fuerza), <span class="text-success">DEX</span> (destreza), <span class="text-warning">CON</span> (constitucíon), <span class="text-primary">INT</span> (inteligencia), <span class="text-primary">WIT</span> (sabiduría) y <span class="text-primary">MEN</span> (mentalidad).</p>
+                                <p>Los Atributos son las características básicas del personaje, que son mostradas en el juego como <span class="text-success">STR</span> (fuerza), <span class="text-success">DEX</span> (destreza), <span class="text-warning">CON</span> (constitución), <span class="text-primary">INT</span> (inteligencia), <span class="text-primary">WIT</span> (sabiduría) y <span class="text-primary">MEN</span> (mentalidad).</p>
                                 <p>Todos estos afectan diferentemente las características de combate de nuestro PJ, las cuales son <span class="text-success">P. Atk.</span> (ataque físico), <span class="text-warning">P. Def.</span> (defensa física), <span class="text-success">Accuracy</span> (precisión), <span class="text-success">Critical</span> (chance de críticos), <span class="text-success">Atk. Spd.</span> (velocidad de ataque) y <span class="text-primary">M. Atk.</span> (ataque mágico), <span class="text-warning">M. Def.</span> (defensa mágica), <span class="text-warning">Evasion</span> (evasión)
                                     <!-- xD -->, <span class="text-warning">Speed</span> <!-- wagon --> (velocidad), <span class="text-primary">Casting Spd.</span> (velocidad de casteo).</p>
                                 <p>Los Dyes son para hacernos "tatuajes" los cuales pueden hacerse en un Symbol Maker. Hay un límite de 3 tatuajes por PJ, y tienen ciertas peculiaridades:</p>
