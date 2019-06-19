@@ -32,6 +32,7 @@ table {
     background-color: transparent;
     cursor: pointer;
     padding: 15px;
+    opacity: 0.6;
 
     /* https://stackoverflow.com/a/11681331 */
 
@@ -52,7 +53,7 @@ table {
     }
 
     to {
-        opacity: 1;
+        opacity: 0.6;
     }
 }
 
@@ -63,7 +64,7 @@ table {
     }
 
     to {
-        opacity: 1;
+        opacity: 0.6;
     }
 }
 
@@ -74,7 +75,7 @@ table {
     }
 
     to {
-        opacity: 1;
+        opacity: 0.6;
     }
 }
 
@@ -85,7 +86,7 @@ table {
     }
 
     to {
-        opacity: 1;
+        opacity: 0.6;
     }
 }
 
@@ -96,6 +97,6 @@ table {
     }
 
     to {
-        opacity: 1;
+        opacity: 0.6;
     }
 }
