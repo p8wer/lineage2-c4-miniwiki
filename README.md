@@ -8,7 +8,7 @@ Contenidos:
 
 * Buffs ![Progress](http://progressed.io/bar/90)
 
-* Noblesse  ![Progress](http://progressed.io/bar/33)
+* Noblesse  ![Progress](http://progressed.io/bar/90)
 
 * * Qué es y como obtenerla
 
