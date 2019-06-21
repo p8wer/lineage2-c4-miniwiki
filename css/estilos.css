@@ -24,7 +24,7 @@ table {
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 10px;
+    bottom: 20px;
     right: 10px;
     z-index: 99;
     border: none;
