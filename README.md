@@ -8,7 +8,7 @@ Contenidos:
 
 * Buffs ![Progress](http://progressed.io/bar/90)
 
-* Noblesse  ![Progress](http://progressed.io/bar/90)
+* Noblesse  ![Progress](http://progressed.io/bar/100)
 
 * * Qué es y como obtenerla
 
@@ -20,7 +20,7 @@ Contenidos:
 
 * * Atributos&Dyes, Quest importantes, tips
 
-* Glosario  ![Progress](http://progressed.io/bar/60)
+* Glosario  ![Progress](http://progressed.io/bar/75)
 
 * Mapa (Grande)  ![Progress](http://progressed.io/bar/100)
 
