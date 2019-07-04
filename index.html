@@ -485,7 +485,8 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col">
-                                <!--  --><p class="text-center"><span class="text-danger font-weight-bold">Recuerda que usualmente en servidores privados se te permite cambiar entre elfos, habilita overlord y warsmith como Subclass y no cambia el skin al cambiar/agregar una Subclass! ATENTO igual a las restricciones que puedan tener!</span> <br>
+                                <!--  -->
+                                <p class="text-center"><span class="text-danger font-weight-bold">Recuerda que usualmente en servidores privados se te permite cambiar entre elfos, habilita overlord y warsmith como Subclass y no cambia el skin al cambiar/agregar una Subclass! ATENTO igual a las restricciones que puedan tener!</span> <br>
                                     Puedes elegir lo que esta <span class="font-weight-bold">en negrita</span> como Subclass cuando llegues a nivel 75 en una</p>
                             </div>
                         </div>
@@ -1036,16 +1037,20 @@
                 <div class="tab-pane fade show active" id="pills-miscelanea0" role="tabpanel" aria-labelledby="pills-miscelanea0-tab">
 
                     <div class="container">
+
                         <div class="row">
                             <div class="col">
                                 <p class="h4">Atributos y Dyes, ¿qué son?</p>
                                 <p>Los Atributos son las características básicas del personaje, que son mostradas en el juego como <span class="text-success">STR</span> (fuerza), <span class="text-success">DEX</span> (destreza), <span class="text-warning">CON</span> (constitución), <span class="text-primary">INT</span> (inteligencia), <span class="text-primary">WIT</span> (sabiduría) y <span class="text-primary">MEN</span> (mentalidad).</p>
                                 <p>Todos estos afectan diferentemente las características de combate de nuestro PJ, las cuales son <span class="text-success">P. Atk.</span> (ataque físico), <span class="text-warning">P. Def.</span> (defensa física), <span class="text-success">Accuracy</span> (precisión), <span class="text-success">Critical</span> (chance de críticos), <span class="text-success">Atk. Spd.</span> (velocidad de ataque) y <span class="text-primary">M. Atk.</span> (ataque mágico), <span class="text-warning">M. Def.</span> (defensa mágica), <span class="text-warning">Evasion</span> (evasión)
                                     <!-- xD -->, <span class="text-warning">Speed</span> <!-- wagon --> (velocidad), <span class="text-primary">Casting Spd.</span> (velocidad de casteo).</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
                                 <p>Los Dyes son para hacernos "tatuajes" los cuales pueden hacerse en un Symbol Maker. Hay un límite de 3 tatuajes por PJ, y tienen ciertas peculiaridades:</p>
                                 <ul>
                                     <li>Los Greater Dye (los que deberías hacerte) estan disponibles para usar a partir de Nivel 40</li>
-                                    <li class="text-danger font-weight-bold">Recuerda que por lo general, en servidores privados NO HAY restricción de Dyes por Clase</li>
                                     <li>Cambiar de Clase quitará tus Dyes, y pero volves a tenerlos si volves a esa clase (ej Switch de Subclass)</li>
                                     <li>Conservas tus Dyes si avanzas a 3ra Clase</li>
                                     <li>STR, DEX y CON pueden usarse en todos</li>
@@ -1053,7 +1058,136 @@
                                     <li>INT y WIT pueden usarse en todos excepto Healers</li>
                                     <li>MEN y WIT pueden usarse en todos excepto Mystics</li>
                                 </ul>
-                                <hr>
+                                <p class="small list-unstyled pt-1">Los servers privados varian en tener restricciones o no, ¡fijate bien antes de planear que dyes usar!</p>
+                            </div>
+
+                        </div>
+                        <div id="accordion">
+                            <div class="card bg-dark my-1">
+                                <div class="card-header border" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn collapsed text-white p-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Todos los Dyes permitidos
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <span>Human</span>
+                                        <ul>
+                                            <li>Sorcerer</li>
+                                            <li>Necromancer</li>
+                                            <li>Warlock</li>
+                                        </ul>
+                                        <span>Elf</span>
+                                        <ul>
+                                            <li>Elemental Summoner</li>
+                                            <li>Spellsinger</li>
+                                        </ul>
+                                        <span>Dark Elf</span>
+                                        <ul>
+                                            <li>Spellhowler</li>
+                                            <li>Phantom Summoner</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-dark my-1">
+                                <div class="card-header border" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn collapsed text-white p-0" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Exclusivamente STR/DEX/CON
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <span>Human</span>
+                                        <ul>
+                                            <li>Warlord</li>
+                                            <li>Gladiator</li>
+                                            <li>Paladin</li>
+                                            <li>Treasure Hunter</li>
+                                            <li>Hawkeye</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-dark my-1">
+                                <div class="card-header border" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="btn collapsed text-white p-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Pueden INT/WIT - <span class="text-danger"> NO MEN</span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <span>Human</span>
+                                        <ul>
+                                            <li>Bishop</li>
+                                            <li>Prophet</li>
+                                        </ul>
+                                        <span>Elf</span>
+                                        <ul>
+                                            <li>Temple Knight</li>
+                                            <li>SwordSinger</li>
+                                        </ul>
+                                        <span>Dark Elf</span>
+                                        <ul>
+                                            <li>Shillien Knight</li>
+                                            <li>Bladedancer</li>
+                                            <li>Abyss Walker</li>
+                                            <li>Phantom Ranger</li>
+                                        </ul>
+                                        <span>Orc</span>
+                                        <ul>
+                                            <li>Overlord</li>
+                                            <li>Warcryer</li>
+                                        </ul>
+                                        <span>Dwarf</span>
+                                        <ul>
+                                            <li>Bounty Hunter</li>
+                                            <li>Warsmith</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card bg-dark my-1">
+                                <div class="card-header border" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="btn collapsed text-white p-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Pueden MEN/WIT - <span class="text-danger"> NO INT</span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <span>Human</span>
+                                        <ul>
+                                            <li>Bishop</li>
+                                            <li>Prophet</li>
+                                        </ul>
+                                        <span>Elf</span>
+                                        <ul>
+                                            <li>Elven Elder</li>
+                                        </ul>
+                                        <span>Dark Elf</span>
+                                        <ul>
+                                            <li>Shillien Elder</li>
+                                        </ul>
+                                        <span>Orc</span>
+                                        <ul>
+                                            <li>Overlord</li>
+                                            <li>Warcryer</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col">
                                 <p class="h4">Entonces, ¿en qué afectan los Dyes?</p>
                                 <ul>
                                     <li>STR afecta tu <span class="text-success">P. Atk.</span></li>
