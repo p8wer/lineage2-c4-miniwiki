@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>L2 C4 MiniWiki</title>
-    <meta name="description" content="Una MiniWiki sobre la 4ta Crónica del Lineage2, hecha para ayudar con la información que no es de fácil acceso en el juego.">
+    <meta name="description" content="Una MiniWiki sobre la 4ta Crónica del Lineage2, hecha para ayudar con la lightrmación que no es de fácil acceso en el juego.">
     <meta name="author" content="https://github.com/sunset904">
     <meta name="keywords" content="lineage2, l2c4, lineage2c4, lineage c4, lineage 2 c4">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <!-- Viewport para celular -->
@@ -18,6 +18,9 @@
     <meta property="og:image:width" content="200">
     <!-- bootstrap -->
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <!-- themestr -->
+    <link rel="stylesheet" href="css/themestr.css">
     <!-- Css alterado -->
     <link rel="stylesheet" href="css/estilos.css">
     <!-- openiconic -->
@@ -88,7 +91,7 @@
 });"><span class="oi oi-chevron-right"></span> Clases</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" id="pills-infomiscelanea-tab" data-toggle="pill" href="#pills-infomiscelanea" role="tab" aria-controls="pills-infomiscelanea" aria-selected="false" onclick="$(document).ready(function(){
+                    <a class="nav-link text-white" id="pills-lightmiscelanea-tab" data-toggle="pill" href="#pills-lightmiscelanea" role="tab" aria-controls="pills-lightmiscelanea" aria-selected="false" onclick="$(document).ready(function(){
     $(this).scrollTop(0);
 });"><span class="oi oi-chevron-right"></span> Info. Miscelánea</a>
                 </li>
@@ -115,17 +118,20 @@
     <div class="tab-content" id="pills-tabContent">
 
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col">
-                        <p class="h2">Hola! Bienvenidos a esta Mini Wiki del Lineage 2 C4</p>
-                        <p class="h5">Hecha con la intención de ayudar a los que menos sabemos y cubrir la falta de información de esta crónica tan apreciada por sus fans.</p>
-                        <!-- <p> <span class="text-danger">Nota Importante: </span> Los cambios en buff/balance son los reflejados en el servidor <a href="https://www.l2ultra.com/info" class="font-weight-bold">L2Ultra</a>.</p> -->
-                        <img src="imagenes/web/fondo.webp" alt="Fondo Lineage 2" class="img-fluid rounded-circle">
+            <div class="container iniciofondo text-center">
+                    <div class="row pt-5">
+                        <div class="col-md-4 mx-auto"><p class="h3 shadow p-3 bg-info rounded">Hola! Bienvenidos a esta Mini Wiki del Lineage 2 C4</p></div>
+                           <div class="col-md-4 mx-auto"><p class="h5 shadow-lg p-3 bg-danger rounded">Hecha con la intención de ayudar a los que menos sabemos y cubrir la falta de información de esta crónica tan apreciada por sus fans.</p></div>
+                            <!-- <p> <span class="text-danger">Nota Importante: </span> Los cambios en buff/balance son los reflejados en el servidor <a href="https://www.l2ultra.com/light" class="font-weight-bold">L2Ultra</a>.</p> -->
                     </div>
-                </div>
+                    <div class="row pt-5">
+                        <div class="col">
+                            <img src="imagenes/web/fon2.jpg" alt="Fondo Lineage 2" class="img-fluid rounded-circle" width="720" height="480">
+                        </div>
+                    </div>
             </div>
+
+
 
         </div>
 
@@ -137,7 +143,7 @@
                     <div class="col">
                         <p class="h5">Referencias:</p>
                         <p><span class="text-success">Verde para los buffs beneficiales a los Fighter</span><br>
-                            <span class="text-primary">Azul para los buffs beneficiales a los Mystic</span><br>
+                            <span class="text-info">Turquesa para los buffs beneficiales a los Mystic</span><br>
                             <span class="text-warning">Amarillo para tipos de Buff generales</span></p>
                     </div>
                 </div>
@@ -147,15 +153,15 @@
                     <div class="col">
                         <p class="h1 display-4">Dances</p>
                         <ul class="list-unstyled">
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_warrior.png" alt="Dance of the Warrior" class="rounded"> Dance of the Warrior <span class="badge badge-success badge-pill blacky">+ P. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_warrior.png" alt="Dance of the Warrior" class="rounded "> Dance of the Warrior <span class="badge badge-success badge-pill blacky">+ P. Atk</span></li>
                             <li class="py-2"><img src="imagenes/skill/dance/dance_of_fire.png" alt="Dance of Fire" class="rounded"> Dance of Fire <span class="badge badge-success badge-pill blacky">+ Critical Damage</span></li>
                             <li class="py-2"><img src="imagenes/skill/dance/dance_of_fury.png" alt="Dance of Fury" class="rounded"> Dance of Fury <span class="badge badge-success badge-pill blacky">+ Atk. Spd.</span></li>
                             <li class="py-2"><img src="imagenes/skill/dance/dance_of_vampire.png" alt="Dance of the Vampire" class="rounded"> Dance of the Vampire <span class="badge badge-success badge-pill blacky">+ Vampiric (Melee)</span></li>
                             <li class="py-2"><img src="imagenes/skill/dance/dance_of_inspiration.png" alt="Dance of Inspiration" class="rounded"> Dance of Inspiration <span class="badge badge-success badge-pill blacky">+ Accuracy</span></li>
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_concentration.png" alt="Dance of Concentration" class="rounded"> Dance of Concentration <span class="badge badge-primary badge-pill blacky">+ Casting Spd.</span> <span class="badge badge-primary badge-pill blacky">- Magic Cancel Rate</span></li>
+                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_concentration.png" alt="Dance of Concentration" class="rounded"> Dance of Concentration <span class="badge badge-info badge-pill blacky">+ Casting Spd.</span> <span class="badge badge-info badge-pill blacky">- Magic Cancel Rate</span></li>
                             <li class="py-2"><img src="imagenes/skill/dance/dance_of_light.png" alt="Dance of Light" class="rounded"> Dance of Light <span class="badge badge-success badge-pill blacky">+ Sacred para P. Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_mystic.png" alt="Dance of the Mystic" class="rounded"> Dance of the Mystic <span class="badge badge-primary badge-pill blacky">+ M. Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_siren.png" alt="Dance of Siren" class="rounded"> Dance of Siren <span class="badge badge-primary badge-pill blacky">+ Critical Rate M. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_mystic.png" alt="Dance of the Mystic" class="rounded"> Dance of the Mystic <span class="badge badge-info badge-pill blacky">+ M. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_siren.png" alt="Dance of Siren" class="rounded"> Dance of Siren <span class="badge badge-info badge-pill blacky">+ Critical Rate M. Atk</span></li>
                             <li class="py-2"><img src="imagenes/skill/dance/dance_of_protection.png" alt="Dance of Protection" class="rounded"> Dance of Protection <span class="badge badge-warning badge-pill blacky">+ Resist Daño AoE</span></li>
                             <li class="py-2"><img src="imagenes/skill/dance/dance_of_aqua_guard.png" alt="Dance of Aqua Guard" class="rounded"> Dance of Aqua Guard <span class="badge badge-warning badge-pill blacky">+ Resist Ataques de Agua</span></li>
                             <li class="py-2"><img src="imagenes/skill/dance/dance_of_earth_guard.png" alt="Dance of Earth Guard" class="rounded"> Dance of Earth Guard <span class="badge badge-warning badge-pill blacky">+ Resist Ataques de Tierra</span></li>
@@ -174,19 +180,19 @@
                             <li class="py-2"><img src="imagenes/skill/song/song_of_hunter.png" alt="Song of Hunter" class="rounded"> Song of Hunter <span class="badge badge-success badge-pill blacky">+ Critical Rate P. Atk</span></li>
                             <li class="py-2"><img src="imagenes/skill/song/song_of_vitality.png" alt="Song of Vitality" class="rounded"> Song of Vitality <span class="badge badge-warning badge-pill blacky">+ HP</span></li>
                             <li class="py-2"><img src="imagenes/skill/song/song_of_champion.png" alt="Song of Champion" class="rounded"> Song of Champion <span class="badge badge-success badge-pill blacky">- Consumo MP y Re-uso Skill Físico</span></li>
-                            <li class="py-2"><img src="imagenes/skill/song/song_of_renewal.png" alt="Song of Renewal" class="rounded"> Song of Renewal <span class="badge badge-primary badge-pill blacky">- Consumo MP y Re-uso Skill Mágico</span></li>
+                            <li class="py-2"><img src="imagenes/skill/song/song_of_renewal.png" alt="Song of Renewal" class="rounded"> Song of Renewal <span class="badge badge-info badge-pill blacky">- Consumo MP y Re-uso Skill Mágico</span></li>
                             <li class="py-2"><img src="imagenes/skill/song/song_of_invocation.png" alt="Song of Invocation" class="rounded"> Song of Invocation <span class="badge badge-warning badge-pill blacky">+ Resist Dark Magic Atk.</span></li>
                             <li class="py-2"><img src="imagenes/skill/song/song_of_storm_guard.png" alt="Song of Storm Guard" class="rounded"> Song of Storm Guard <span class="badge badge-warning badge-pill blacky">+ Resist Ataques de Aire</span></li>
                             <li class="py-2"><img src="imagenes/skill/song/song_of_flame_guard.png" alt="Song of Flame Guard" class="rounded"> Song of Flame Guard <span class="badge badge-warning badge-pill blacky">+ Resist Ataques de Fuego</span></li>
                             <li class="py-2"><img src="imagenes/skill/song/song_of_vengeance.png" alt="Song of Vengeance" class="rounded"> Song of Vengeance <span class="badge badge-warning badge-pill blacky">Refleja % del daño Melee recibido</span></li>
-                            <li class="py-2"><img src="imagenes/skill/song/song_of_meditation.png" alt="Song of Meditation" class="rounded"> Song of Meditation <span class="badge badge-info badge-pill blacky">- Consumo MP y Re-uso Skill Físico</span><span class="badge badge-info badge-pill blacky">- Consumo MP y Re-uso Skill Mágico</span></li>
+                            <li class="py-2"><img src="imagenes/skill/song/song_of_meditation.png" alt="Song of Meditation" class="rounded"> Song of Meditation <span class="badge badge-light badge-pill blacky">- Consumo MP y Re-uso Skill Físico</span><span class="badge badge-light badge-pill blacky">- Consumo MP y Re-uso Skill Mágico</span></li>
                         </ul>
                     </div>
 
                     <div class="col">
                         <p class="h1 display-4">Chants</p>
                         <ul class="list-unstyled">
-                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_flame.png" alt="Chant of Flame" class="rounded"> Chant of Flame <span class="badge badge-primary badge-pill blacky">+ Casting Spd.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_flame.png" alt="Chant of Flame" class="rounded"> Chant of Flame <span class="badge badge-info badge-pill blacky">+ Casting Spd.</span></li>
                             <li class="py-2"><img src="imagenes/skill/chant/chant_of_fire.png" alt="Chant of Fire" class="rounded"> Chant of Fire <span class="badge badge-warning badge-pill blacky">+ M. Def</span></li>
                             <li class="py-2"><img src="imagenes/skill/chant/chant_of_battle.png" alt="Chant of Battle" class="rounded"> Chant of Battle <span class="badge badge-success badge-pill blacky">+ P. Atk</span></li>
                             <li class="py-2"><img src="imagenes/skill/chant/chant_of_shielding.png" alt="Chant of Shielding" class="rounded"> Chant of Shielding <span class="badge badge-warning badge-pill blacky">+ P. Def</span></li>
@@ -197,7 +203,7 @@
                             <li class="py-2"><img src="imagenes/skill/chant/chant_of_revenge.png" alt="Chant of Revenge" class="rounded"> Chant of Revenge <span class="badge badge-warning badge-pill blacky">Refleja % del daño Melee recibido</span></li>
                             <li class="py-2"><img src="imagenes/skill/chant/chant_of_eagle.png" alt="Chant of Eagle" class="rounded"> Chant of Eagle <span class="badge badge-success badge-pill blacky">+ Accuracy</span></li>
                             <li class="py-2"><img src="imagenes/skill/chant/chant_of_vampire.png" alt="Chant of Vampire" class="rounded"> Chant of Vampire <span class="badge badge-success badge-pill blacky">+ Vampiric (Melee)</span></li>
-                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_victory.png" alt="Chant of Victory" class="rounded"> Chant of Victory <span class="badge badge-danger badge-pill blacky">- Speed</span><span class="badge badge-success badge-pill blacky">+ HP, P. Atk, P. Def, Accuracy, Atk Spd.</span><span class="badge badge-primary badge-pill blacky">+ M. Atk, M. Def, Casting Spd.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_victory.png" alt="Chant of Victory" class="rounded"> Chant of Victory <span class="badge badge-danger badge-pill blacky">- Speed</span><span class="badge badge-success badge-pill blacky">+ HP, P. Atk, P. Def, Accuracy, Atk Spd.</span><span class="badge badge-info badge-pill blacky">+ M. Atk, M. Def, Casting Spd.</span></li>
                             <li class="py-2"><img src="imagenes/skill/chant/chant_of_spirit.png" alt="Chant of Spirit" class="rounded"> Chant of Spirit <span class="badge badge-warning badge-pill blacky">+ Resist Buff Cancel y a Debuff</span></li>
                         </ul>
                     </div>
@@ -207,15 +213,15 @@
                         <ul class="list-unstyled">
                             <li class="py-2"><img src="imagenes/skill/paagrio/power_of_paagrio.png" alt="Power of Pa'agrio" class="rounded"> Power of Pa'agrio <span class="badge badge-success badge-pill blacky">+ P. Atk</span></li>
                             <li class="py-2"><img src="imagenes/skill/paagrio/blessing_of_paagrio.png" alt="Blessing of Pa'agrio" class="rounded"> Blessing of Pa'agrio <span class="badge badge-warning badge-pill blacky">+ P. Def</span></li>
-                            <li class="py-2"><img src="imagenes/skill/paagrio/wisdom_of_paagrio.png" alt="Wisdom of Pa'agrio" class="rounded"> Wisdom of Pa'agrio <span class="badge badge-primary badge-pill blacky">+ Casting Spd.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/paagrio/wisdom_of_paagrio.png" alt="Wisdom of Pa'agrio" class="rounded"> Wisdom of Pa'agrio <span class="badge badge-info badge-pill blacky">+ Casting Spd.</span></li>
                             <li class="py-2"><img src="imagenes/skill/paagrio/glory_of_paagrio.png" alt="Glory of Pa'agrio" class="rounded"> Glory of Pa'agrio <span class="badge badge-warning badge-pill blacky">+ M. Def</span></li>
                             <li class="py-2"><img src="imagenes/skill/paagrio/sight_of_paagrio.png" alt="Sight of Pa'agrio" class="rounded"> Sight of Pa'agrio <span class="badge badge-success badge-pill blacky">+ Accuracy</span></li>
                             <li class="py-2"><img src="imagenes/skill/paagrio/shield_of_paagrio.png" alt="Shield of Pa'agrio" class="rounded"> Shield of Pa'agrio <span class="badge badge-warning badge-pill blacky">+ Shield Def.</span></li>
                             <li class="py-2"><img src="imagenes/skill/paagrio/tact_of_paagrio.png" alt="Tact of Pa'agrio" class="rounded"> Tact of Pa'agrio <span class="badge badge-warning badge-pill blacky">+ Evasion</span></li>
                             <li class="py-2"><img src="imagenes/skill/paagrio/speed_of_paagrio.png" alt="Speed of Pa'agrio" class="rounded"> Speed of Pa'agrio <span class="badge badge-warning badge-pill blacky">+ Speed</span></li>
-                            <li class="py-2"><img src="imagenes/skill/paagrio/rage_of_paagrio.png" alt="Rage of Pa'agrio" class="rounded"> Rage of Pa'agrio <span class="badge badge-danger badge-pill blacky">- P. Def M. Def </span><span class="badge badge-primary badge-pill blacky">+ M. Atk, Casting Spd </span> <span class="badge badge-success badge-pill blacky">+ P. Atk, Atk Spd</span></li>
+                            <li class="py-2"><img src="imagenes/skill/paagrio/rage_of_paagrio.png" alt="Rage of Pa'agrio" class="rounded"> Rage of Pa'agrio <span class="badge badge-danger badge-pill blacky">- P. Def M. Def </span><span class="badge badge-info badge-pill blacky">+ M. Atk, Casting Spd </span> <span class="badge badge-success badge-pill blacky">+ P. Atk, Atk Spd</span></li>
                             <li class="py-2"><img src="imagenes/skill/paagrio/eye_of_paagrio.png" alt="Eye of Pa'agrio" class="rounded"> Eye of Pa'agrio <span class="badge badge-success badge-pill blacky">+ Critical Damage</span></li>
-                            <li class="py-2"><img src="imagenes/skill/paagrio/soul_of_paagrio.png" alt="Soul of Pa'agrio" class="rounded"> Soul of Pa'agrio <span class="badge badge-primary badge-pill blacky">+ M. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/paagrio/soul_of_paagrio.png" alt="Soul of Pa'agrio" class="rounded"> Soul of Pa'agrio <span class="badge badge-info badge-pill blacky">+ M. Atk</span></li>
                         </ul>
                     </div>
 
@@ -231,13 +237,13 @@
                         <ul class="list-unstyled">
                             <li class="py-2"><img src="imagenes/skill/otros/wind_walk.png" alt="Wind Walk" class="rounded"> Wind Walk <span class="badge badge-warning badge-pill blacky">+ Speed</span></li>
                             <li class="py-2"><img src="imagenes/skill/otros/mental_shield.png" alt="Mental Shield" class="rounded"> Mental Shield <span class="badge badge-warning badge-pill blacky">+ Resist Hold, Sleep, Fear y Mental Atks </span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/guidance.png" alt="Guidance" class="rounded"> Guidance <span class="badge badge-primary badge-success">+ Accuracy</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/guidance.png" alt="Guidance" class="rounded"> Guidance <span class="badge badge-info badge-success">+ Accuracy</span></li>
                             <li class="py-2"><img src="imagenes/skill/otros/shield.png" alt="Shield" class="rounded"> Shield <span class="badge badge-warning badge-pill blacky">+ P. Def</span></li>
                             <li class="py-2"><img src="imagenes/skill/otros/might.png" alt="Might" class="rounded"> Might <span class="badge badge-success badge-pill blacky">+ P. Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/berserker_spirit.png" alt="Berserker Spirit" class="rounded"> Berserker Spirit <span class="badge badge-danger badge-pill blacky">- P. Def M. Def </span><span class="badge badge-primary badge-pill blacky">+ M. Atk, Casting Spd </span> <span class="badge badge-success badge-pill blacky">+ P. Atk, Atk Spd</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/berserker_spirit.png" alt="Berserker Spirit" class="rounded"> Berserker Spirit <span class="badge badge-danger badge-pill blacky">- P. Def M. Def </span><span class="badge badge-info badge-pill blacky">+ M. Atk, Casting Spd </span> <span class="badge badge-success badge-pill blacky">+ P. Atk, Atk Spd</span></li>
                             <li class="py-2"><img src="imagenes/skill/otros/bless_the_body.png" alt="Bless the Body" class="rounded"> Bless the Body <span class="badge badge-warning badge-pill blacky">+ HP</span></li>
                             <li class="py-2"><img src="imagenes/skill/otros/bless_the_soul.png" alt="Bless the Soul" class="rounded"> Bless the Soul <span class="badge badge-warning badge-pill blacky">+ MP</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/concentration.png" alt="Concentration" class="rounded"> Concentration <span class="badge badge-primary badge-pill blacky">- Magic Cancel Rate</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/concentration.png" alt="Concentration" class="rounded"> Concentration <span class="badge badge-info badge-pill blacky">- Magic Cancel Rate</span></li>
                             <li class="py-2"><img src="imagenes/skill/otros/magic_barrier.png" alt="Magic Barrier" class="rounded"> Magic Barrier <span class="badge badge-warning badge-pill blacky">+ M. Def</span></li>
                         </ul>
                     </div>
@@ -245,22 +251,22 @@
                     <div class="col-sm-3">
                         <ul class="list-unstyled">
                             <li class="py-2"><img src="imagenes/skill/otros/resist_shock.png" alt="Resist Shock" class="rounded"> Resist Shock <span class="badge badge-warning badge-pill blacky">+ Resist Shock</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/acumen.png" alt="Acumen" class="rounded"> Acumen <span class="badge badge-primary badge-pill blacky">+ Casting Spd.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/acumen.png" alt="Acumen" class="rounded"> Acumen <span class="badge badge-info badge-pill blacky">+ Casting Spd.</span></li>
                             <li class="py-2"><img src="imagenes/skill/otros/bless_shield.png" alt="Bless Shield" class="rounded"> Bless Shield <span class="badge badge-warning badge-pill blacky">+ Shield Def.</span></li>
                             <li class="py-2"><img src="imagenes/skill/otros/advanced_block.png" alt="Advanced Block" class="rounded"> Advanced Block <span class="badge badge-warning badge-pill blacky">+ Rate Shield Def.</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/empower.png" alt="Empower" class="rounded"> Empower <span class="badge badge-primary badge-pill blacky">+ M. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/empower.png" alt="Empower" class="rounded"> Empower <span class="badge badge-info badge-pill blacky">+ M. Atk</span></li>
                             <li class="py-2"><img src="imagenes/skill/otros/decrease_weight.png" alt="Decrease Weight" class="rounded"> Decrease Weight <span class="badge badge-warning badge-pill blacky">Aligera el peso</span></li>
                             <li class="py-2"><img src="imagenes/skill/otros/focus.png" alt="Focus" class="rounded"> Focus <span class="badge badge-success badge-pill blacky">+ Critical Rate P. Atk</span></li>
                             <li class="py-2"><img src="imagenes/skill/otros/death_whisper.png" alt="Death Whisper" class="rounded"> Death Whisper <span class="badge badge-success badge-pill blacky">+ Critical Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/wild_magic.png" alt="Wild Magic" class="rounded"> Wild Magic <span class="badge badge-primary badge-pill blacky">+ Critical Rate M. Atk</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/wild_magic.png" alt="Wild Magic" class="rounded"> Wild Magic <span class="badge badge-info badge-pill blacky">+ Critical Rate M. Atk</span></li>
                             <li class="py-2"><img src="imagenes/skill/otros/vampiric_rage.png" alt="Vampiric Rage" class="rounded"> Vampiric Rage <span class="badge badge-success badge-pill blacky">+ Vampiric (Melee)</span></li>
                         </ul>
                     </div>
 
                     <div class="col-sm-3">
                         <ul class="list-unstyled">
-                            <li class="py-2"><img src="imagenes/skill/otros/haste.png" alt="Haste" class="rounded">Haste <span class="badge badge-primary badge-pill blacky">+ Atk. Spd.</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/prophecy_of_water.png" alt="Prophecy of Water" class="rounded"> Prophecy of Water <span class="badge badge-danger badge-pill blacky">- Speed</span><span class="badge badge-primary badge-pill blacky"> + M. Atk, M. Def, Casting Spd.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/haste.png" alt="Haste" class="rounded">Haste <span class="badge badge-info badge-pill blacky">+ Atk. Spd.</span></li>
+                            <li class="py-2"><img src="imagenes/skill/otros/prophecy_of_water.png" alt="Prophecy of Water" class="rounded"> Prophecy of Water <span class="badge badge-danger badge-pill blacky">- Speed</span><span class="badge badge-info badge-pill blacky"> + M. Atk, M. Def, Casting Spd.</span></li>
                             <li class="py-2"><img src="imagenes/skill/otros/prophecy_of_fire.png" alt="Prophecy of Fire" class="rounded"> Prophecy of Fire <span class="badge badge-danger badge-pill blacky">- Speed</span><span class="badge badge-success badge-pill blacky">+ HP, P. Atk, P. Def, Accuracy, Atk Spd.</span></li>
                             <li class="py-2"><img src="imagenes/skill/otros/prophecy_of_wind.png" alt="Prophecy of Wind" class="rounded"> Prophecy of Wind <span class="badge badge-success badge-pill blacky">+ Evasion, Accuracy, Atk Spd.</span></li>
                         </ul>
@@ -273,7 +279,7 @@
         <div class="tab-pane fade" id="pills-noblesse" role="tabpanel" aria-labelledby="pills-noblesse-tab">
 
 
-            <ul class="nav nav-pills m-1" id="pills-tab-noblesse" role="tablist">
+            <ul class="nav nav-pills px-3" id="pills-tab-noblesse" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active text-white" id="pills-noble0-tab" data-toggle="pill" href="#pills-noble0" role="tab" aria-controls="pills-noble0" aria-selected="true"><span class="oi oi-chevron-right"></span> ¿Por qué Noblesse?</a>
                 </li>
@@ -323,7 +329,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <p class="h2 text-center text-info">- Possessor of a Precious Soul -</p>
+                                <p class="h2 text-center text-light">- Possessor of a Precious Soul -</p>
                                 <hr>
                                 <p class="h4">Requisitos: <br>
                                     Estar en Subclass en nivel 50 mínimo. <br>
@@ -384,7 +390,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <p class="h2 text-center text-info">- Possessor of a Precious Soul -</p>
+                                <p class="h2 text-center text-light">- Possessor of a Precious Soul -</p>
                                 <hr>
                                 <p class="h4">Requisitos: <br>
                                     Estar en Subclass en nivel 60 mínimo, haber finalizado la parte anterior</p>
@@ -419,7 +425,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <p class="h2 text-center text-info">- Possessor of a Precious Soul -</p>
+                                <p class="h2 text-center text-light">- Possessor of a Precious Soul -</p>
                                 <hr>
                                 <p class="h4">Requisitos: <br>
                                     Estar en Subclass en nivel 65 mínimo, haber finalizado la parte anterior</p>
@@ -444,7 +450,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <p class="h2 text-center text-info">- Possessor of a Precious Soul -</p>
+                                <p class="h2 text-center text-light">- Possessor of a Precious Soul -</p>
                                 <hr>
                                 <p class="h4">Requisitos: <br>
                                     Estar en Subclass en nivel 75 mínimo, haber finalizado la parte anterior</p>
@@ -467,7 +473,7 @@
         <div class="tab-pane fade" id="pills-clases" role="tabpanel" aria-labelledby="pills-clases-tab">
 
 
-            <ul class="nav nav-pills m-1" id="pills-tab-clases" role="tablist">
+            <ul class="nav nav-pills px-3" id="pills-tab-clases" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active text-white" id="pills-clases0-tab" data-toggle="pill" href="#pills-clases0" role="tab" aria-controls="pills-clases0" aria-selected="true"><span class="oi oi-chevron-right"></span> Listado</a>
                 </li>
@@ -486,7 +492,7 @@
                         <div class="row">
                             <div class="col">
                                 <!--  -->
-                                <p class="text-center"><span class="text-danger font-weight-bold">Recuerda que usualmente en servidores privados se te permite cambiar entre elfos, habilita overlord y warsmith como Subclass y no cambia el skin al cambiar/agregar una Subclass! ATENTO igual a las restricciones que puedan tener!</span> <br>
+                                <p class="text-center"><span class="text-danger font-weight-bold">Recuerda que usualmente en servidores privados se te permite cambiar entre elfos, habilita Overlord y Warsmith como Subclass y no cambia el skin al cambiar/agregar una Subclass! ATENTO igual a las restricciones que puedan tener!</span> <br>
                                     Puedes elegir lo que esta <span class="font-weight-bold">en negrita</span> como Subclass cuando llegues a nivel 75 en una</p>
                             </div>
                         </div>
@@ -827,7 +833,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                <p><a href="https://warcry.com.ar/foro/forum/general/808-guia-cómo-diseñar-subs-para-mi-pj" class="text-info">-Basado y adaptado de este post de WarCry-</a><br>
+                                <p><a href="https://warcry.com.ar/foro/forum/general/808-guia-cómo-diseñar-subs-para-mi-pj" class="text-light">-Basado y adaptado de este post de WarCry-</a><br>
                                     Antes que nada, recuerden que el juego <span class="text-danger">no fue diseñado para Subclass acumulativas, por ende una combinación siempre va a ser superior a otras</span>. Asimismo, <span class="text-danger">NO SIRVE mezclar el enfoque de las subclasses entre PvP y PvE</span>, ya que sería un desperdicio de eficiencia. Debe ser o para uno o para lo otro.</p>
                                 <p class="h4 text-success">Tanques</p>
                                 <ul>
@@ -915,7 +921,7 @@
                                         </ul>
                                     </li>
                                 </ul>
-                                <p class="h4 text-primary">Magos Nukers</p>
+                                <p class="h4 text-info">Magos Nukers</p>
                                 <ul>
                                     <li class="py-1 font-weight-bold">Sorcerer <ul class="list-unstyled">
                                             <li class="font-weight-normal">Daño elemental de fuego, estados de quemadura, AOE y Cancel.</li>
@@ -938,7 +944,7 @@
                                         </ul>
                                     </li>
                                 </ul>
-                                <p class="h4 text-primary">Invocadores</p>
+                                <p class="h4 text-info">Invocadores</p>
                                 <ul>
                                     <li class="py-1 font-weight-bold">Warlock <ul class="list-unstyled">
                                             <li class="font-weight-normal">Su valor reside en poder invocar la Gatita, que aumenta la tasa y daño de Críticos Físicos.</li>
@@ -953,7 +959,7 @@
                                         </ul>
                                     </li>
                                 </ul>
-                                <p class="h4 text-primary">Soportes</p>
+                                <p class="h4 text-info">Soportes</p>
                                 <ul>
                                     <li class="py-1 font-weight-bold">Bishop <ul class="list-unstyled">
                                             <li class="font-weight-normal">Tiene las mejores curas del juego sin excepción y limpieza de debuffs.</li>
@@ -1019,9 +1025,9 @@
 
         </div>
 
-        <div class="tab-pane fade" id="pills-infomiscelanea" role="tabpanel" aria-labelledby="pills-infomiscelanea-tab">
+        <div class="tab-pane fade" id="pills-lightmiscelanea" role="tabpanel" aria-labelledby="pills-lightmiscelanea-tab">
 
-            <ul class="nav nav-pills m-1" id="pills-tab-miscelanea" role="tablist">
+            <ul class="nav nav-pills px-3" id="pills-tab-miscelanea" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active text-white" id="pills-miscelanea0-tab" data-toggle="pill" href="#pills-miscelanea0" role="tab" aria-controls="pills-miscelanea0" aria-selected="true"><span class="oi oi-chevron-right"></span> Atributos y Dyes</a>
                 </li>
@@ -1041,9 +1047,9 @@
                         <div class="row">
                             <div class="col">
                                 <p class="h4">Atributos y Dyes, ¿qué son?</p>
-                                <p>Los Atributos son las características básicas del personaje, que son mostradas en el juego como <span class="text-success">STR</span> (fuerza), <span class="text-success">DEX</span> (destreza), <span class="text-warning">CON</span> (constitución), <span class="text-primary">INT</span> (inteligencia), <span class="text-primary">WIT</span> (sabiduría) y <span class="text-primary">MEN</span> (mentalidad).</p>
-                                <p>Todos estos afectan diferentemente las características de combate de nuestro PJ, las cuales son <span class="text-success">P. Atk.</span> (ataque físico), <span class="text-warning">P. Def.</span> (defensa física), <span class="text-success">Accuracy</span> (precisión), <span class="text-success">Critical</span> (chance de críticos), <span class="text-success">Atk. Spd.</span> (velocidad de ataque) y <span class="text-primary">M. Atk.</span> (ataque mágico), <span class="text-warning">M. Def.</span> (defensa mágica), <span class="text-warning">Evasion</span> (evasión)
-                                    <!-- xD -->, <span class="text-warning">Speed</span> <!-- wagon --> (velocidad), <span class="text-primary">Casting Spd.</span> (velocidad de casteo).</p>
+                                <p>Los Atributos son las características básicas del personaje, que son mostradas en el juego como <span class="text-success">STR</span> (fuerza), <span class="text-success">DEX</span> (destreza), <span class="text-warning">CON</span> (constitución), <span class="text-info">INT</span> (inteligencia), <span class="text-info">WIT</span> (sabiduría) y <span class="text-info">MEN</span> (mentalidad).</p>
+                                <p>Todos estos afectan diferentemente las características de combate de nuestro PJ, las cuales son <span class="text-success">P. Atk.</span> (ataque físico), <span class="text-warning">P. Def.</span> (defensa física), <span class="text-success">Accuracy</span> (precisión), <span class="text-success">Critical</span> (chance de críticos), <span class="text-success">Atk. Spd.</span> (velocidad de ataque) y <span class="text-info">M. Atk.</span> (ataque mágico), <span class="text-warning">M. Def.</span> (defensa mágica), <span class="text-warning">Evasion</span> (evasión)
+                                    <!-- xD -->, <span class="text-warning">Speed</span> <!-- wagon --> (velocidad), <span class="text-info">Casting Spd.</span> (velocidad de casteo).</p>
                             </div>
                         </div>
                         <div class="row">
@@ -1192,13 +1198,13 @@
                                     <li>STR afecta tu <span class="text-success">P. Atk.</span></li>
                                     <li>DEX afecta tu <span class="text-success">Atk. Spd.</span>, tu <span class="text-success">Casting Spd. de Skill físico</span>, <span class="text-success">Accuracy</span>, <span class="text-warning">Evasion</span>, <span class="text-success">probabilidad de Crítico</span>, <span class="text-success">tasa de Crítico</span>, <span class="text-success">tasa de éxito de Skill de Dagas, Escudos</span> y <span class="text-warning">Speed</span></li>
                                     <li>CON afecta tu <span class="text-warning">HP</span>, <span class="text-warning">CP</span>, <span class="text-warning">velocidad de regeneración de HP</span>, <span class="text-warning">límite de peso</span>, <span class="text-warning">aguante de respiración</span>, <span class="text-warning">resistencia al Shock y Bleed</span></li>
-                                    <li>INT afecta tu <span class="text-primary">M. Atk.</span> y <span class="text-primary">tasa de éxito de Curse Spells</span></li>
-                                    <li>WIT afecta tu <span class="text-primary">chance de Crítico Mágico</span>, <span class="text-primary">Casting Spd. de Skill mágico</span>, <span class="text-warning">resistencia al Hold y Curse Spells</span></li>
-                                    <li>MEN afecta tu <span class="text-warning">M. Def.</span>, <span class="text-warning">MP</span>, <span class="text-warning">velocidad de regeneración de MP</span>, <span class="text-warning">Resistencia Poison y Curse Spells</span>, y <span class="text-primary">baja la probabilidad de interrupción de Hechizos Mágicos</span></li>
+                                    <li>INT afecta tu <span class="text-info">M. Atk.</span> y <span class="text-info">tasa de éxito de Curse Spells</span></li>
+                                    <li>WIT afecta tu <span class="text-info">chance de Crítico Mágico</span>, <span class="text-info">Casting Spd. de Skill mágico</span>, <span class="text-warning">resistencia al Hold y Curse Spells</span></li>
+                                    <li>MEN afecta tu <span class="text-warning">M. Def.</span>, <span class="text-warning">MP</span>, <span class="text-warning">velocidad de regeneración de MP</span>, <span class="text-warning">Resistencia Poison y Curse Spells</span>, y <span class="text-info">baja la probabilidad de interrupción de Hechizos Mágicos</span></li>
                                 </ul>
                                 <hr>
                                 <p class="h4">Los Atributos básicos de cada Raza basado en su inclinación</p>
-                                <p>En <span class="badge badge-success">Verde</span> los Atributos más altos de cada Raza - Fighter, en <span class="badge badge-primary">Azul</span> los más altos para cada Raza - Mystic. Y se usa <span class="badge badge-danger">Rojo</span> para los peores.</p>
+                                <p>En <span class="badge badge-success">Verde</span> los Atributos más altos de cada Raza - Fighter, en <span class="badge badge-info">Azul</span> los más altos para cada Raza - Mystic. Y se usa <span class="badge badge-danger">Rojo</span> para los peores.</p>
                                 <small>Protip: si por ejemplo queres tener Atributos de Dark Elf siendo Human, pero queres tener 3er clase de Humano, cambiá y hace la de 3ra de Human, y luego volve a la de Dark Elf después de aprender todos los Skill.</small>
                             </div>
                         </div>
@@ -1294,10 +1300,10 @@
                                         <tr>
                                             <th scope="row">Elf</th>
                                             <td>21</td>
-                                            <td><span class="badge badge-pill badge-primary">24</span></td>
+                                            <td><span class="badge badge-pill badge-info">24</span></td>
                                             <td>25</td>
                                             <td>37</td>
-                                            <td><span class="badge badge-pill badge-primary">23</span></td>
+                                            <td><span class="badge badge-pill badge-info">23</span></td>
                                             <td>40</td>
                                         </tr>
                                         <tr>
@@ -1305,18 +1311,18 @@
                                             <td>23</td>
                                             <td>23</td>
                                             <td><span class="badge badge-pill badge-danger">24</span></td>
-                                            <td><span class="badge badge-pill badge-primary">44</span></td>
+                                            <td><span class="badge badge-pill badge-info">44</span></td>
                                             <td>19</td>
                                             <td><span class="badge badge-pill badge-danger">37</span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">Orc</th>
-                                            <td><span class="badge badge-pill badge-primary">27</span></td>
-                                            <td><span class="badge badge-pill badge-primary">24</span></td>
-                                            <td><span class="badge badge-pill badge-primary">31</span></td>
+                                            <td><span class="badge badge-pill badge-info">27</span></td>
+                                            <td><span class="badge badge-pill badge-info">24</span></td>
+                                            <td><span class="badge badge-pill badge-info">31</span></td>
                                             <td><span class="badge badge-pill badge-danger">31</span></td>
                                             <td><span class="badge badge-pill badge-danger">15</span></td>
-                                            <td><span class="badge badge-pill badge-primary">42</span></td>
+                                            <td><span class="badge badge-pill badge-info">42</span></td>
                                         </tr>
                                         <tr>
                                             <th scope="row">Dwarf</th>
@@ -1340,7 +1346,7 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col text-center text-justify">
-                                <p class="font-weight-bold m-1 h6 text-info">Es altamente recomendadable tener las Quest permanentes/repetibles lo antes posible y siempre, ya que no expiran y ¡siempre tienen buenas recompensas!</p>
+                                <p class="font-weight-bold m-1 h6 text-light">Es altamente recomendadable tener las Quest permanentes/repetibles lo antes posible y siempre, ya que no expiran y ¡siempre tienen buenas recompensas!</p>
                             </div>
                         </div>
                         <hr>
@@ -1432,7 +1438,7 @@
                                             <li class="py-2 px-1"><img src="imagenes/quest/mist.webp" alt="Mist" class="img-fluid rounded"></li>
                                             <li class="py-2 px-1">5) Vuelve con Jeremy</li>
                                             <li class="py-2 px-1">6) Vuelve con Leikar en Aden</li>
-                                            <li class="py-2 px-1">Aca es cuando se empiezan las Subquest <span class="font-weight-bold text-info">"In Search of Cloth"</span>, <span class="font-weight-bold text-info">"Find Glittering Jewelry"</span> y <span class="font-weight-bold text-info">"Make a Sewing Kit"</span>, donde conseguiremos los materiales necesarios para avanzar con la Quest original</li>
+                                            <li class="py-2 px-1">Aca es cuando se empiezan las Subquest <span class="font-weight-bold text-light">"In Search of Cloth"</span>, <span class="font-weight-bold text-light">"Find Glittering Jewelry"</span> y <span class="font-weight-bold text-light">"Make a Sewing Kit"</span>, donde conseguiremos los materiales necesarios para avanzar con la Quest original</li>
                                             <li class="py-2 px-1">
                                                 <hr>
                                             </li>
@@ -1473,7 +1479,7 @@
                                                 <ul class="list-unstyled">
                                                     <li class="py-2 px-1">1) Habla con Ferris en Aden</li>
                                                     <li class="py-2 px-1"><img src="imagenes/quest/ferris.webp" alt="Ferris" class="img-fluid rounded"></li>
-                                                    <li class="py-2 px-1">2) Ve a Ivory Tower y mata Enchanted Iron Golem hasta que consigas 5 "Piece of Reinforced Steel"</li>
+                                                    <li class="py-2 px-1">2) Ve a Ivory Tower y mata Enchanted Iron Golem hasta que consigas 5 "Piece of Relightrced Steel"</li>
                                                     <li class="py-2 px-1"><img src="imagenes/quest/enchanted_iron_golem.webp" alt="Enchanted Iron Golem" class="img-fluid rounded"></li>
                                                     <li class="py-2 px-1">3) Vuelve con Ferris, que te dira que necesita <span class="font-weight-bold">10 Artisan Frame y 10 Oriharukon</span></li>
                                                     <li class="py-2 px-1">4) Cuando tengas los materiales, hablale devuelta y te dara "Sewing Kit", ¡felicitaciones!</li>
@@ -1522,7 +1528,7 @@
                                             <li class="py-2 px-1">2) Asegurate de elegir la quest correcta </li>
                                             <li class="py-2 px-1"><img src="imagenes/quest/fishermen_guild_member2.webp" alt="Fishermen's Guild Member" class="img-fluid rounded"></li>
                                             <li class="py-2 px-1">3) ¡Genial! Ahora solo resta ir a matar mobs que puedan droppear el "Sweet Fluid" <img src="imagenes/quest/sweet_fluid.webp" alt="Sweet Fluid" class="img-fluid rounded"> , el cual cuando quieras volves a un <span class="text-success">Fishermen's Guild Member</span> para intercambiarlo por Fishing Shot (la cantidad depende del Grado)
-                                            <img src="imagenes/quest/fishing_shot.webp" alt="Fishing Shot" class="img-fluid rounded"></li>
+                                                <img src="imagenes/quest/fishing_shot.webp" alt="Fishing Shot" class="img-fluid rounded"></li>
                                             <li class="py-2 px-1"><img src="imagenes/quest/fishing_shot_trade.webp" alt="Fishing Shot Trade" class="img-fluid rounded"></li>
                                         </ul>
                                         <p class="h5">Cada Sweet Fluid equivale a:</p>
@@ -1642,11 +1648,6 @@
                     <div class="col">
                         <a href="https://github.com/sunset904" class="h5 display-4 text-white">by sunset</a>
                         <hr>
-                        <p>
-                            Agradecimientos especiales a:
-                        </p>
-                        <p>LosPibes del Ultra y todos los que se copan desde que estoy en el sv para polearlos y que tiran convo copadas :B, sino la verdad que seria un re garrón
-                        </p>
                         <ul class="list-unstyled">
                             <li class="py-1">Hecho con <a href="https://getbootstrap.com" class="text-warning font-weight-bold">Bootstrap</a></li>
                             <li class="py-1"><a href="https://useiconic.com/open" class="text-warning font-weight-bold">Open Iconic</a> para los iconos</li>

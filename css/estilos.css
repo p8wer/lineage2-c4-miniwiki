@@ -2,10 +2,10 @@
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
     color: #fff;
-    background-color: rgba(0, 250, 0, 0.2);
+    background-color:darkolivegreen;
 }
 
-/* OVERRIDE de la fuente de bootstrap para que sea Tahoma, la fuente que usa el L2 */
+/* OVERRIDE de la fuente de bootstrap para que sea Tahoma, la fuente que usa el L2 
 p,
 ul,
 table {
@@ -15,11 +15,12 @@ table {
     font-variant: normal;
     font-weight: 400;
     line-height: 20px;
-}
+} */
 
 .blacky {
     color: black
 }
+
 
 #myBtn {
     display: none;
