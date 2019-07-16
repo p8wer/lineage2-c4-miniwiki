@@ -26,6 +26,10 @@
     <link href="vendor/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
     <!-- fancybox -->
     <link rel="stylesheet" href="vendor/fancybox/dist/jquery.fancybox.min.css">
+    <!-- Spritesheets -->
+    <link rel="stylesheet" href="css/spritesheet.css">
+    <link rel="stylesheet" href="css/spritesheet2.css">
+    <link rel="stylesheet" href="css/spritesheet3.css">
     <!-- dan's tools favicon.ico -->
     <link rel="apple-touch-icon" sizes="57x57" href="imagenes/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="imagenes/favicon/apple-icon-60x60.png">
@@ -133,148 +137,880 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
 
         <div class="tab-pane fade" id="pills-buffs" role="tabpanel" aria-labelledby="pills-buffs-tab">
 
-            <div class="container-fluid">
-
+            <div class="container-fluid mb-5">
                 <div class="row">
                     <div class="col">
                         <p class="h5">Referencias:</p>
-                        <p><span class="text-success">Verde para los buffs beneficiales a los Fighter</span><br>
-                            <span class="text-info">Turquesa para los buffs beneficiales a los Mystic</span><br>
-                            <span class="text-warning">Amarillo para tipos de Buff generales</span></p>
+                        <p><span class="text-success">[Verde para los beneficiales a los Fighter]</span>
+                            <span class="text-info"> [Turquesa para los beneficiales a los Mystic] </span>
+                            <span class="text-warning"> [Amarillo para tipos generales]</span> <span class="lila"> [Lila para tipos especiales]</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="media">
+                            <div class="media-body">
+                                <p class="h3 text-center">Songs</p>
+                                <p class="text-center">Buffs que se pasan a través de Party. En su mayoria mejoran defensivamente. Provienen de la clase <span class="lead">Sword Singer</span>.</p>
+                                <div class="media my-1">
+                                    <div class="song-of-earth mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Song of <span class="font-weight-bold">Earth</span></p>
+                                        <p class="text-warning m-0">+ P. Def</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="song-of-life mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Song of <span class="font-weight-bold">Life</span></p>
+                                        <p class="text-warning m-0">+ Regen HP</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="song-of-water mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Song of <span class="font-weight-bold">Water</span></p>
+                                        <p class="text-warning m-0">+ Evasion</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="song-of-warding mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Song of <span class="font-weight-bold">Warding</span></p>
+                                        <p class="text-warning m-0">+ M. Def</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="song-of-wind mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Song of <span class="font-weight-bold">Wind</span></p>
+                                        <p class="text-warning m-0">+ Speed</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="song-of-vitality mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Song of <span class="font-weight-bold">Vitality</span></p>
+                                        <p class="text-warning m-0">+ HP</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="song-of-invocation mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Song of <span class="font-weight-bold">Invocation</span></p>
+                                        <p class="text-warning m-0">+ Resist Dark</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="song-of-storm-guard mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Song of <span class="font-weight-bold">Storm Guard</span></p>
+                                        <p class="text-warning m-0">+ Resist Wind</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="song-of-flame-guard mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Song of <span class="font-weight-bold">Flame Guard</span></p>
+                                        <p class="text-warning m-0">+ Resist Fire</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="song-of-hunter mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Song of <span class="font-weight-bold">Hunter</span></p>
+                                        <p class="text-success m-0">+ Critical Rate Físico</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="song-of-champion mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Song of <span class="font-weight-bold">Champion</span></p>
+                                        <p class="text-success m-0">- Consumo MP y tiempo de reuso Skill Físico</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="song-of-renewal mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Song of <span class="font-weight-bold">Renewal</span></p>
+                                        <p class="text-info m-0">+ Regen MP, - Consumo MP y tiempo de reuso Skill Mágico</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="song-of-meditation mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Song of <span class="font-weight-bold">Meditation</span></p>
+                                        <p class="text-info m-0">- Consumo MP y tiempo de reuso Skill <span class="text-success">Físico</span> y Mágico</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="song-of-vengeance mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Song of <span class="font-weight-bold">Vengeance</span></p>
+                                        <p class="lila m-0">Refleja % daño Melee recibido</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="media">
+                            <div class="media-body">
+                                <p class="h3 text-center">Dances</p>
+                                <p class="text-center">Buffs que se pasan a través de Party. En su mayoria mejoran ofensivamente. Provienen de la clase <span class="lead">Blade Dancer</span>.</p>
+                                <div class="media my-1">
+                                    <div class="dance-of-warrior mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Dance of <span class="font-weight-bold">Warrior</span></p>
+                                        <p class="text-success m-0">+ P. Atk</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="dance-of-fire mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Dance of <span class="font-weight-bold">Fire</span></p>
+                                        <p class="text-success m-0">+ Critical Damage</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="dance-of-fury mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Dance of <span class="font-weight-bold">Fury</span></p>
+                                        <p class="text-success m-0">+ Atk. Spd.</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="dance-of-vampire mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Dance of <span class="font-weight-bold">Vampire</span></p>
+                                        <p class="text-success m-0">+ Vampiric</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="dance-of-inspiration mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Dance of <span class="font-weight-bold">Inspiration</span></p>
+                                        <p class="text-success m-0">+ Accuracy</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="dance-of-light mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Dance of <span class="font-weight-bold">Light</span></p>
+                                        <p class="text-success m-0">+ Holy/Sacred P. Atk</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="dance-of-concentration mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Dance of <span class="font-weight-bold">Concentration</span></p>
+                                        <p class="text-info m-0">+ Casting Spd. - Magic Cancel Rate</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="dance-of-mystic mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Dance of <span class="font-weight-bold">Mystic</span></p>
+                                        <p class="text-info m-0">+ M. Atk</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="dance-of-siren mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Dance of <span class="font-weight-bold">Siren</span></p>
+                                        <p class="text-info m-0">+ Critical Rate Mágico</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="dance-of-protection mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Dance of <span class="font-weight-bold">Protection</span></p>
+                                        <p class="text-warning m-0">+ Resist daño en area</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="dance-of-aqua-guard mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Dance of <span class="font-weight-bold">Aqua Guard</span></p>
+                                        <p class="text-warning m-0">+ Resist Aqua</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="dance-of-earth-guard mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Dance of <span class="font-weight-bold">Earth Guard</span></p>
+                                        <p class="text-warning m-0">+ Resist Earth</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="dance-of-shadows mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Dance of <span class="font-weight-bold">Shadow</span></p>
+                                        <p class="lila m-0">Los mobs no atacan primero</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="dance-of-medusa mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Dance of <span class="font-weight-bold">Medusa</span></p>
+                                        <p class="lila m-0">(Activo) Petrifica mobs cercanos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="media">
+                            <div class="media-body">
+                                <p class="h3 text-center">Chants</p>
+                                <p class="text-center">Buffs que se pasan a través de Party. Son bastante orientados a los Luchadores. Provienen de la clase <span class="lead">Warcryer</span>.</p>
+                                <div class="media my-1">
+                                    <div class="chant-of-battle mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Chant of <span class="font-weight-bold">Battle</span></p>
+                                        <p class="text-success m-0">+ P. Atk</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="chant-of-fury mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Chant of <span class="font-weight-bold">Fury</span></p>
+                                        <p class="text-success m-0">+ Atk. Spd</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="chant-of-rage mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Chant of <span class="font-weight-bold">Rage</span></p>
+                                        <p class="text-success m-0">+ Critical Damage</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="chant-of-predator mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Chant of <span class="font-weight-bold">Predator</span></p>
+                                        <p class="text-success m-0">+ Critical Rate Físico</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="chant-of-eagle mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Chant of <span class="font-weight-bold">Eagle</span></p>
+                                        <p class="text-success m-0">+ Accuracy</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="chant-of-vampire mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Chant of <span class="font-weight-bold">Vampire</span></p>
+                                        <p class="text-success m-0">+ Vampiric</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="chant-of-victory mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Chant of <span class="font-weight-bold">Victory</span></p>
+                                        <p class="m-0"><span class="text-danger">- Speed</span><br><span class="text-success">+ Hp, P. Atk, P. Def, Accuracy, Atk. Spd.</span><br><span class="text-info">+ M. Atk, M. Def, Casting Spd</span></p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="chant-of-flame mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Chant of <span class="font-weight-bold">Flame</span></p>
+                                        <p class="text-info m-0">+ Casting Spd.</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="chant-of-fire mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Chant of <span class="font-weight-bold">Fire</span></p>
+                                        <p class="text-warning m-0">+ M. Def</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="chant-of-shielding mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Chant of <span class="font-weight-bold">Shielding</span></p>
+                                        <p class="text-warning m-0">+ P. Def</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="chant-of-evasion mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Chant of <span class="font-weight-bold">Evasion</span></p>
+                                        <p class="text-warning m-0">+ Evasion</p> <!-- WOW! -->
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="chant-of-spirit mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Chant of <span class="font-weight-bold">Spirit</span></p>
+                                        <p class="text-warning m-0">+ Resist Buff Cancel y Debuff</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="chant-of-revenge mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Chant of <span class="font-weight-bold">Revenge</span></p>
+                                        <p class="lila m-0">Refleja % daño Melee recibido</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="chant-of-life mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0">Chant of <span class="font-weight-bold">Life</span></p>
+                                        <p class="lila m-0">Mejora la Regen HP. No cuenta contra el limite de Buffs</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="media">
+                            <div class="media-body">
+                                <p class="h3 text-center">Pa'agrio</p>
+                                <p class="text-center">Buffs que se pasan a través de Alianza. Son mixtos. Provienen de la clase <span class="lead">Overlord</span>. Pueden Curar CP masivamente.</p>
+                                <div class="media my-1">
+                                    <div class="power-of-paagrio mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0"><span class="font-weight-bold">Power</span> of Pa'agrio</p>
+                                        <p class="text-success m-0">+ P. Atk</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="sight-of-paagrio mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0"><span class="font-weight-bold">Sight</span> of Pa'agrio</p>
+                                        <p class="text-success m-0">+ Accuracy</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="eye-of-paagrio mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0"><span class="font-weight-bold">Eye</span> of Pa'agrio</p>
+                                        <p class="text-success m-0">+ Critical Damage</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="rage-of-paagrio mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0"><span class="font-weight-bold">Rage</span> of Pa'agrio</p>
+                                        <p class="m-0"><span class="text-danger">- P. Def, M. Def</span><br><span class="text-success">+ P. Atk, Atk. Spd.</span> <span class="text-info">+ M. Atk, Casting Spd</span></p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="wisdom-of-paagrio mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0"><span class="font-weight-bold">Wisdom</span> of Pa'agrio</p>
+                                        <p class="text-info m-0">+ Casting Spd.</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="soul-of-paagrio mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0"><span class="font-weight-bold">Soul</span> of Pa'agrio</p>
+                                        <p class="text-info m-0">+ M. Atk</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="blessing-of-paagrio mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0"><span class="font-weight-bold">Blessing</span> of Pa'agrio</p>
+                                        <p class="text-warning m-0">+ P. Def</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="glory-of-paagrio mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0"><span class="font-weight-bold">Glory</span> of Pa'agrio</p>
+                                        <p class="text-warning m-0">+ M. Def</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="shield-of-paagrio mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0"><span class="font-weight-bold">Shield</span> of Pa'agrio</p>
+                                        <p class="text-warning m-0">+ Shield Def</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="tact-of-paagrio mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0"><span class="font-weight-bold">Tact</span> of Pa'agrio</p>
+                                        <p class="text-warning m-0">+ Evasion</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="speed-of-paagrio mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0"><span class="font-weight-bold">Speed</span> of Pa'agrio</p>
+                                        <p class="text-warning m-0">+ Speed</p> <!-- WOW!!!! x2 -->
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="heart-of-paagrio mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0"><span class="font-weight-bold">Heart</span> of Pa'agrio</p>
+                                        <p class="lila m-0">Mejora considerablemente la Regen HP. No cuenta contra el limite de Buffs</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="honor-of-paagrio mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0"><span class="font-weight-bold">Honor</span> of Pa'agrio</p>
+                                        <p class="lila m-0">(Activo) Cura CP a los miembros de la alianza cercanos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="row">
-
-                    <div class="col">
-                        <p class="h1 display-4">Dances</p>
-                        <ul class="list-unstyled">
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_warrior.png" alt="Dance of the Warrior" class="rounded "> Dance of the Warrior <span class="badge badge-success badge-pill blacky">+ P. Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_fire.png" alt="Dance of Fire" class="rounded"> Dance of Fire <span class="badge badge-success badge-pill blacky">+ Critical Damage</span></li>
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_fury.png" alt="Dance of Fury" class="rounded"> Dance of Fury <span class="badge badge-success badge-pill blacky">+ Atk. Spd.</span></li>
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_vampire.png" alt="Dance of the Vampire" class="rounded"> Dance of the Vampire <span class="badge badge-success badge-pill blacky">+ Vampiric (Melee)</span></li>
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_inspiration.png" alt="Dance of Inspiration" class="rounded"> Dance of Inspiration <span class="badge badge-success badge-pill blacky">+ Accuracy</span></li>
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_concentration.png" alt="Dance of Concentration" class="rounded"> Dance of Concentration <span class="badge badge-info badge-pill blacky">+ Casting Spd.</span> <span class="badge badge-info badge-pill blacky">- Magic Cancel Rate</span></li>
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_light.png" alt="Dance of Light" class="rounded"> Dance of Light <span class="badge badge-success badge-pill blacky">+ Sacred para P. Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_mystic.png" alt="Dance of the Mystic" class="rounded"> Dance of the Mystic <span class="badge badge-info badge-pill blacky">+ M. Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_siren.png" alt="Dance of Siren" class="rounded"> Dance of Siren <span class="badge badge-info badge-pill blacky">+ Critical Rate M. Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_protection.png" alt="Dance of Protection" class="rounded"> Dance of Protection <span class="badge badge-warning badge-pill blacky">+ Resist Daño AoE</span></li>
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_aqua_guard.png" alt="Dance of Aqua Guard" class="rounded"> Dance of Aqua Guard <span class="badge badge-warning badge-pill blacky">+ Resist Ataques de Agua</span></li>
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_earth_guard.png" alt="Dance of Earth Guard" class="rounded"> Dance of Earth Guard <span class="badge badge-warning badge-pill blacky">+ Resist Ataques de Tierra</span></li>
-                            <li class="py-2"><img src="imagenes/skill/dance/dance_of_shadows.png" alt="Dance of Shadows" class="rounded"> Dance of Shadows <span class="badge badge-danger badge-pill blacky">- Speed</span><span class="badge badge-warning badge-pill blacky">Los mobs no atacan primero</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="col">
-                        <p class="h1 display-4">Songs</p>
-                        <ul class="list-unstyled">
-                            <li class="py-2"><img src="imagenes/skill/song/song_of_earth.png" alt="Song of Earth" class="rounded"> Song of Earth <span class="badge badge-warning badge-pill blacky">+ P. Def</span></li>
-                            <li class="py-2"><img src="imagenes/skill/song/song_of_life.png" alt="Song of Life" class="rounded"> Song of Life <span class="badge badge-warning badge-pill blacky">+ Regen HP</span></li>
-                            <li class="py-2"><img src="imagenes/skill/song/song_of_water.png" alt="Song of Water" class="rounded"> Song of Water <span class="badge badge-warning badge-pill blacky">+ Evasion</span></li>
-                            <li class="py-2"><img src="imagenes/skill/song/song_of_warding.png" alt="Song of Warding" class="rounded"> Song of Warding <span class="badge badge-warning badge-pill blacky">+ M. Def</span></li>
-                            <li class="py-2"><img src="imagenes/skill/song/song_of_wind.png" alt="Song of Wind" class="rounded"> Song of Wind <span class="badge badge-warning badge-pill blacky">+ Speed</span></li>
-                            <li class="py-2"><img src="imagenes/skill/song/song_of_hunter.png" alt="Song of Hunter" class="rounded"> Song of Hunter <span class="badge badge-success badge-pill blacky">+ Critical Rate P. Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/song/song_of_vitality.png" alt="Song of Vitality" class="rounded"> Song of Vitality <span class="badge badge-warning badge-pill blacky">+ HP</span></li>
-                            <li class="py-2"><img src="imagenes/skill/song/song_of_champion.png" alt="Song of Champion" class="rounded"> Song of Champion <span class="badge badge-success badge-pill blacky">- Consumo MP y Re-uso Skill Físico</span></li>
-                            <li class="py-2"><img src="imagenes/skill/song/song_of_renewal.png" alt="Song of Renewal" class="rounded"> Song of Renewal <span class="badge badge-info badge-pill blacky">- Consumo MP y Re-uso Skill Mágico</span></li>
-                            <li class="py-2"><img src="imagenes/skill/song/song_of_invocation.png" alt="Song of Invocation" class="rounded"> Song of Invocation <span class="badge badge-warning badge-pill blacky">+ Resist Dark Magic Atk.</span></li>
-                            <li class="py-2"><img src="imagenes/skill/song/song_of_storm_guard.png" alt="Song of Storm Guard" class="rounded"> Song of Storm Guard <span class="badge badge-warning badge-pill blacky">+ Resist Ataques de Aire</span></li>
-                            <li class="py-2"><img src="imagenes/skill/song/song_of_flame_guard.png" alt="Song of Flame Guard" class="rounded"> Song of Flame Guard <span class="badge badge-warning badge-pill blacky">+ Resist Ataques de Fuego</span></li>
-                            <li class="py-2"><img src="imagenes/skill/song/song_of_vengeance.png" alt="Song of Vengeance" class="rounded"> Song of Vengeance <span class="badge badge-warning badge-pill blacky">Refleja % del daño Melee recibido</span></li>
-                            <li class="py-2"><img src="imagenes/skill/song/song_of_meditation.png" alt="Song of Meditation" class="rounded"> Song of Meditation <span class="badge badge-light badge-pill blacky">- Consumo MP y Re-uso Skill Físico</span><span class="badge badge-light badge-pill blacky">- Consumo MP y Re-uso Skill Mágico</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="col">
-                        <p class="h1 display-4">Chants</p>
-                        <ul class="list-unstyled">
-                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_flame.png" alt="Chant of Flame" class="rounded"> Chant of Flame <span class="badge badge-info badge-pill blacky">+ Casting Spd.</span></li>
-                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_fire.png" alt="Chant of Fire" class="rounded"> Chant of Fire <span class="badge badge-warning badge-pill blacky">+ M. Def</span></li>
-                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_battle.png" alt="Chant of Battle" class="rounded"> Chant of Battle <span class="badge badge-success badge-pill blacky">+ P. Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_shielding.png" alt="Chant of Shielding" class="rounded"> Chant of Shielding <span class="badge badge-warning badge-pill blacky">+ P. Def</span></li>
-                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_fury.png" alt="Chant of Fury" class="rounded"> Chant of Fury <span class="badge badge-success badge-pill blacky">+ Atk. Spd.</span></li>
-                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_evasion.png" alt="Chant of Evasion" class="rounded"> Chant of Evasion <span class="badge badge-warning badge-pill blacky">+ Evasion</span></li>
-                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_rage.png" alt="Chant of Rage" class="rounded"> Chant of Rage <span class="badge badge-success badge-pill blacky">+ Critical Damage</span></li>
-                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_predator.png" alt="Chant of Predator" class="r ounded"> Chant of Predator <span class="badge badge-success badge-pill blacky">+ Critical Rate P. Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_revenge.png" alt="Chant of Revenge" class="rounded"> Chant of Revenge <span class="badge badge-warning badge-pill blacky">Refleja % del daño Melee recibido</span></li>
-                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_eagle.png" alt="Chant of Eagle" class="rounded"> Chant of Eagle <span class="badge badge-success badge-pill blacky">+ Accuracy</span></li>
-                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_vampire.png" alt="Chant of Vampire" class="rounded"> Chant of Vampire <span class="badge badge-success badge-pill blacky">+ Vampiric (Melee)</span></li>
-                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_victory.png" alt="Chant of Victory" class="rounded"> Chant of Victory <span class="badge badge-danger badge-pill blacky">- Speed</span><span class="badge badge-success badge-pill blacky">+ HP, P. Atk, P. Def, Accuracy, Atk Spd.</span><span class="badge badge-info badge-pill blacky">+ M. Atk, M. Def, Casting Spd.</span></li>
-                            <li class="py-2"><img src="imagenes/skill/chant/chant_of_spirit.png" alt="Chant of Spirit" class="rounded"> Chant of Spirit <span class="badge badge-warning badge-pill blacky">+ Resist Buff Cancel y a Debuff</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="col">
-                        <p class="h1 display-4">Pa'agrio</p>
-                        <ul class="list-unstyled">
-                            <li class="py-2"><img src="imagenes/skill/paagrio/power_of_paagrio.png" alt="Power of Pa'agrio" class="rounded"> Power of Pa'agrio <span class="badge badge-success badge-pill blacky">+ P. Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/paagrio/blessing_of_paagrio.png" alt="Blessing of Pa'agrio" class="rounded"> Blessing of Pa'agrio <span class="badge badge-warning badge-pill blacky">+ P. Def</span></li>
-                            <li class="py-2"><img src="imagenes/skill/paagrio/wisdom_of_paagrio.png" alt="Wisdom of Pa'agrio" class="rounded"> Wisdom of Pa'agrio <span class="badge badge-info badge-pill blacky">+ Casting Spd.</span></li>
-                            <li class="py-2"><img src="imagenes/skill/paagrio/glory_of_paagrio.png" alt="Glory of Pa'agrio" class="rounded"> Glory of Pa'agrio <span class="badge badge-warning badge-pill blacky">+ M. Def</span></li>
-                            <li class="py-2"><img src="imagenes/skill/paagrio/sight_of_paagrio.png" alt="Sight of Pa'agrio" class="rounded"> Sight of Pa'agrio <span class="badge badge-success badge-pill blacky">+ Accuracy</span></li>
-                            <li class="py-2"><img src="imagenes/skill/paagrio/shield_of_paagrio.png" alt="Shield of Pa'agrio" class="rounded"> Shield of Pa'agrio <span class="badge badge-warning badge-pill blacky">+ Shield Def.</span></li>
-                            <li class="py-2"><img src="imagenes/skill/paagrio/tact_of_paagrio.png" alt="Tact of Pa'agrio" class="rounded"> Tact of Pa'agrio <span class="badge badge-warning badge-pill blacky">+ Evasion</span></li>
-                            <li class="py-2"><img src="imagenes/skill/paagrio/speed_of_paagrio.png" alt="Speed of Pa'agrio" class="rounded"> Speed of Pa'agrio <span class="badge badge-warning badge-pill blacky">+ Speed</span></li>
-                            <li class="py-2"><img src="imagenes/skill/paagrio/rage_of_paagrio.png" alt="Rage of Pa'agrio" class="rounded"> Rage of Pa'agrio <span class="badge badge-danger badge-pill blacky">- P. Def M. Def </span><span class="badge badge-info badge-pill blacky">+ M. Atk, Casting Spd </span> <span class="badge badge-success badge-pill blacky">+ P. Atk, Atk Spd</span></li>
-                            <li class="py-2"><img src="imagenes/skill/paagrio/eye_of_paagrio.png" alt="Eye of Pa'agrio" class="rounded"> Eye of Pa'agrio <span class="badge badge-success badge-pill blacky">+ Critical Damage</span></li>
-                            <li class="py-2"><img src="imagenes/skill/paagrio/soul_of_paagrio.png" alt="Soul of Pa'agrio" class="rounded"> Soul of Pa'agrio <span class="badge badge-info badge-pill blacky">+ M. Atk</span></li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div class="row-fluid">
-                    <p class="h1 display-4 text-center">Otros</p>
-                </div>
-
-                <div class="row justify-content-center">
-
-                    <div class="col-sm-3">
-                        <ul class="list-unstyled">
-                            <li class="py-2"><img src="imagenes/skill/otros/wind_walk.png" alt="Wind Walk" class="rounded"> Wind Walk <span class="badge badge-warning badge-pill blacky">+ Speed</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/mental_shield.png" alt="Mental Shield" class="rounded"> Mental Shield <span class="badge badge-warning badge-pill blacky">+ Resist Hold, Sleep, Fear y Mental Atks </span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/guidance.png" alt="Guidance" class="rounded"> Guidance <span class="badge badge-info badge-success">+ Accuracy</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/shield.png" alt="Shield" class="rounded"> Shield <span class="badge badge-warning badge-pill blacky">+ P. Def</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/might.png" alt="Might" class="rounded"> Might <span class="badge badge-success badge-pill blacky">+ P. Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/berserker_spirit.png" alt="Berserker Spirit" class="rounded"> Berserker Spirit <span class="badge badge-danger badge-pill blacky">- P. Def M. Def </span><span class="badge badge-info badge-pill blacky">+ M. Atk, Casting Spd </span> <span class="badge badge-success badge-pill blacky">+ P. Atk, Atk Spd</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/bless_the_body.png" alt="Bless the Body" class="rounded"> Bless the Body <span class="badge badge-warning badge-pill blacky">+ HP</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/bless_the_soul.png" alt="Bless the Soul" class="rounded"> Bless the Soul <span class="badge badge-warning badge-pill blacky">+ MP</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/concentration.png" alt="Concentration" class="rounded"> Concentration <span class="badge badge-info badge-pill blacky">- Magic Cancel Rate</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/magic_barrier.png" alt="Magic Barrier" class="rounded"> Magic Barrier <span class="badge badge-warning badge-pill blacky">+ M. Def</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <ul class="list-unstyled">
-                            <li class="py-2"><img src="imagenes/skill/otros/resist_shock.png" alt="Resist Shock" class="rounded"> Resist Shock <span class="badge badge-warning badge-pill blacky">+ Resist Shock</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/acumen.png" alt="Acumen" class="rounded"> Acumen <span class="badge badge-info badge-pill blacky">+ Casting Spd.</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/bless_shield.png" alt="Bless Shield" class="rounded"> Bless Shield <span class="badge badge-warning badge-pill blacky">+ Shield Def.</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/advanced_block.png" alt="Advanced Block" class="rounded"> Advanced Block <span class="badge badge-warning badge-pill blacky">+ Rate Shield Def.</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/empower.png" alt="Empower" class="rounded"> Empower <span class="badge badge-info badge-pill blacky">+ M. Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/decrease_weight.png" alt="Decrease Weight" class="rounded"> Decrease Weight <span class="badge badge-warning badge-pill blacky">Aligera el peso</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/focus.png" alt="Focus" class="rounded"> Focus <span class="badge badge-success badge-pill blacky">+ Critical Rate P. Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/death_whisper.png" alt="Death Whisper" class="rounded"> Death Whisper <span class="badge badge-success badge-pill blacky">+ Critical Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/wild_magic.png" alt="Wild Magic" class="rounded"> Wild Magic <span class="badge badge-info badge-pill blacky">+ Critical Rate M. Atk</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/vampiric_rage.png" alt="Vampiric Rage" class="rounded"> Vampiric Rage <span class="badge badge-success badge-pill blacky">+ Vampiric (Melee)</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <ul class="list-unstyled">
-                            <li class="py-2"><img src="imagenes/skill/otros/haste.png" alt="Haste" class="rounded">Haste <span class="badge badge-info badge-pill blacky">+ Atk. Spd.</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/prophecy_of_water.png" alt="Prophecy of Water" class="rounded"> Prophecy of Water <span class="badge badge-danger badge-pill blacky">- Speed</span><span class="badge badge-info badge-pill blacky"> + M. Atk, M. Def, Casting Spd.</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/prophecy_of_fire.png" alt="Prophecy of Fire" class="rounded"> Prophecy of Fire <span class="badge badge-danger badge-pill blacky">- Speed</span><span class="badge badge-success badge-pill blacky">+ HP, P. Atk, P. Def, Accuracy, Atk Spd.</span></li>
-                            <li class="py-2"><img src="imagenes/skill/otros/prophecy_of_wind.png" alt="Prophecy of Wind" class="rounded"> Prophecy of Wind <span class="badge badge-success badge-pill blacky">+ Evasion, Accuracy, Atk Spd.</span></li>
-                        </ul>
+                    <div class="col-12 text-center mx-3">
+                        <p class="h1">Otros</p>
+                        <p>Buffs que provienen de diferentes Clases. Estan en esta lista dado que pueden tirarselo a otro char sin restricciones.</p>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="media">
+                            <div class="media-body">
+                                <div class="media my-1">
+                                    <div class="bless-the-body mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Bless the Body</p>
+                                        <p class="text-warning m-0">+ HP</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="bless-the-soul mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Bless the Soul</p>
+                                        <p class="text-warning m-0">+ MP</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="wind-walk mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Wind Walk</p>
+                                        <p class="text-warning m-0">+ P. Atk</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="body-of-avatar mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Body of Avatar</p>
+                                        <p class="text-warning m-0">+ P. Atk</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="shield mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Shield</p>
+                                        <p class="text-warning m-0">+ P. Def</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="magic-barrier mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Magic Barrier</p>
+                                        <p class="text-warning m-0">+ M. Def</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="bless-shield mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Bless Shield</p>
+                                        <p class="text-warning m-0">+ Shield Def</p> <!-- 300% tasa de criticos hibridos -->
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="advanced-block mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Advanced Block</p>
+                                        <p class="text-warning m-0">+ Rate Shield Def</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="media">
+                            <div class="media-body">
+                                <div class="media my-1">
+                                    <div class="agility mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Agility</p>
+                                        <p class="text-warning m-0">+ Evasion</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="mental-shield mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Mental Shield</p>
+                                        <p class="text-warning m-0">+ Resist Hold, Sleep, Fear y Mental Atk</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="resist-shock mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Resist Shock</p>
+                                        <p class="text-warning m-0">+ Resist a estado de Shock</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="resist-aqua mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Resist Aqua</p>
+                                        <p class="text-warning m-0">+ Resist a ataques Aqua</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="resist-fire mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Resist Fire</p>
+                                        <p class="text-warning m-0">+ Resist a ataques Fire</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="resist-poison mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Resist Poison</p>
+                                        <p class="text-warning m-0">+ Resist a ataques Poison</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="resist-wind mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Resist Wind</p>
+                                        <p class="text-warning m-0">+ Resist a ataques Wind</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="decrease-weight mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Decrease Weight</p>
+                                        <p class="text-warning m-0">+ Limite de peso</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="media">
+                            <div class="media-body">
+                                <div class="media my-1">
+                                    <div class="invigor mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Invigor</p>
+                                        <p class="text-warning m-0">+ Resist a Bleed</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="kiss-of-eva mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Kiss of Eva</p>
+                                        <p class="text-warning m-0">+ Capacidad respiratoria</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="regeneration mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Regeneration</p>
+                                        <p class="text-warning m-0">+ Regen HP</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="prayer mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Prayer</p>
+                                        <p class="text-warning m-0">+ Curacion al ser curado</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="acumen mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Acumen</p>
+                                        <p class="text-info m-0">+ Casting Spd.</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="concentration mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Concentration</p>
+                                        <p class="text-info m-0">- Cancel de casteo</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="empower mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Empower</p>
+                                        <p class="text-info m-0">+ M. Atk</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="wild-magic mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Wild Magic</p>
+                                        <p class="text-info m-0">+ Critical Rate Mágico</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="media">
+                            <div class="media-body">
+                                <div class="media my-1">
+                                    <div class="berserker-spirit mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Berserker Spirit</p>
+                                        <p class="m-0"><span class="text-danger">- P. Def, M. Def</span><br><span class="text-success">+ P. Atk, Atk. Spd.</span> <span class="text-info">+ M. Atk, Casting Spd</span></p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="death-whisper mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Death Whisper</p>
+                                        <p class="text-success m-0">+ Critical Damage</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="focus mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Focus</p>
+                                        <p class="text-success m-0">+ Critical Rate Físico</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="haste mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Haste</p>
+                                        <p class="text-success m-0">+ Atk. Spd.</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="guidance mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Guidance</p>
+                                        <p class="text-success m-0">+ Accuracy</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="might mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Might</p>
+                                        <p class="text-success m-0">+ P. Atk</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="vampiric-rage mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Vampiric Rage</p>
+                                        <p class="text-success m-0">+ Vampiric</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="holy-weapon mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Holy Weapon</p>
+                                        <p class="lila m-0">Atributo Holy en magias y ataques físicos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center mx-3">
+                        <p class="h1">3ra Clase, Invocaciones y Cubics</p>
+                        <p>Buffs que provienen de 3ras Clases, Gata y Unicornio/Seraphim, y los Cubics existentes. <br> ¡Los Buff de la Gata y Unicornio y los Mass Summon Cubic se pasan a través de <span class="font-weight-bold">PARTY</span>!</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="media">
+                            <div class="media-body">
+                                <div class="media my-1">
+                                    <div class="arcane-protection mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Arcante Protection</p>
+                                        <p class="text-warning m-0">+ Resist a Buff Cancel y Debuffs</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="divine-protection mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Divine Protection</p>
+                                        <p class="text-warning m-0">+ Resist Dark</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="elemental-protection mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Elemental Protection</p>
+                                        <p class="text-warning m-0">+ Resist Fire, Water, Wind y Earth</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="prophecy-of-fire mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Prophecy of Fire</p>
+                                        <!-- HP +20%, HP added is restored, P.Atk. +10%, P.Def. +20%, Accuracy +4, Speed -10%, Atk. Spd. +20%, Debuff Resistance +10% -->
+                                        <p class="text-warning m-0"><span class="text-success">+ P. Atk, Atk. Spd., Accuracy</span><br>+ HP, P. Def, Resist Debuff <br> <span class="text-danger">- Speed</span></p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="prophecy-of-water mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Prophecy of Water</p>
+                                        <!-- Prophecy of Water - MP regen per tick +20%, M.Atk. +20%, M.Def. +20%, Speed -20%, Casting Spd. +20%,Magic Critical Rate +100%, Debuff Resistance +10% -->
+                                        <p class="text-warning m-0"><span class="text-info">+ M. Atk, Casting Spd., Critical Rate Mágico</span><br>+ MP Regen, M. Def, Resist Debuff <br> <span class="text-danger">- Speed</span></p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="prophecy-of-wind mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Prophecy of Wind</p>
+                                        <!-- Prophecy of Wind - Accuracy +4, Atk Speed +20%, Recover 5% of melee physical damage as HP, Critical +20% from behind,Critical Damage from behind +20%, Debuff Resistance +10% -->
+                                        <p class="text-warning m-0"><span class="text-success">+ P. Atk, Atk. Spd., Accuracy, Vampiric, Critical Damage hacia la espalda</span><br>+ Resist Debuff <br> <span class="text-danger">- Speed</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="media">
+                            <div class="media-body">
+                                <div class="media my-1">
+                                    <div class="catqueen-blessing mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Blessing of Queen</p>
+                                        <p class="text-success m-0">+ Critical Rate Físico, Critical Damage</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="catqueen-gift mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Gift of Queen</p>
+                                        <p class="text-success m-0">+ P. Atk, Accuracy</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="seraphim-blessing mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Blessing of Seraphim</p>
+                                        <p class="text-info m-0">- Tiempo reuso Skill Mágico</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="seraphim-gift mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Gift of Seraphim</p>
+                                        <p class="text-info m-0">+ Regen MP</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="media">
+                            <div class="media-body">
+                                <div class="media my-1">
+                                    <div class="cubic-phantom mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Phantom Cubic</p>
+                                        <p class="text-danger m-0">Baja el P. Atk, P. Def y Atk. Spd.</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="mass-cubic-phantom mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Mass Summon Phantom Cubic</p>
+                                        <p class="lila m-0">Phantom Cubic se puede invocar para Party</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="cubic-aqua mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Aqua Cubic</p>
+                                        <p class="text-danger m-0">Hace daño periodicamente</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="mass-cubic-aqua mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Mass Summon Aqua Cubic</p>
+                                        <p class="lila m-0">Aqua Cubic se puede invocar para Party</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="cubic-storm mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Storm Cubic</p>
+                                        <p class="text-danger m-0">Hace daño</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="mass-cubic-storm mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Mass Summon Storm Cubic</p>
+                                        <p class="lila m-0">Storm Cubic se puede invocar para Party</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="media">
+                            <div class="media-body">
+                                <div class="media my-1">
+                                    <div class="cubic-life mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Life Cubic</p>
+                                        <p class="text-warning m-0">Recupera HP periodicamente</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="cubic-spark mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Spark Cubic</p>
+                                        <p class="text-danger m-0">Stunea</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="cubic-vampiric mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Vampiric Cubic</p>
+                                        <p class="text-danger m-0">Hace daño y <span class="text-warning">cura</span> con este</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="cubic-binding mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Binding Cubic</p>
+                                        <p class="text-danger m-0">Paraliza</p>
+                                    </div>
+                                </div>
+                                <div class="media my-1">
+                                    <div class="cubic-viper mr-3 rounded"></div>
+                                    <div class="media-body">
+                                        <p class="m-0 font-weight-bold">Viper Cubic</p>
+                                        <p class="text-danger m-0">Envenena</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
         </div>
@@ -305,20 +1041,36 @@
                     <div class="container mt-3">
                         <div class="d-flex align-items-center">
                             <div class="align-self-center">
-                                <p>La Noblesse es un set de Skills aprendidos luego de completar la saga de Quests "Path Of A Noblesse, Possesor Of A Precious Soul". Es muy importante ya que es un hito importante para cualquier PJ dispuesto a alcanzarla, al aportar Skills necesarios para cualquier momento (Blessing of the Noblesse y Summon CP Potion) y un subset de Skills para Asedios.<br>Además te da una tiara fachera! <img src="imagenes/skill/noblesse/noblesse_tiara.png" alt="Noblesse Tiara" class="rounded"></p>
+                                <p>La Noblesse es un set de Skills aprendidos luego de completar la saga de Quests "Path Of A Noblesse, Possesor Of A Precious Soul". Es muy importante ya que es un hito importante para cualquier PJ dispuesto a alcanzarla, al aportar Skills necesarios para cualquier momento (Blessing of the Noblesse y Summon CP Potion) y un subset de Skills para Asedios.<br>Además te da una tiara fachera! <span class="noblesse-tiara rounded"></span></p>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
                             <div class="align-self-center">
                                 <ul class="list-unstyled">
-                                    <li class="py-2"><img src="imagenes/skill/noblesse/blessing_of_the_noblesse.png" alt="Blessing of the Noblesse" class="rounded"><span class="font-weight-bold h5"> Blessing of the Noblesse</span> - Retiene todos los Buffs que tenias en caso de que mueras.</li>
-                                    <li class="py-2"><img src="imagenes/skill/noblesse/summon_cp_potion.png" alt="Summon CP Potion" class="rounded"><span class="font-weight-bold h5"> Summon CP Potion</span> - Invoca 20 Greater CP Potion.</li>
-                                    <li class="py-2"><img src="imagenes/skill/noblesse/fortune_of_noblesse.png" alt="Fortune of Noblesse" class="rounded"><span class="font-weight-bold h5"> Fortune of Noblesse</span> - Baja la chance a tu Party de dropear un item en caso de Raid o Boss War.</li>
-                                    <li class="py-2"><img src="imagenes/skill/noblesse/build_advanced_headquarters.png" alt="Build Advanced Headquarters" class="rounded"><span class="font-weight-bold h5"> Build Advanced Headquarters</span> - Establece un cuartel con doble de vida que ayuda con la recuperación y despacho de miembros de tu clan.</li>
-                                    <li class="py-2"><img src="imagenes/skill/noblesse/harmony_of_the_noblesse.png" alt="Harmony of the Noblesse" class="rounded"><span class="font-weight-bold h5"> Harmony of the Noblesse</span> - Hace daño no elemental en área.</li>
-                                    <li class="py-2"><img src="imagenes/skill/noblesse/symphony_of_the_noblesse.png" alt="ymphony of the Noblesse" class="rounded"><span class="font-weight-bold h5"> Symphony of the Noblesse</span> - Hace aun más daño no elemental en área.</li>
-                                    <li class="py-2"><img src="imagenes/skill/noblesse/strider_siege_assault.png" alt="Strider Siege Assault" class="rounded"><span class="font-weight-bold h5"> Strider Siege Assault</span> - Ataque fuerte con un Strider a una puerta y pared de Castillo.</li>
-                                    <li class="py-2"><img src="imagenes/skill/noblesse/wyvern_aegis.png" alt="Wyvern Aegis" class="rounded"><span class="font-weight-bold h5"> Wyvern Aegis</span> - Incrementa P. y M. Def al estar montado en un Wyvern.</li>
+                                    <li class="py-2">
+                                        <div class="rounded blessing-of-the-noblesse"></div><span class="font-weight-bold h5"> Blessing of the Noblesse</span> - Retiene todos los Buffs que tenias en caso de que mueras.
+                                    </li>
+                                    <li class="py-2">
+                                        <div class="rounded summon-cp-potion"></div><span class="font-weight-bold h5"> Summon CP Potion</span> - Invoca 20 Greater CP Potion.
+                                    </li>
+                                    <li class="py-2">
+                                        <div class="rounded fortune-of-noblesse"></div><span class="font-weight-bold h5"> Fortune of Noblesse</span> - Baja la chance a tu Party de dropear un item en caso de Raid o Boss War.
+                                    </li>
+                                    <li class="py-2">
+                                        <div class="rounded build-advanced-headquarters"></div><span class="font-weight-bold h5"> Build Advanced Headquarters</span> - Establece un cuartel con doble de vida que ayuda con la recuperación y despacho de miembros de tu clan.
+                                    </li>
+                                    <li class="py-2">
+                                        <div class="rounded harmony-of-the-noblesse"></div><span class="font-weight-bold h5"> Harmony of the Noblesse</span> - Hace daño no elemental en área.
+                                    </li>
+                                    <li class="py-2">
+                                        <div class="rounded symphony-of-the-noblesse"></div><span class="font-weight-bold h5"> Symphony of the Noblesse</span> - Hace aun más daño no elemental en área.
+                                    </li>
+                                    <li class="py-2">
+                                        <div class="rounded strider-siege-assault"></div><span class="font-weight-bold h5"> Strider Siege Assault</span> - Ataque fuerte con un Strider a una puerta y pared de Castillo.
+                                    </li>
+                                    <li class="py-2">
+                                        <div class="rounded wyvern-aegis"></div><span class="font-weight-bold h5"> Wyvern Aegis</span> - Incrementa P. y M. Def al estar montado en un Wyvern.
+                                    </li>
                                 </ul>
                             </div>
 
@@ -943,7 +1695,7 @@
                                         </ul>
                                     </li>
                                     <li class="py-1 font-weight-bold">Overlord <ul class="list-unstyled">
-                                            <li class="font-weight-normal">Mago de corto rango, mucho MEN. Tiene los mejores Skills para Magos Nukers, y hasta es usable de apoyo para PJ orientado a Fighter. Sus buffs son para Clan. Tienen buenos niveles de Armor Mastery Mágicos, Heavy Armor Mastery carente en otras clases. Cura CP, y tiene mejor Vampire que el Necromancer o el Spellhowler. Tiene Soul Cry y Soul Guard, que son útiles al aumentar el P. Atk. y M. Def, PERO consumen muchísimo mana.</li>
+                                            <li class="font-weight-normal">Mago de corto rango, mucho MEN. Tiene los mejores Skills para Magos Nukers, y hasta es usable de apoyo para PJ orientado a Fighter. Sus buffs son para Clan. Tienen buenos niveles de Armor Mastery Mágicos, Heavy Armor Mastery carente en otras clases. Cura CP, y tiene mejor Vampire que el Necromancer o el Spellhowler. Tiene Soul Cry y Soul Guard, que son útiles al aumentar el P. Atk. y P. Def, PERO consumen muchísimo mana.</li>
                                         </ul>
                                     </li>
                                 </ul>

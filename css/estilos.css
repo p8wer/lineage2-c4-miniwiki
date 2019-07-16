@@ -2,7 +2,11 @@
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
     color: #fff;
-    background-color:darkolivegreen;
+    background-color: darkolivegreen;
+}
+
+.lila {
+    color: violet;
 }
 
 /* OVERRIDE de la fuente de bootstrap para que sea Tahoma, la fuente que usa el L2 
@@ -18,7 +22,7 @@ table {
 } */
 
 .blacky {
-    color: black
+    color: black;
 }
 
 
