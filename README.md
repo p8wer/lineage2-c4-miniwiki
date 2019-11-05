@@ -4,27 +4,27 @@ Hola! Esta es una ideita que estuve teniendo para aplicar lo que aprendí en cla
 
 Contenidos:
 
-* Inicio  ![Progress](http://progressed.io/bar/100)
+* Inicio 
 
-* Buffs ![Progress](http://progressed.io/bar/90)
+* Buffs
 
-* Noblesse  ![Progress](http://progressed.io/bar/100)
+* Noblesse 
 
 * * Qué es y como obtenerla
 
-* Clases/Sub  ![Progress](http://progressed.io/bar/75)
+* Clases/Sub
 
 * * Cuales existen, importancia de tales, combos
 
-* Info. Miscelánea  ![Progress](http://progressed.io/bar/80)
+* Info. Miscelánea
 
 * * Atributos&Dyes, Quest importantes, tips
 
-* Glosario  ![Progress](http://progressed.io/bar/75)
+* Glosario
 
-* Mapa (Grande)  ![Progress](http://progressed.io/bar/100)
+* Mapa (Grande)
 
-* Sobre la Web  ![Progress](http://progressed.io/bar/100)
+* Sobre la Web
 
 
 ___________________________
